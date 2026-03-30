@@ -87,19 +87,138 @@ CMakeFiles/opencraft.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencraft.dir/src/main.cpp.s"
 	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Projects/cpp-projects/opencraft/src/main.cpp -o CMakeFiles/opencraft.dir/src/main.cpp.s
 
+CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.obj: CMakeFiles/opencraft.dir/flags.make
+CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.obj: CMakeFiles/opencraft.dir/includes_CXX.rsp
+CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.obj: D:/Projects/cpp-projects/opencraft/lib/imgui/imgui.cpp
+CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.obj: CMakeFiles/opencraft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.obj"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.obj -MF CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.obj.d -o CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.obj -c D:/Projects/cpp-projects/opencraft/lib/imgui/imgui.cpp
+
+CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.i"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/imgui/imgui.cpp > CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.i
+
+CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.s"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/imgui/imgui.cpp -o CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.s
+
+CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.obj: CMakeFiles/opencraft.dir/flags.make
+CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.obj: CMakeFiles/opencraft.dir/includes_CXX.rsp
+CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.obj: D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_demo.cpp
+CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.obj: CMakeFiles/opencraft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.obj"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.obj -MF CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.obj.d -o CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.obj -c D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_demo.cpp
+
+CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.i"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_demo.cpp > CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.i
+
+CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.s"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_demo.cpp -o CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.s
+
+CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.obj: CMakeFiles/opencraft.dir/flags.make
+CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.obj: CMakeFiles/opencraft.dir/includes_CXX.rsp
+CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.obj: D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_draw.cpp
+CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.obj: CMakeFiles/opencraft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.obj"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.obj -MF CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.obj.d -o CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.obj -c D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_draw.cpp
+
+CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.i"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_draw.cpp > CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.i
+
+CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.s"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_draw.cpp -o CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.s
+
+CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.obj: CMakeFiles/opencraft.dir/flags.make
+CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.obj: CMakeFiles/opencraft.dir/includes_CXX.rsp
+CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.obj: D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_tables.cpp
+CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.obj: CMakeFiles/opencraft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.obj"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.obj -MF CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.obj.d -o CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.obj -c D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_tables.cpp
+
+CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.i"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_tables.cpp > CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.i
+
+CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.s"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_tables.cpp -o CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.s
+
+CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.obj: CMakeFiles/opencraft.dir/flags.make
+CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.obj: CMakeFiles/opencraft.dir/includes_CXX.rsp
+CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.obj: D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_widgets.cpp
+CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.obj: CMakeFiles/opencraft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.obj"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.obj -MF CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.obj.d -o CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.obj -c D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_widgets.cpp
+
+CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.i"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_widgets.cpp > CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.i
+
+CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.s"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_widgets.cpp -o CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.s
+
+CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.obj: CMakeFiles/opencraft.dir/flags.make
+CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.obj: CMakeFiles/opencraft.dir/includes_CXX.rsp
+CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.obj: D:/Projects/cpp-projects/opencraft/lib/imgui/backends/imgui_impl_glfw.cpp
+CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.obj: CMakeFiles/opencraft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.obj"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.obj -MF CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.obj.d -o CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.obj -c D:/Projects/cpp-projects/opencraft/lib/imgui/backends/imgui_impl_glfw.cpp
+
+CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.i"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/imgui/backends/imgui_impl_glfw.cpp > CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.i
+
+CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.s"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/imgui/backends/imgui_impl_glfw.cpp -o CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.s
+
+CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.obj: CMakeFiles/opencraft.dir/flags.make
+CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.obj: CMakeFiles/opencraft.dir/includes_CXX.rsp
+CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.obj: D:/Projects/cpp-projects/opencraft/lib/imgui/backends/imgui_impl_opengl3.cpp
+CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.obj: CMakeFiles/opencraft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.obj"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.obj -MF CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.obj.d -o CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.obj -c D:/Projects/cpp-projects/opencraft/lib/imgui/backends/imgui_impl_opengl3.cpp
+
+CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.i"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/imgui/backends/imgui_impl_opengl3.cpp > CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.i
+
+CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s"
+	C:/msys64/ucrt64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/imgui/backends/imgui_impl_opengl3.cpp -o CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s
+
 # Object files for target opencraft
 opencraft_OBJECTS = \
-"CMakeFiles/opencraft.dir/src/main.cpp.obj"
+"CMakeFiles/opencraft.dir/src/main.cpp.obj" \
+"CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.obj" \
+"CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.obj" \
+"CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.obj" \
+"CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.obj" \
+"CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.obj" \
+"CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.obj" \
+"CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.obj"
 
 # External object files for target opencraft
 opencraft_EXTERNAL_OBJECTS =
 
 opencraft.exe: CMakeFiles/opencraft.dir/src/main.cpp.obj
+opencraft.exe: CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.obj
+opencraft.exe: CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.obj
+opencraft.exe: CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.obj
+opencraft.exe: CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.obj
+opencraft.exe: CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.obj
+opencraft.exe: CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.obj
+opencraft.exe: CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.obj
 opencraft.exe: CMakeFiles/opencraft.dir/build.make
 opencraft.exe: lib/glfw/src/libglfw3.a
 opencraft.exe: CMakeFiles/opencraft.dir/linkLibs.rsp
 opencraft.exe: CMakeFiles/opencraft.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable opencraft.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable opencraft.exe"
 	"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/opencraft.dir/objects.a
 	C:/msys64/ucrt64/bin/ar.exe qc CMakeFiles/opencraft.dir/objects.a @CMakeFiles/opencraft.dir/objects1.rsp
 	C:/msys64/ucrt64/bin/g++.exe -g -Wl,--whole-archive CMakeFiles/opencraft.dir/objects.a -Wl,--no-whole-archive -o opencraft.exe -Wl,--out-implib,libopencraft.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/opencraft.dir/linkLibs.rsp

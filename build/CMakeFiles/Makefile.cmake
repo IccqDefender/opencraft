@@ -64,6 +64,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/Projects/cpp-projects/opencraft/lib/glfw/CMakeLists.txt"
   "D:/Projects/cpp-projects/opencraft/lib/glfw/docs/CMakeLists.txt"
   "D:/Projects/cpp-projects/opencraft/lib/glfw/src/CMakeLists.txt"
+  "D:/Projects/cpp-projects/opencraft/lib/glm/CMakeLists.txt"
+  "D:/Projects/cpp-projects/opencraft/lib/glm/glm/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -82,6 +84,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "lib/glfw/src/glfw3.pc"
   "lib/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/glfw/docs/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/glm/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/glm/glm/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -90,4 +94,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "lib/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake"
   "lib/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   "lib/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake"
+  "lib/glm/glm/CMakeFiles/glm.dir/DependInfo.cmake"
   )

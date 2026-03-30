@@ -137,6 +137,13 @@ all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 0
 .PHONY : all
 
+# The main codegen target
+codegen: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles D:/Projects/cpp-projects/opencraft/build//CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 0
+.PHONY : codegen
+
 # The main clean target
 clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
@@ -213,6 +220,187 @@ update_mappings/fast:
 	$(MAKE) $(MAKESILENT) -f lib/glfw/src/CMakeFiles/update_mappings.dir/build.make lib/glfw/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
+#=============================================================================
+# Target rules for targets named glm
+
+# Build rule for target.
+glm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glm
+.PHONY : glm
+
+# fast build rule for target.
+glm/fast:
+	$(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/build
+.PHONY : glm/fast
+
+lib/imgui/backends/imgui_impl_glfw.obj: lib/imgui/backends/imgui_impl_glfw.cpp.obj
+.PHONY : lib/imgui/backends/imgui_impl_glfw.obj
+
+# target to build an object file
+lib/imgui/backends/imgui_impl_glfw.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.obj
+.PHONY : lib/imgui/backends/imgui_impl_glfw.cpp.obj
+
+lib/imgui/backends/imgui_impl_glfw.i: lib/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : lib/imgui/backends/imgui_impl_glfw.i
+
+# target to preprocess a source file
+lib/imgui/backends/imgui_impl_glfw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : lib/imgui/backends/imgui_impl_glfw.cpp.i
+
+lib/imgui/backends/imgui_impl_glfw.s: lib/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : lib/imgui/backends/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+lib/imgui/backends/imgui_impl_glfw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : lib/imgui/backends/imgui_impl_glfw.cpp.s
+
+lib/imgui/backends/imgui_impl_opengl3.obj: lib/imgui/backends/imgui_impl_opengl3.cpp.obj
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.obj
+
+# target to build an object file
+lib/imgui/backends/imgui_impl_opengl3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.obj
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.cpp.obj
+
+lib/imgui/backends/imgui_impl_opengl3.i: lib/imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+lib/imgui/backends/imgui_impl_opengl3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.i
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.cpp.i
+
+lib/imgui/backends/imgui_impl_opengl3.s: lib/imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+lib/imgui/backends/imgui_impl_opengl3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.cpp.s
+
+lib/imgui/imgui.obj: lib/imgui/imgui.cpp.obj
+.PHONY : lib/imgui/imgui.obj
+
+# target to build an object file
+lib/imgui/imgui.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.obj
+.PHONY : lib/imgui/imgui.cpp.obj
+
+lib/imgui/imgui.i: lib/imgui/imgui.cpp.i
+.PHONY : lib/imgui/imgui.i
+
+# target to preprocess a source file
+lib/imgui/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.i
+.PHONY : lib/imgui/imgui.cpp.i
+
+lib/imgui/imgui.s: lib/imgui/imgui.cpp.s
+.PHONY : lib/imgui/imgui.s
+
+# target to generate assembly for a file
+lib/imgui/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.s
+.PHONY : lib/imgui/imgui.cpp.s
+
+lib/imgui/imgui_demo.obj: lib/imgui/imgui_demo.cpp.obj
+.PHONY : lib/imgui/imgui_demo.obj
+
+# target to build an object file
+lib/imgui/imgui_demo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.obj
+.PHONY : lib/imgui/imgui_demo.cpp.obj
+
+lib/imgui/imgui_demo.i: lib/imgui/imgui_demo.cpp.i
+.PHONY : lib/imgui/imgui_demo.i
+
+# target to preprocess a source file
+lib/imgui/imgui_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.i
+.PHONY : lib/imgui/imgui_demo.cpp.i
+
+lib/imgui/imgui_demo.s: lib/imgui/imgui_demo.cpp.s
+.PHONY : lib/imgui/imgui_demo.s
+
+# target to generate assembly for a file
+lib/imgui/imgui_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.s
+.PHONY : lib/imgui/imgui_demo.cpp.s
+
+lib/imgui/imgui_draw.obj: lib/imgui/imgui_draw.cpp.obj
+.PHONY : lib/imgui/imgui_draw.obj
+
+# target to build an object file
+lib/imgui/imgui_draw.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.obj
+.PHONY : lib/imgui/imgui_draw.cpp.obj
+
+lib/imgui/imgui_draw.i: lib/imgui/imgui_draw.cpp.i
+.PHONY : lib/imgui/imgui_draw.i
+
+# target to preprocess a source file
+lib/imgui/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.i
+.PHONY : lib/imgui/imgui_draw.cpp.i
+
+lib/imgui/imgui_draw.s: lib/imgui/imgui_draw.cpp.s
+.PHONY : lib/imgui/imgui_draw.s
+
+# target to generate assembly for a file
+lib/imgui/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.s
+.PHONY : lib/imgui/imgui_draw.cpp.s
+
+lib/imgui/imgui_tables.obj: lib/imgui/imgui_tables.cpp.obj
+.PHONY : lib/imgui/imgui_tables.obj
+
+# target to build an object file
+lib/imgui/imgui_tables.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.obj
+.PHONY : lib/imgui/imgui_tables.cpp.obj
+
+lib/imgui/imgui_tables.i: lib/imgui/imgui_tables.cpp.i
+.PHONY : lib/imgui/imgui_tables.i
+
+# target to preprocess a source file
+lib/imgui/imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.i
+.PHONY : lib/imgui/imgui_tables.cpp.i
+
+lib/imgui/imgui_tables.s: lib/imgui/imgui_tables.cpp.s
+.PHONY : lib/imgui/imgui_tables.s
+
+# target to generate assembly for a file
+lib/imgui/imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.s
+.PHONY : lib/imgui/imgui_tables.cpp.s
+
+lib/imgui/imgui_widgets.obj: lib/imgui/imgui_widgets.cpp.obj
+.PHONY : lib/imgui/imgui_widgets.obj
+
+# target to build an object file
+lib/imgui/imgui_widgets.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.obj
+.PHONY : lib/imgui/imgui_widgets.cpp.obj
+
+lib/imgui/imgui_widgets.i: lib/imgui/imgui_widgets.cpp.i
+.PHONY : lib/imgui/imgui_widgets.i
+
+# target to preprocess a source file
+lib/imgui/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.i
+.PHONY : lib/imgui/imgui_widgets.cpp.i
+
+lib/imgui/imgui_widgets.s: lib/imgui/imgui_widgets.cpp.s
+.PHONY : lib/imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+lib/imgui/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.s
+.PHONY : lib/imgui/imgui_widgets.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -243,6 +431,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -252,7 +441,29 @@ help:
 	@echo "... uninstall"
 	@echo "... update_mappings"
 	@echo "... glfw"
+	@echo "... glm"
 	@echo "... opencraft"
+	@echo "... lib/imgui/backends/imgui_impl_glfw.obj"
+	@echo "... lib/imgui/backends/imgui_impl_glfw.i"
+	@echo "... lib/imgui/backends/imgui_impl_glfw.s"
+	@echo "... lib/imgui/backends/imgui_impl_opengl3.obj"
+	@echo "... lib/imgui/backends/imgui_impl_opengl3.i"
+	@echo "... lib/imgui/backends/imgui_impl_opengl3.s"
+	@echo "... lib/imgui/imgui.obj"
+	@echo "... lib/imgui/imgui.i"
+	@echo "... lib/imgui/imgui.s"
+	@echo "... lib/imgui/imgui_demo.obj"
+	@echo "... lib/imgui/imgui_demo.i"
+	@echo "... lib/imgui/imgui_demo.s"
+	@echo "... lib/imgui/imgui_draw.obj"
+	@echo "... lib/imgui/imgui_draw.i"
+	@echo "... lib/imgui/imgui_draw.s"
+	@echo "... lib/imgui/imgui_tables.obj"
+	@echo "... lib/imgui/imgui_tables.i"
+	@echo "... lib/imgui/imgui_tables.s"
+	@echo "... lib/imgui/imgui_widgets.obj"
+	@echo "... lib/imgui/imgui_widgets.i"
+	@echo "... lib/imgui/imgui_widgets.s"
 	@echo "... src/main.obj"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

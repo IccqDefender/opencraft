@@ -4,7 +4,9 @@
 		"D:/Projects/cpp-projects/opencraft/build/cmake_install.cmake",
 		"D:/Projects/cpp-projects/opencraft/build/lib/glfw/cmake_install.cmake",
 		"D:/Projects/cpp-projects/opencraft/build/lib/glfw/src/cmake_install.cmake",
-		"D:/Projects/cpp-projects/opencraft/build/lib/glfw/docs/cmake_install.cmake"
+		"D:/Projects/cpp-projects/opencraft/build/lib/glfw/docs/cmake_install.cmake",
+		"D:/Projects/cpp-projects/opencraft/build/lib/glm/cmake_install.cmake",
+		"D:/Projects/cpp-projects/opencraft/build/lib/glm/glm/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

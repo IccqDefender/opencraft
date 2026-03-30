@@ -6,6 +6,48 @@
   "output": "CMakeFiles/opencraft.dir/src/main.cpp.obj"
 },
 {
+  "directory": "D:/Projects/cpp-projects/opencraft/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe  @CMakeFiles/opencraft.dir/includes_CXX.rsp -g -o CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.obj -c D:/Projects/cpp-projects/opencraft/lib/imgui/imgui.cpp",
+  "file": "D:/Projects/cpp-projects/opencraft/lib/imgui/imgui.cpp",
+  "output": "CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.obj"
+},
+{
+  "directory": "D:/Projects/cpp-projects/opencraft/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe  @CMakeFiles/opencraft.dir/includes_CXX.rsp -g -o CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.obj -c D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_demo.cpp",
+  "file": "D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_demo.cpp",
+  "output": "CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.obj"
+},
+{
+  "directory": "D:/Projects/cpp-projects/opencraft/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe  @CMakeFiles/opencraft.dir/includes_CXX.rsp -g -o CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.obj -c D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_draw.cpp",
+  "file": "D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_draw.cpp",
+  "output": "CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.obj"
+},
+{
+  "directory": "D:/Projects/cpp-projects/opencraft/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe  @CMakeFiles/opencraft.dir/includes_CXX.rsp -g -o CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.obj -c D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_tables.cpp",
+  "file": "D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_tables.cpp",
+  "output": "CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.obj"
+},
+{
+  "directory": "D:/Projects/cpp-projects/opencraft/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe  @CMakeFiles/opencraft.dir/includes_CXX.rsp -g -o CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.obj -c D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_widgets.cpp",
+  "file": "D:/Projects/cpp-projects/opencraft/lib/imgui/imgui_widgets.cpp",
+  "output": "CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.obj"
+},
+{
+  "directory": "D:/Projects/cpp-projects/opencraft/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe  @CMakeFiles/opencraft.dir/includes_CXX.rsp -g -o CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.obj -c D:/Projects/cpp-projects/opencraft/lib/imgui/backends/imgui_impl_glfw.cpp",
+  "file": "D:/Projects/cpp-projects/opencraft/lib/imgui/backends/imgui_impl_glfw.cpp",
+  "output": "CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.obj"
+},
+{
+  "directory": "D:/Projects/cpp-projects/opencraft/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe  @CMakeFiles/opencraft.dir/includes_CXX.rsp -g -o CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.obj -c D:/Projects/cpp-projects/opencraft/lib/imgui/backends/imgui_impl_opengl3.cpp",
+  "file": "D:/Projects/cpp-projects/opencraft/lib/imgui/backends/imgui_impl_opengl3.cpp",
+  "output": "CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.obj"
+},
+{
   "directory": "D:/Projects/cpp-projects/opencraft/build/lib/glfw/src",
   "command": "C:/msys64/ucrt64/bin/gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles/glfw.dir/context.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/context.c",
   "file": "D:/Projects/cpp-projects/opencraft/lib/glfw/src/context.c",
@@ -130,5 +172,11 @@
   "command": "C:/msys64/ucrt64/bin/gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -std=c99 -Wall -o CMakeFiles/glfw.dir/wgl_context.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/wgl_context.c",
   "file": "D:/Projects/cpp-projects/opencraft/lib/glfw/src/wgl_context.c",
   "output": "lib/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj"
+},
+{
+  "directory": "D:/Projects/cpp-projects/opencraft/build/lib/glm/glm",
+  "command": "C:/msys64/ucrt64/bin/g++.exe  @CMakeFiles/glm.dir/includes_CXX.rsp -g -o CMakeFiles/glm.dir/detail/glm.cpp.obj -c D:/Projects/cpp-projects/opencraft/lib/glm/glm/detail/glm.cpp",
+  "file": "D:/Projects/cpp-projects/opencraft/lib/glm/glm/detail/glm.cpp",
+  "output": "lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj"
 }
 ]

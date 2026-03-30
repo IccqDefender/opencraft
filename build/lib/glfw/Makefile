@@ -137,6 +137,13 @@ all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 0
 .PHONY : all
 
+# The main codegen target
+codegen: cmake_check_build_system
+	cd D:/Projects/cpp-projects/opencraft/build && $(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles D:/Projects/cpp-projects/opencraft/build/lib/glfw//CMakeFiles/progress.marks
+	cd D:/Projects/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glfw/codegen
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 0
+.PHONY : codegen
+
 # The main clean target
 clean:
 	cd D:/Projects/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glfw/clean
@@ -181,6 +188,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
