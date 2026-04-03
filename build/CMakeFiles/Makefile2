@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:/Projects/cpp-projects/opencraft
+CMAKE_SOURCE_DIR = /home/sterben/cpp-projects/opencraft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:/Projects/cpp-projects/opencraft/build
+CMAKE_BINARY_DIR = /home/sterben/cpp-projects/opencraft/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -193,14 +193,14 @@ lib/glm/glm/clean: lib/glm/glm/CMakeFiles/glm.dir/clean
 CMakeFiles/opencraft.dir/all: lib/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33 "Built target opencraft"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=48,49,50,51,52,53,54,55,56,57,58 "Built target opencraft"
 .PHONY : CMakeFiles/opencraft.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/opencraft.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles 56
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/opencraft.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles 0
 .PHONY : CMakeFiles/opencraft.dir/rule
 
 # Convenience name for target.
@@ -210,7 +210,7 @@ opencraft: CMakeFiles/opencraft.dir/rule
 # codegen rule for target.
 CMakeFiles/opencraft.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33 "Finished codegen for target opencraft"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=48,49,50,51,52,53,54,55,56,57,58 "Finished codegen for target opencraft"
 .PHONY : CMakeFiles/opencraft.dir/codegen
 
 # clean rule for target.
@@ -225,14 +225,14 @@ CMakeFiles/opencraft.dir/clean:
 lib/glfw/CMakeFiles/uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/glfw/CMakeFiles/uninstall.dir/build.make lib/glfw/CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/glfw/CMakeFiles/uninstall.dir/build.make lib/glfw/CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : lib/glfw/CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 lib/glfw/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glfw/CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles 0
 .PHONY : lib/glfw/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -242,7 +242,7 @@ uninstall: lib/glfw/CMakeFiles/uninstall.dir/rule
 # codegen rule for target.
 lib/glfw/CMakeFiles/uninstall.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/glfw/CMakeFiles/uninstall.dir/build.make lib/glfw/CMakeFiles/uninstall.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num= "Finished codegen for target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num= "Finished codegen for target uninstall"
 .PHONY : lib/glfw/CMakeFiles/uninstall.dir/codegen
 
 # clean rule for target.
@@ -257,14 +257,14 @@ lib/glfw/CMakeFiles/uninstall.dir/clean:
 lib/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/glfw/src/CMakeFiles/glfw.dir/build.make lib/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/glfw/src/CMakeFiles/glfw.dir/build.make lib/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45 "Built target glfw"
 .PHONY : lib/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
 lib/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles 45
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glfw/src/CMakeFiles/glfw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles 0
 .PHONY : lib/glfw/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.
@@ -274,7 +274,7 @@ glfw: lib/glfw/src/CMakeFiles/glfw.dir/rule
 # codegen rule for target.
 lib/glfw/src/CMakeFiles/glfw.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/glfw/src/CMakeFiles/glfw.dir/build.make lib/glfw/src/CMakeFiles/glfw.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 "Finished codegen for target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45 "Finished codegen for target glfw"
 .PHONY : lib/glfw/src/CMakeFiles/glfw.dir/codegen
 
 # clean rule for target.
@@ -289,14 +289,14 @@ lib/glfw/src/CMakeFiles/glfw.dir/clean:
 lib/glfw/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/glfw/src/CMakeFiles/update_mappings.dir/build.make lib/glfw/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/glfw/src/CMakeFiles/update_mappings.dir/build.make lib/glfw/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=34 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=59 "Built target update_mappings"
 .PHONY : lib/glfw/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
 lib/glfw/src/CMakeFiles/update_mappings.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glfw/src/CMakeFiles/update_mappings.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles 0
 .PHONY : lib/glfw/src/CMakeFiles/update_mappings.dir/rule
 
 # Convenience name for target.
@@ -306,7 +306,7 @@ update_mappings: lib/glfw/src/CMakeFiles/update_mappings.dir/rule
 # codegen rule for target.
 lib/glfw/src/CMakeFiles/update_mappings.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/glfw/src/CMakeFiles/update_mappings.dir/build.make lib/glfw/src/CMakeFiles/update_mappings.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=34 "Finished codegen for target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=59 "Finished codegen for target update_mappings"
 .PHONY : lib/glfw/src/CMakeFiles/update_mappings.dir/codegen
 
 # clean rule for target.
@@ -321,14 +321,14 @@ lib/glfw/src/CMakeFiles/update_mappings.dir/clean:
 lib/glm/glm/CMakeFiles/glm.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=23,24 "Built target glm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=46,47 "Built target glm"
 .PHONY : lib/glm/glm/CMakeFiles/glm.dir/all
 
 # Build rule for subdir invocation for target.
 lib/glm/glm/CMakeFiles/glm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/CMakeFiles/glm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles 0
 .PHONY : lib/glm/glm/CMakeFiles/glm.dir/rule
 
 # Convenience name for target.
@@ -338,7 +338,7 @@ glm: lib/glm/glm/CMakeFiles/glm.dir/rule
 # codegen rule for target.
 lib/glm/glm/CMakeFiles/glm.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=23,24 "Finished codegen for target glm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=46,47 "Finished codegen for target glm"
 .PHONY : lib/glm/glm/CMakeFiles/glm.dir/codegen
 
 # clean rule for target.

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Projects/cpp-projects/opencraft/lib/glm/glm/detail/glm.cpp" "lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj" "gcc" "lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj.d"
+  "/home/sterben/cpp-projects/opencraft/lib/glm/glm/detail/glm.cpp" "lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o" "gcc" "lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

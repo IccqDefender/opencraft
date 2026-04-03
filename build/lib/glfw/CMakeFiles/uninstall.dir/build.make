@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:/Projects/cpp-projects/opencraft
+CMAKE_SOURCE_DIR = /home/sterben/cpp-projects/opencraft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:/Projects/cpp-projects/opencraft/build
+CMAKE_BINARY_DIR = /home/sterben/cpp-projects/opencraft/build
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include lib/glfw/CMakeFiles/uninstall.dir/compiler_depend.make
 include lib/glfw/CMakeFiles/uninstall.dir/progress.make
 
 lib/glfw/CMakeFiles/uninstall:
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw && "C:/Program Files/CMake/bin/cmake.exe" -P D:/Projects/cpp-projects/opencraft/build/lib/glfw/cmake_uninstall.cmake
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw && /usr/bin/cmake -P /home/sterben/cpp-projects/opencraft/build/lib/glfw/cmake_uninstall.cmake
 
 lib/glfw/CMakeFiles/uninstall.dir/codegen:
 .PHONY : lib/glfw/CMakeFiles/uninstall.dir/codegen
@@ -81,10 +81,10 @@ lib/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : lib/glfw/CMakeFiles/uninstall.dir/build
 
 lib/glfw/CMakeFiles/uninstall.dir/clean:
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : lib/glfw/CMakeFiles/uninstall.dir/clean
 
 lib/glfw/CMakeFiles/uninstall.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" D:/Projects/cpp-projects/opencraft D:/Projects/cpp-projects/opencraft/lib/glfw D:/Projects/cpp-projects/opencraft/build D:/Projects/cpp-projects/opencraft/build/lib/glfw D:/Projects/cpp-projects/opencraft/build/lib/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)" uninstall
+	cd /home/sterben/cpp-projects/opencraft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sterben/cpp-projects/opencraft /home/sterben/cpp-projects/opencraft/lib/glfw /home/sterben/cpp-projects/opencraft/build /home/sterben/cpp-projects/opencraft/build/lib/glfw /home/sterben/cpp-projects/opencraft/build/lib/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)" uninstall
 .PHONY : lib/glfw/CMakeFiles/uninstall.dir/depend
 

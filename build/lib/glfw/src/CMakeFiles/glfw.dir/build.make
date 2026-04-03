@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:/Projects/cpp-projects/opencraft
+CMAKE_SOURCE_DIR = /home/sterben/cpp-projects/opencraft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:/Projects/cpp-projects/opencraft/build
+CMAKE_BINARY_DIR = /home/sterben/cpp-projects/opencraft/build
 
 # Include any dependencies generated for this target.
 include lib/glfw/src/CMakeFiles/glfw.dir/depend.make
@@ -69,387 +69,535 @@ include lib/glfw/src/CMakeFiles/glfw.dir/progress.make
 # Include the compile flags for this target's objects.
 include lib/glfw/src/CMakeFiles/glfw.dir/flags.make
 
+lib/glfw/src/wayland-client-protocol.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/wayland.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating wayland-client-protocol.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner client-header /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/wayland.xml wayland-client-protocol.h
+
+lib/glfw/src/wayland-client-protocol-code.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/wayland.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating wayland-client-protocol-code.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner private-code /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/wayland.xml wayland-client-protocol-code.h
+
+lib/glfw/src/viewporter-client-protocol.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/viewporter.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating viewporter-client-protocol.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner client-header /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/viewporter.xml viewporter-client-protocol.h
+
+lib/glfw/src/viewporter-client-protocol-code.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/viewporter.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating viewporter-client-protocol-code.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner private-code /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/viewporter.xml viewporter-client-protocol-code.h
+
+lib/glfw/src/xdg-shell-client-protocol.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/xdg-shell.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating xdg-shell-client-protocol.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner client-header /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/xdg-shell.xml xdg-shell-client-protocol.h
+
+lib/glfw/src/xdg-shell-client-protocol-code.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/xdg-shell.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating xdg-shell-client-protocol-code.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner private-code /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/xdg-shell.xml xdg-shell-client-protocol-code.h
+
+lib/glfw/src/idle-inhibit-unstable-v1-client-protocol.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/idle-inhibit-unstable-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating idle-inhibit-unstable-v1-client-protocol.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner client-header /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/idle-inhibit-unstable-v1.xml idle-inhibit-unstable-v1-client-protocol.h
+
+lib/glfw/src/idle-inhibit-unstable-v1-client-protocol-code.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/idle-inhibit-unstable-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating idle-inhibit-unstable-v1-client-protocol-code.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner private-code /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/idle-inhibit-unstable-v1.xml idle-inhibit-unstable-v1-client-protocol-code.h
+
+lib/glfw/src/pointer-constraints-unstable-v1-client-protocol.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/pointer-constraints-unstable-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating pointer-constraints-unstable-v1-client-protocol.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner client-header /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/pointer-constraints-unstable-v1.xml pointer-constraints-unstable-v1-client-protocol.h
+
+lib/glfw/src/pointer-constraints-unstable-v1-client-protocol-code.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/pointer-constraints-unstable-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating pointer-constraints-unstable-v1-client-protocol-code.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner private-code /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/pointer-constraints-unstable-v1.xml pointer-constraints-unstable-v1-client-protocol-code.h
+
+lib/glfw/src/relative-pointer-unstable-v1-client-protocol.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/relative-pointer-unstable-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating relative-pointer-unstable-v1-client-protocol.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner client-header /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/relative-pointer-unstable-v1.xml relative-pointer-unstable-v1-client-protocol.h
+
+lib/glfw/src/relative-pointer-unstable-v1-client-protocol-code.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/relative-pointer-unstable-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating relative-pointer-unstable-v1-client-protocol-code.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner private-code /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/relative-pointer-unstable-v1.xml relative-pointer-unstable-v1-client-protocol-code.h
+
+lib/glfw/src/fractional-scale-v1-client-protocol.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/fractional-scale-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating fractional-scale-v1-client-protocol.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner client-header /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/fractional-scale-v1.xml fractional-scale-v1-client-protocol.h
+
+lib/glfw/src/fractional-scale-v1-client-protocol-code.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/fractional-scale-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating fractional-scale-v1-client-protocol-code.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner private-code /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/fractional-scale-v1.xml fractional-scale-v1-client-protocol-code.h
+
+lib/glfw/src/xdg-activation-v1-client-protocol.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/xdg-activation-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating xdg-activation-v1-client-protocol.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner client-header /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/xdg-activation-v1.xml xdg-activation-v1-client-protocol.h
+
+lib/glfw/src/xdg-activation-v1-client-protocol-code.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/xdg-activation-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating xdg-activation-v1-client-protocol-code.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner private-code /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/xdg-activation-v1.xml xdg-activation-v1-client-protocol-code.h
+
+lib/glfw/src/xdg-decoration-unstable-v1-client-protocol.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/xdg-decoration-unstable-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating xdg-decoration-unstable-v1-client-protocol.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner client-header /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/xdg-decoration-unstable-v1.xml xdg-decoration-unstable-v1-client-protocol.h
+
+lib/glfw/src/xdg-decoration-unstable-v1-client-protocol-code.h: /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/xdg-decoration-unstable-v1.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating xdg-decoration-unstable-v1-client-protocol-code.h"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/wayland-scanner private-code /home/sterben/cpp-projects/opencraft/lib/glfw/deps/wayland/xdg-decoration-unstable-v1.xml xdg-decoration-unstable-v1-client-protocol-code.h
+
 lib/glfw/src/CMakeFiles/glfw.dir/codegen:
 .PHONY : lib/glfw/src/CMakeFiles/glfw.dir/codegen
 
-lib/glfw/src/CMakeFiles/glfw.dir/context.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/context.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/context.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/context.c
-lib/glfw/src/CMakeFiles/glfw.dir/context.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/context.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/context.c.obj -MF CMakeFiles/glfw.dir/context.c.obj.d -o CMakeFiles/glfw.dir/context.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/context.c
+lib/glfw/src/CMakeFiles/glfw.dir/context.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/context.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/context.c
+lib/glfw/src/CMakeFiles/glfw.dir/context.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/context.c.o -MF CMakeFiles/glfw.dir/context.c.o.d -o CMakeFiles/glfw.dir/context.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/context.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/context.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/context.c > CMakeFiles/glfw.dir/context.c.i
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/context.c > CMakeFiles/glfw.dir/context.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/context.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/context.c -o CMakeFiles/glfw.dir/context.c.s
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/context.c -o CMakeFiles/glfw.dir/context.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/init.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/init.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/init.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/init.c
-lib/glfw/src/CMakeFiles/glfw.dir/init.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/init.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/init.c.obj -MF CMakeFiles/glfw.dir/init.c.obj.d -o CMakeFiles/glfw.dir/init.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/init.c
+lib/glfw/src/CMakeFiles/glfw.dir/init.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/init.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/init.c
+lib/glfw/src/CMakeFiles/glfw.dir/init.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/init.c.o -MF CMakeFiles/glfw.dir/init.c.o.d -o CMakeFiles/glfw.dir/init.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/init.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/init.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/init.c > CMakeFiles/glfw.dir/init.c.i
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/init.c > CMakeFiles/glfw.dir/init.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/init.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/init.c -o CMakeFiles/glfw.dir/init.c.s
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/init.c -o CMakeFiles/glfw.dir/init.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/input.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/input.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/input.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/input.c
-lib/glfw/src/CMakeFiles/glfw.dir/input.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/input.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/input.c.obj -MF CMakeFiles/glfw.dir/input.c.obj.d -o CMakeFiles/glfw.dir/input.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/input.c
+lib/glfw/src/CMakeFiles/glfw.dir/input.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/input.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/input.c
+lib/glfw/src/CMakeFiles/glfw.dir/input.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/input.c.o -MF CMakeFiles/glfw.dir/input.c.o.d -o CMakeFiles/glfw.dir/input.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/input.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/input.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/input.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/input.c > CMakeFiles/glfw.dir/input.c.i
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/input.c > CMakeFiles/glfw.dir/input.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/input.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/input.c -o CMakeFiles/glfw.dir/input.c.s
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/input.c -o CMakeFiles/glfw.dir/input.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/monitor.c
-lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj -MF CMakeFiles/glfw.dir/monitor.c.obj.d -o CMakeFiles/glfw.dir/monitor.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/monitor.c
+lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/monitor.c
+lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.o -MF CMakeFiles/glfw.dir/monitor.c.o.d -o CMakeFiles/glfw.dir/monitor.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/monitor.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/monitor.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/monitor.c > CMakeFiles/glfw.dir/monitor.c.i
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/monitor.c > CMakeFiles/glfw.dir/monitor.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/monitor.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/monitor.c -o CMakeFiles/glfw.dir/monitor.c.s
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/monitor.c -o CMakeFiles/glfw.dir/monitor.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/platform.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/platform.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/platform.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/platform.c
-lib/glfw/src/CMakeFiles/glfw.dir/platform.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/platform.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/platform.c.obj -MF CMakeFiles/glfw.dir/platform.c.obj.d -o CMakeFiles/glfw.dir/platform.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/platform.c
+lib/glfw/src/CMakeFiles/glfw.dir/platform.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/platform.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/platform.c
+lib/glfw/src/CMakeFiles/glfw.dir/platform.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/platform.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/platform.c.o -MF CMakeFiles/glfw.dir/platform.c.o.d -o CMakeFiles/glfw.dir/platform.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/platform.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/platform.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/platform.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/platform.c > CMakeFiles/glfw.dir/platform.c.i
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/platform.c > CMakeFiles/glfw.dir/platform.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/platform.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/platform.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/platform.c -o CMakeFiles/glfw.dir/platform.c.s
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/platform.c -o CMakeFiles/glfw.dir/platform.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/vulkan.c
-lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj -MF CMakeFiles/glfw.dir/vulkan.c.obj.d -o CMakeFiles/glfw.dir/vulkan.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/vulkan.c
+lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/vulkan.c
+lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o -MF CMakeFiles/glfw.dir/vulkan.c.o.d -o CMakeFiles/glfw.dir/vulkan.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/vulkan.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/vulkan.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/vulkan.c > CMakeFiles/glfw.dir/vulkan.c.i
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/vulkan.c > CMakeFiles/glfw.dir/vulkan.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/vulkan.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/vulkan.c -o CMakeFiles/glfw.dir/vulkan.c.s
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/vulkan.c -o CMakeFiles/glfw.dir/vulkan.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/window.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/window.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/window.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/window.c
-lib/glfw/src/CMakeFiles/glfw.dir/window.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/window.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/window.c.obj -MF CMakeFiles/glfw.dir/window.c.obj.d -o CMakeFiles/glfw.dir/window.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/window.c
+lib/glfw/src/CMakeFiles/glfw.dir/window.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/window.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/window.c
+lib/glfw/src/CMakeFiles/glfw.dir/window.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/window.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/window.c.o -MF CMakeFiles/glfw.dir/window.c.o.d -o CMakeFiles/glfw.dir/window.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/window.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/window.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/window.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/window.c > CMakeFiles/glfw.dir/window.c.i
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/window.c > CMakeFiles/glfw.dir/window.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/window.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/window.c -o CMakeFiles/glfw.dir/window.c.s
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/window.c -o CMakeFiles/glfw.dir/window.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/egl_context.c
-lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj -MF CMakeFiles/glfw.dir/egl_context.c.obj.d -o CMakeFiles/glfw.dir/egl_context.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/egl_context.c
+lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/egl_context.c
+lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o -MF CMakeFiles/glfw.dir/egl_context.c.o.d -o CMakeFiles/glfw.dir/egl_context.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/egl_context.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/egl_context.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/egl_context.c > CMakeFiles/glfw.dir/egl_context.c.i
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/egl_context.c > CMakeFiles/glfw.dir/egl_context.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/egl_context.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/egl_context.c -o CMakeFiles/glfw.dir/egl_context.c.s
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/egl_context.c -o CMakeFiles/glfw.dir/egl_context.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/osmesa_context.c
-lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj -MF CMakeFiles/glfw.dir/osmesa_context.c.obj.d -o CMakeFiles/glfw.dir/osmesa_context.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/osmesa_context.c
+lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/osmesa_context.c
+lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o -MF CMakeFiles/glfw.dir/osmesa_context.c.o.d -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/osmesa_context.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/osmesa_context.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/osmesa_context.c > CMakeFiles/glfw.dir/osmesa_context.c.i
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/osmesa_context.c > CMakeFiles/glfw.dir/osmesa_context.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/osmesa_context.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/osmesa_context.c -o CMakeFiles/glfw.dir/osmesa_context.c.s
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/osmesa_context.c -o CMakeFiles/glfw.dir/osmesa_context.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_init.c
-lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj -MF CMakeFiles/glfw.dir/null_init.c.obj.d -o CMakeFiles/glfw.dir/null_init.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_init.c
+lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_init.c
+lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.o -MF CMakeFiles/glfw.dir/null_init.c.o.d -o CMakeFiles/glfw.dir/null_init.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_init.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/null_init.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_init.c > CMakeFiles/glfw.dir/null_init.c.i
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_init.c > CMakeFiles/glfw.dir/null_init.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/null_init.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_init.c -o CMakeFiles/glfw.dir/null_init.c.s
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_init.c -o CMakeFiles/glfw.dir/null_init.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_monitor.c
-lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj -MF CMakeFiles/glfw.dir/null_monitor.c.obj.d -o CMakeFiles/glfw.dir/null_monitor.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_monitor.c
+lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_monitor.c
+lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o -MF CMakeFiles/glfw.dir/null_monitor.c.o.d -o CMakeFiles/glfw.dir/null_monitor.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_monitor.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/null_monitor.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_monitor.c > CMakeFiles/glfw.dir/null_monitor.c.i
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_monitor.c > CMakeFiles/glfw.dir/null_monitor.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/null_monitor.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_monitor.c -o CMakeFiles/glfw.dir/null_monitor.c.s
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_monitor.c -o CMakeFiles/glfw.dir/null_monitor.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_window.c
-lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj -MF CMakeFiles/glfw.dir/null_window.c.obj.d -o CMakeFiles/glfw.dir/null_window.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_window.c
+lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_window.c
+lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.o -MF CMakeFiles/glfw.dir/null_window.c.o.d -o CMakeFiles/glfw.dir/null_window.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_window.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/null_window.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_window.c > CMakeFiles/glfw.dir/null_window.c.i
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_window.c > CMakeFiles/glfw.dir/null_window.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/null_window.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_window.c -o CMakeFiles/glfw.dir/null_window.c.s
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_window.c -o CMakeFiles/glfw.dir/null_window.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_joystick.c
-lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj -MF CMakeFiles/glfw.dir/null_joystick.c.obj.d -o CMakeFiles/glfw.dir/null_joystick.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_joystick.c
+lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_joystick.c
+lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o -MF CMakeFiles/glfw.dir/null_joystick.c.o.d -o CMakeFiles/glfw.dir/null_joystick.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_joystick.c
 
 lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/null_joystick.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_joystick.c > CMakeFiles/glfw.dir/null_joystick.c.i
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_joystick.c > CMakeFiles/glfw.dir/null_joystick.c.i
 
 lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/null_joystick.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/null_joystick.c -o CMakeFiles/glfw.dir/null_joystick.c.s
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/null_joystick.c -o CMakeFiles/glfw.dir/null_joystick.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_module.c
-lib/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj -MF CMakeFiles/glfw.dir/win32_module.c.obj.d -o CMakeFiles/glfw.dir/win32_module.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_module.c
+lib/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_module.c
+lib/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o -MF CMakeFiles/glfw.dir/posix_module.c.o.d -o CMakeFiles/glfw.dir/posix_module.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_module.c
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_module.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/win32_module.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_module.c > CMakeFiles/glfw.dir/win32_module.c.i
+lib/glfw/src/CMakeFiles/glfw.dir/posix_module.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/posix_module.c.i"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_module.c > CMakeFiles/glfw.dir/posix_module.c.i
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_module.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/win32_module.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_module.c -o CMakeFiles/glfw.dir/win32_module.c.s
+lib/glfw/src/CMakeFiles/glfw.dir/posix_module.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/posix_module.c.s"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_module.c -o CMakeFiles/glfw.dir/posix_module.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_time.c
-lib/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj -MF CMakeFiles/glfw.dir/win32_time.c.obj.d -o CMakeFiles/glfw.dir/win32_time.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_time.c
+lib/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_time.c
+lib/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o -MF CMakeFiles/glfw.dir/posix_time.c.o.d -o CMakeFiles/glfw.dir/posix_time.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_time.c
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_time.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/win32_time.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_time.c > CMakeFiles/glfw.dir/win32_time.c.i
+lib/glfw/src/CMakeFiles/glfw.dir/posix_time.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/posix_time.c.i"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_time.c > CMakeFiles/glfw.dir/posix_time.c.i
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_time.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/win32_time.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_time.c -o CMakeFiles/glfw.dir/win32_time.c.s
+lib/glfw/src/CMakeFiles/glfw.dir/posix_time.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/posix_time.c.s"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_time.c -o CMakeFiles/glfw.dir/posix_time.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_thread.c
-lib/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj -MF CMakeFiles/glfw.dir/win32_thread.c.obj.d -o CMakeFiles/glfw.dir/win32_thread.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_thread.c
+lib/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_thread.c
+lib/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o -MF CMakeFiles/glfw.dir/posix_thread.c.o.d -o CMakeFiles/glfw.dir/posix_thread.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_thread.c
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/win32_thread.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_thread.c > CMakeFiles/glfw.dir/win32_thread.c.i
+lib/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/posix_thread.c.i"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_thread.c > CMakeFiles/glfw.dir/posix_thread.c.i
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/win32_thread.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_thread.c -o CMakeFiles/glfw.dir/win32_thread.c.s
+lib/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/posix_thread.c.s"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_thread.c -o CMakeFiles/glfw.dir/posix_thread.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_init.c
-lib/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj -MF CMakeFiles/glfw.dir/win32_init.c.obj.d -o CMakeFiles/glfw.dir/win32_init.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_init.c
+lib/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/x11_init.c
+lib/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o -MF CMakeFiles/glfw.dir/x11_init.c.o.d -o CMakeFiles/glfw.dir/x11_init.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/x11_init.c
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_init.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/win32_init.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_init.c > CMakeFiles/glfw.dir/win32_init.c.i
+lib/glfw/src/CMakeFiles/glfw.dir/x11_init.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/x11_init.c.i"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/x11_init.c > CMakeFiles/glfw.dir/x11_init.c.i
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_init.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/win32_init.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_init.c -o CMakeFiles/glfw.dir/win32_init.c.s
+lib/glfw/src/CMakeFiles/glfw.dir/x11_init.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/x11_init.c.s"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/x11_init.c -o CMakeFiles/glfw.dir/x11_init.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_joystick.c
-lib/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj -MF CMakeFiles/glfw.dir/win32_joystick.c.obj.d -o CMakeFiles/glfw.dir/win32_joystick.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_joystick.c
+lib/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/x11_monitor.c
+lib/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o -MF CMakeFiles/glfw.dir/x11_monitor.c.o.d -o CMakeFiles/glfw.dir/x11_monitor.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/x11_monitor.c
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/win32_joystick.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_joystick.c > CMakeFiles/glfw.dir/win32_joystick.c.i
+lib/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/x11_monitor.c.i"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/x11_monitor.c > CMakeFiles/glfw.dir/x11_monitor.c.i
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/win32_joystick.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_joystick.c -o CMakeFiles/glfw.dir/win32_joystick.c.s
+lib/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/x11_monitor.c.s"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/x11_monitor.c -o CMakeFiles/glfw.dir/x11_monitor.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_monitor.c
-lib/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj -MF CMakeFiles/glfw.dir/win32_monitor.c.obj.d -o CMakeFiles/glfw.dir/win32_monitor.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_monitor.c
+lib/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/x11_window.c
+lib/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o -MF CMakeFiles/glfw.dir/x11_window.c.o.d -o CMakeFiles/glfw.dir/x11_window.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/x11_window.c
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/win32_monitor.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_monitor.c > CMakeFiles/glfw.dir/win32_monitor.c.i
+lib/glfw/src/CMakeFiles/glfw.dir/x11_window.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/x11_window.c.i"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/x11_window.c > CMakeFiles/glfw.dir/x11_window.c.i
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/win32_monitor.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_monitor.c -o CMakeFiles/glfw.dir/win32_monitor.c.s
+lib/glfw/src/CMakeFiles/glfw.dir/x11_window.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/x11_window.c.s"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/x11_window.c -o CMakeFiles/glfw.dir/x11_window.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_window.c
-lib/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj -MF CMakeFiles/glfw.dir/win32_window.c.obj.d -o CMakeFiles/glfw.dir/win32_window.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_window.c
+lib/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/xkb_unicode.c
+lib/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o -MF CMakeFiles/glfw.dir/xkb_unicode.c.o.d -o CMakeFiles/glfw.dir/xkb_unicode.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/xkb_unicode.c
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_window.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/win32_window.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_window.c > CMakeFiles/glfw.dir/win32_window.c.i
+lib/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/xkb_unicode.c.i"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/xkb_unicode.c > CMakeFiles/glfw.dir/xkb_unicode.c.i
 
-lib/glfw/src/CMakeFiles/glfw.dir/win32_window.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/win32_window.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/win32_window.c -o CMakeFiles/glfw.dir/win32_window.c.s
+lib/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/xkb_unicode.c.s"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/xkb_unicode.c -o CMakeFiles/glfw.dir/xkb_unicode.c.s
 
-lib/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
-lib/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/includes_C.rsp
-lib/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj: D:/Projects/cpp-projects/opencraft/lib/glfw/src/wgl_context.c
-lib/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj -MF CMakeFiles/glfw.dir/wgl_context.c.obj.d -o CMakeFiles/glfw.dir/wgl_context.c.obj -c D:/Projects/cpp-projects/opencraft/lib/glfw/src/wgl_context.c
+lib/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/glx_context.c
+lib/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o -MF CMakeFiles/glfw.dir/glx_context.c.o.d -o CMakeFiles/glfw.dir/glx_context.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/glx_context.c
 
-lib/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/wgl_context.c.i"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/Projects/cpp-projects/opencraft/lib/glfw/src/wgl_context.c > CMakeFiles/glfw.dir/wgl_context.c.i
+lib/glfw/src/CMakeFiles/glfw.dir/glx_context.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/glx_context.c.i"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/glx_context.c > CMakeFiles/glfw.dir/glx_context.c.i
 
-lib/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/wgl_context.c.s"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && C:/msys64/ucrt64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/Projects/cpp-projects/opencraft/lib/glfw/src/wgl_context.c -o CMakeFiles/glfw.dir/wgl_context.c.s
+lib/glfw/src/CMakeFiles/glfw.dir/glx_context.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/glx_context.c.s"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/glx_context.c -o CMakeFiles/glfw.dir/glx_context.c.s
+
+lib/glfw/src/CMakeFiles/glfw.dir/wl_init.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/wl_init.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/wl_init.c
+lib/glfw/src/CMakeFiles/glfw.dir/wl_init.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/wl_init.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/wl_init.c.o -MF CMakeFiles/glfw.dir/wl_init.c.o.d -o CMakeFiles/glfw.dir/wl_init.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/wl_init.c
+
+lib/glfw/src/CMakeFiles/glfw.dir/wl_init.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/wl_init.c.i"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/wl_init.c > CMakeFiles/glfw.dir/wl_init.c.i
+
+lib/glfw/src/CMakeFiles/glfw.dir/wl_init.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/wl_init.c.s"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/wl_init.c -o CMakeFiles/glfw.dir/wl_init.c.s
+
+lib/glfw/src/CMakeFiles/glfw.dir/wl_monitor.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/wl_monitor.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/wl_monitor.c
+lib/glfw/src/CMakeFiles/glfw.dir/wl_monitor.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/wl_monitor.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/wl_monitor.c.o -MF CMakeFiles/glfw.dir/wl_monitor.c.o.d -o CMakeFiles/glfw.dir/wl_monitor.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/wl_monitor.c
+
+lib/glfw/src/CMakeFiles/glfw.dir/wl_monitor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/wl_monitor.c.i"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/wl_monitor.c > CMakeFiles/glfw.dir/wl_monitor.c.i
+
+lib/glfw/src/CMakeFiles/glfw.dir/wl_monitor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/wl_monitor.c.s"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/wl_monitor.c -o CMakeFiles/glfw.dir/wl_monitor.c.s
+
+lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/wl_window.c
+lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o -MF CMakeFiles/glfw.dir/wl_window.c.o.d -o CMakeFiles/glfw.dir/wl_window.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/wl_window.c
+
+lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/wl_window.c.i"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/wl_window.c > CMakeFiles/glfw.dir/wl_window.c.i
+
+lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/wl_window.c.s"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/wl_window.c -o CMakeFiles/glfw.dir/wl_window.c.s
+
+lib/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/linux_joystick.c
+lib/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o -MF CMakeFiles/glfw.dir/linux_joystick.c.o.d -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/linux_joystick.c
+
+lib/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/linux_joystick.c.i"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/linux_joystick.c > CMakeFiles/glfw.dir/linux_joystick.c.i
+
+lib/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/linux_joystick.c.s"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/linux_joystick.c -o CMakeFiles/glfw.dir/linux_joystick.c.s
+
+lib/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o: lib/glfw/src/CMakeFiles/glfw.dir/flags.make
+lib/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o: /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_poll.c
+lib/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o: lib/glfw/src/CMakeFiles/glfw.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object lib/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o -MF CMakeFiles/glfw.dir/posix_poll.c.o.d -o CMakeFiles/glfw.dir/posix_poll.c.o -c /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_poll.c
+
+lib/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glfw.dir/posix_poll.c.i"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_poll.c > CMakeFiles/glfw.dir/posix_poll.c.i
+
+lib/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glfw.dir/posix_poll.c.s"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sterben/cpp-projects/opencraft/lib/glfw/src/posix_poll.c -o CMakeFiles/glfw.dir/posix_poll.c.s
 
 # Object files for target glfw
 glfw_OBJECTS = \
-"CMakeFiles/glfw.dir/context.c.obj" \
-"CMakeFiles/glfw.dir/init.c.obj" \
-"CMakeFiles/glfw.dir/input.c.obj" \
-"CMakeFiles/glfw.dir/monitor.c.obj" \
-"CMakeFiles/glfw.dir/platform.c.obj" \
-"CMakeFiles/glfw.dir/vulkan.c.obj" \
-"CMakeFiles/glfw.dir/window.c.obj" \
-"CMakeFiles/glfw.dir/egl_context.c.obj" \
-"CMakeFiles/glfw.dir/osmesa_context.c.obj" \
-"CMakeFiles/glfw.dir/null_init.c.obj" \
-"CMakeFiles/glfw.dir/null_monitor.c.obj" \
-"CMakeFiles/glfw.dir/null_window.c.obj" \
-"CMakeFiles/glfw.dir/null_joystick.c.obj" \
-"CMakeFiles/glfw.dir/win32_module.c.obj" \
-"CMakeFiles/glfw.dir/win32_time.c.obj" \
-"CMakeFiles/glfw.dir/win32_thread.c.obj" \
-"CMakeFiles/glfw.dir/win32_init.c.obj" \
-"CMakeFiles/glfw.dir/win32_joystick.c.obj" \
-"CMakeFiles/glfw.dir/win32_monitor.c.obj" \
-"CMakeFiles/glfw.dir/win32_window.c.obj" \
-"CMakeFiles/glfw.dir/wgl_context.c.obj"
+"CMakeFiles/glfw.dir/context.c.o" \
+"CMakeFiles/glfw.dir/init.c.o" \
+"CMakeFiles/glfw.dir/input.c.o" \
+"CMakeFiles/glfw.dir/monitor.c.o" \
+"CMakeFiles/glfw.dir/platform.c.o" \
+"CMakeFiles/glfw.dir/vulkan.c.o" \
+"CMakeFiles/glfw.dir/window.c.o" \
+"CMakeFiles/glfw.dir/egl_context.c.o" \
+"CMakeFiles/glfw.dir/osmesa_context.c.o" \
+"CMakeFiles/glfw.dir/null_init.c.o" \
+"CMakeFiles/glfw.dir/null_monitor.c.o" \
+"CMakeFiles/glfw.dir/null_window.c.o" \
+"CMakeFiles/glfw.dir/null_joystick.c.o" \
+"CMakeFiles/glfw.dir/posix_module.c.o" \
+"CMakeFiles/glfw.dir/posix_time.c.o" \
+"CMakeFiles/glfw.dir/posix_thread.c.o" \
+"CMakeFiles/glfw.dir/x11_init.c.o" \
+"CMakeFiles/glfw.dir/x11_monitor.c.o" \
+"CMakeFiles/glfw.dir/x11_window.c.o" \
+"CMakeFiles/glfw.dir/xkb_unicode.c.o" \
+"CMakeFiles/glfw.dir/glx_context.c.o" \
+"CMakeFiles/glfw.dir/wl_init.c.o" \
+"CMakeFiles/glfw.dir/wl_monitor.c.o" \
+"CMakeFiles/glfw.dir/wl_window.c.o" \
+"CMakeFiles/glfw.dir/linux_joystick.c.o" \
+"CMakeFiles/glfw.dir/posix_poll.c.o"
 
 # External object files for target glfw
 glfw_EXTERNAL_OBJECTS =
 
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/context.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/init.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/input.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/platform.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/window.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj
-lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/context.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/init.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/input.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/platform.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/window.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/wl_init.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/wl_monitor.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o
+lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o
 lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/build.make
 lib/glfw/src/libglfw3.a: lib/glfw/src/CMakeFiles/glfw.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking C static library libglfw3.a"
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean_target.cmake
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfw.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Linking C static library libglfw3.a"
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean_target.cmake
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfw.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/glfw/src/CMakeFiles/glfw.dir/build: lib/glfw/src/libglfw3.a
 .PHONY : lib/glfw/src/CMakeFiles/glfw.dir/build
 
 lib/glfw/src/CMakeFiles/glfw.dir/clean:
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean.cmake
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean.cmake
 .PHONY : lib/glfw/src/CMakeFiles/glfw.dir/clean
 
-lib/glfw/src/CMakeFiles/glfw.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" D:/Projects/cpp-projects/opencraft D:/Projects/cpp-projects/opencraft/lib/glfw/src D:/Projects/cpp-projects/opencraft/build D:/Projects/cpp-projects/opencraft/build/lib/glfw/src D:/Projects/cpp-projects/opencraft/build/lib/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake "--color=$(COLOR)" glfw
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/fractional-scale-v1-client-protocol-code.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/fractional-scale-v1-client-protocol.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/idle-inhibit-unstable-v1-client-protocol-code.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/idle-inhibit-unstable-v1-client-protocol.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/pointer-constraints-unstable-v1-client-protocol-code.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/pointer-constraints-unstable-v1-client-protocol.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/relative-pointer-unstable-v1-client-protocol-code.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/relative-pointer-unstable-v1-client-protocol.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/viewporter-client-protocol-code.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/viewporter-client-protocol.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/wayland-client-protocol-code.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/wayland-client-protocol.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/xdg-activation-v1-client-protocol-code.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/xdg-activation-v1-client-protocol.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/xdg-decoration-unstable-v1-client-protocol-code.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/xdg-decoration-unstable-v1-client-protocol.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/xdg-shell-client-protocol-code.h
+lib/glfw/src/CMakeFiles/glfw.dir/depend: lib/glfw/src/xdg-shell-client-protocol.h
+	cd /home/sterben/cpp-projects/opencraft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sterben/cpp-projects/opencraft /home/sterben/cpp-projects/opencraft/lib/glfw/src /home/sterben/cpp-projects/opencraft/build /home/sterben/cpp-projects/opencraft/build/lib/glfw/src /home/sterben/cpp-projects/opencraft/build/lib/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake "--color=$(COLOR)" glfw
 .PHONY : lib/glfw/src/CMakeFiles/glfw.dir/depend
 

@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:/Projects/cpp-projects/opencraft
+CMAKE_SOURCE_DIR = /home/sterben/cpp-projects/opencraft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:/Projects/cpp-projects/opencraft/build
+CMAKE_BINARY_DIR = /home/sterben/cpp-projects/opencraft/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = D:/Projects/cpp-projects/opencraft/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	"C:/Program Files/CMake/bin/cmake-gui.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"C:/Program Files/CMake/bin/cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,51 +97,51 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	"C:/Program Files/CMake/bin/cmake.exe" -P cmake_install.cmake
+	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	"C:/Program Files/CMake/bin/cmake.exe" -P cmake_install.cmake
+	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	"C:/Program Files/CMake/bin/cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	"C:/Program Files/CMake/bin/cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	"C:/Program Files/CMake/bin/cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	"C:/Program Files/CMake/bin/cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles D:/Projects/cpp-projects/opencraft/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles /home/sterben/cpp-projects/opencraft/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles D:/Projects/cpp-projects/opencraft/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles /home/sterben/cpp-projects/opencraft/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
@@ -233,13 +233,13 @@ glm/fast:
 	$(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/build
 .PHONY : glm/fast
 
-lib/imgui/backends/imgui_impl_glfw.obj: lib/imgui/backends/imgui_impl_glfw.cpp.obj
-.PHONY : lib/imgui/backends/imgui_impl_glfw.obj
+lib/imgui/backends/imgui_impl_glfw.o: lib/imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : lib/imgui/backends/imgui_impl_glfw.o
 
 # target to build an object file
-lib/imgui/backends/imgui_impl_glfw.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.obj
-.PHONY : lib/imgui/backends/imgui_impl_glfw.cpp.obj
+lib/imgui/backends/imgui_impl_glfw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : lib/imgui/backends/imgui_impl_glfw.cpp.o
 
 lib/imgui/backends/imgui_impl_glfw.i: lib/imgui/backends/imgui_impl_glfw.cpp.i
 .PHONY : lib/imgui/backends/imgui_impl_glfw.i
@@ -257,13 +257,13 @@ lib/imgui/backends/imgui_impl_glfw.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_glfw.cpp.s
 .PHONY : lib/imgui/backends/imgui_impl_glfw.cpp.s
 
-lib/imgui/backends/imgui_impl_opengl3.obj: lib/imgui/backends/imgui_impl_opengl3.cpp.obj
-.PHONY : lib/imgui/backends/imgui_impl_opengl3.obj
+lib/imgui/backends/imgui_impl_opengl3.o: lib/imgui/backends/imgui_impl_opengl3.cpp.o
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.o
 
 # target to build an object file
-lib/imgui/backends/imgui_impl_opengl3.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.obj
-.PHONY : lib/imgui/backends/imgui_impl_opengl3.cpp.obj
+lib/imgui/backends/imgui_impl_opengl3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o
+.PHONY : lib/imgui/backends/imgui_impl_opengl3.cpp.o
 
 lib/imgui/backends/imgui_impl_opengl3.i: lib/imgui/backends/imgui_impl_opengl3.cpp.i
 .PHONY : lib/imgui/backends/imgui_impl_opengl3.i
@@ -281,13 +281,13 @@ lib/imgui/backends/imgui_impl_opengl3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.s
 .PHONY : lib/imgui/backends/imgui_impl_opengl3.cpp.s
 
-lib/imgui/imgui.obj: lib/imgui/imgui.cpp.obj
-.PHONY : lib/imgui/imgui.obj
+lib/imgui/imgui.o: lib/imgui/imgui.cpp.o
+.PHONY : lib/imgui/imgui.o
 
 # target to build an object file
-lib/imgui/imgui.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.obj
-.PHONY : lib/imgui/imgui.cpp.obj
+lib/imgui/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.o
+.PHONY : lib/imgui/imgui.cpp.o
 
 lib/imgui/imgui.i: lib/imgui/imgui.cpp.i
 .PHONY : lib/imgui/imgui.i
@@ -305,13 +305,13 @@ lib/imgui/imgui.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui.cpp.s
 .PHONY : lib/imgui/imgui.cpp.s
 
-lib/imgui/imgui_demo.obj: lib/imgui/imgui_demo.cpp.obj
-.PHONY : lib/imgui/imgui_demo.obj
+lib/imgui/imgui_demo.o: lib/imgui/imgui_demo.cpp.o
+.PHONY : lib/imgui/imgui_demo.o
 
 # target to build an object file
-lib/imgui/imgui_demo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.obj
-.PHONY : lib/imgui/imgui_demo.cpp.obj
+lib/imgui/imgui_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.o
+.PHONY : lib/imgui/imgui_demo.cpp.o
 
 lib/imgui/imgui_demo.i: lib/imgui/imgui_demo.cpp.i
 .PHONY : lib/imgui/imgui_demo.i
@@ -329,13 +329,13 @@ lib/imgui/imgui_demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_demo.cpp.s
 .PHONY : lib/imgui/imgui_demo.cpp.s
 
-lib/imgui/imgui_draw.obj: lib/imgui/imgui_draw.cpp.obj
-.PHONY : lib/imgui/imgui_draw.obj
+lib/imgui/imgui_draw.o: lib/imgui/imgui_draw.cpp.o
+.PHONY : lib/imgui/imgui_draw.o
 
 # target to build an object file
-lib/imgui/imgui_draw.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.obj
-.PHONY : lib/imgui/imgui_draw.cpp.obj
+lib/imgui/imgui_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.o
+.PHONY : lib/imgui/imgui_draw.cpp.o
 
 lib/imgui/imgui_draw.i: lib/imgui/imgui_draw.cpp.i
 .PHONY : lib/imgui/imgui_draw.i
@@ -353,13 +353,13 @@ lib/imgui/imgui_draw.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_draw.cpp.s
 .PHONY : lib/imgui/imgui_draw.cpp.s
 
-lib/imgui/imgui_tables.obj: lib/imgui/imgui_tables.cpp.obj
-.PHONY : lib/imgui/imgui_tables.obj
+lib/imgui/imgui_tables.o: lib/imgui/imgui_tables.cpp.o
+.PHONY : lib/imgui/imgui_tables.o
 
 # target to build an object file
-lib/imgui/imgui_tables.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.obj
-.PHONY : lib/imgui/imgui_tables.cpp.obj
+lib/imgui/imgui_tables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.o
+.PHONY : lib/imgui/imgui_tables.cpp.o
 
 lib/imgui/imgui_tables.i: lib/imgui/imgui_tables.cpp.i
 .PHONY : lib/imgui/imgui_tables.i
@@ -377,13 +377,13 @@ lib/imgui/imgui_tables.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_tables.cpp.s
 .PHONY : lib/imgui/imgui_tables.cpp.s
 
-lib/imgui/imgui_widgets.obj: lib/imgui/imgui_widgets.cpp.obj
-.PHONY : lib/imgui/imgui_widgets.obj
+lib/imgui/imgui_widgets.o: lib/imgui/imgui_widgets.cpp.o
+.PHONY : lib/imgui/imgui_widgets.o
 
 # target to build an object file
-lib/imgui/imgui_widgets.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.obj
-.PHONY : lib/imgui/imgui_widgets.cpp.obj
+lib/imgui/imgui_widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.o
+.PHONY : lib/imgui/imgui_widgets.cpp.o
 
 lib/imgui/imgui_widgets.i: lib/imgui/imgui_widgets.cpp.i
 .PHONY : lib/imgui/imgui_widgets.i
@@ -401,13 +401,61 @@ lib/imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/lib/imgui/imgui_widgets.cpp.s
 .PHONY : lib/imgui/imgui_widgets.cpp.s
 
-src/main.obj: src/main.cpp.obj
-.PHONY : src/main.obj
+src/Core/Engine.o: src/Core/Engine.cpp.o
+.PHONY : src/Core/Engine.o
 
 # target to build an object file
-src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
+src/Core/Engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/Core/Engine.cpp.o
+.PHONY : src/Core/Engine.cpp.o
+
+src/Core/Engine.i: src/Core/Engine.cpp.i
+.PHONY : src/Core/Engine.i
+
+# target to preprocess a source file
+src/Core/Engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/Core/Engine.cpp.i
+.PHONY : src/Core/Engine.cpp.i
+
+src/Core/Engine.s: src/Core/Engine.cpp.s
+.PHONY : src/Core/Engine.s
+
+# target to generate assembly for a file
+src/Core/Engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/Core/Engine.cpp.s
+.PHONY : src/Core/Engine.cpp.s
+
+src/WindowManager/WindowManager.o: src/WindowManager/WindowManager.cpp.o
+.PHONY : src/WindowManager/WindowManager.o
+
+# target to build an object file
+src/WindowManager/WindowManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/WindowManager/WindowManager.cpp.o
+.PHONY : src/WindowManager/WindowManager.cpp.o
+
+src/WindowManager/WindowManager.i: src/WindowManager/WindowManager.cpp.i
+.PHONY : src/WindowManager/WindowManager.i
+
+# target to preprocess a source file
+src/WindowManager/WindowManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/WindowManager/WindowManager.cpp.i
+.PHONY : src/WindowManager/WindowManager.cpp.i
+
+src/WindowManager/WindowManager.s: src/WindowManager/WindowManager.cpp.s
+.PHONY : src/WindowManager/WindowManager.s
+
+# target to generate assembly for a file
+src/WindowManager/WindowManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/WindowManager/WindowManager.cpp.s
+.PHONY : src/WindowManager/WindowManager.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
 .PHONY : src/main.i
@@ -443,28 +491,34 @@ help:
 	@echo "... glfw"
 	@echo "... glm"
 	@echo "... opencraft"
-	@echo "... lib/imgui/backends/imgui_impl_glfw.obj"
+	@echo "... lib/imgui/backends/imgui_impl_glfw.o"
 	@echo "... lib/imgui/backends/imgui_impl_glfw.i"
 	@echo "... lib/imgui/backends/imgui_impl_glfw.s"
-	@echo "... lib/imgui/backends/imgui_impl_opengl3.obj"
+	@echo "... lib/imgui/backends/imgui_impl_opengl3.o"
 	@echo "... lib/imgui/backends/imgui_impl_opengl3.i"
 	@echo "... lib/imgui/backends/imgui_impl_opengl3.s"
-	@echo "... lib/imgui/imgui.obj"
+	@echo "... lib/imgui/imgui.o"
 	@echo "... lib/imgui/imgui.i"
 	@echo "... lib/imgui/imgui.s"
-	@echo "... lib/imgui/imgui_demo.obj"
+	@echo "... lib/imgui/imgui_demo.o"
 	@echo "... lib/imgui/imgui_demo.i"
 	@echo "... lib/imgui/imgui_demo.s"
-	@echo "... lib/imgui/imgui_draw.obj"
+	@echo "... lib/imgui/imgui_draw.o"
 	@echo "... lib/imgui/imgui_draw.i"
 	@echo "... lib/imgui/imgui_draw.s"
-	@echo "... lib/imgui/imgui_tables.obj"
+	@echo "... lib/imgui/imgui_tables.o"
 	@echo "... lib/imgui/imgui_tables.i"
 	@echo "... lib/imgui/imgui_tables.s"
-	@echo "... lib/imgui/imgui_widgets.obj"
+	@echo "... lib/imgui/imgui_widgets.o"
 	@echo "... lib/imgui/imgui_widgets.i"
 	@echo "... lib/imgui/imgui_widgets.s"
-	@echo "... src/main.obj"
+	@echo "... src/Core/Engine.o"
+	@echo "... src/Core/Engine.i"
+	@echo "... src/Core/Engine.s"
+	@echo "... src/WindowManager/WindowManager.o"
+	@echo "... src/WindowManager/WindowManager.i"
+	@echo "... src/WindowManager/WindowManager.s"
+	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 .PHONY : help

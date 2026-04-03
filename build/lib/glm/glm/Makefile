@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:/Projects/cpp-projects/opencraft
+CMAKE_SOURCE_DIR = /home/sterben/cpp-projects/opencraft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:/Projects/cpp-projects/opencraft/build
+CMAKE_BINARY_DIR = /home/sterben/cpp-projects/opencraft/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = D:/Projects/cpp-projects/opencraft/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	"C:/Program Files/CMake/bin/cmake-gui.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"C:/Program Files/CMake/bin/cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,56 +97,56 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	"C:/Program Files/CMake/bin/cmake.exe" -P cmake_install.cmake
+	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	"C:/Program Files/CMake/bin/cmake.exe" -P cmake_install.cmake
+	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	"C:/Program Files/CMake/bin/cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	"C:/Program Files/CMake/bin/cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	"C:/Program Files/CMake/bin/cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	"C:/Program Files/CMake/bin/cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd D:/Projects/cpp-projects/opencraft/build && $(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles D:/Projects/cpp-projects/opencraft/build/lib/glm/glm//CMakeFiles/progress.marks
-	cd D:/Projects/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 0
+	cd /home/sterben/cpp-projects/opencraft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles /home/sterben/cpp-projects/opencraft/build/lib/glm/glm//CMakeFiles/progress.marks
+	cd /home/sterben/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	cd D:/Projects/cpp-projects/opencraft/build && $(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles D:/Projects/cpp-projects/opencraft/build/lib/glm/glm//CMakeFiles/progress.marks
-	cd D:/Projects/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Projects/cpp-projects/opencraft/build/CMakeFiles 0
+	cd /home/sterben/cpp-projects/opencraft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles /home/sterben/cpp-projects/opencraft/build/lib/glm/glm//CMakeFiles/progress.marks
+	cd /home/sterben/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/codegen
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sterben/cpp-projects/opencraft/build/CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
 clean:
-	cd D:/Projects/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/clean
+	cd /home/sterben/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/clean
 .PHONY : clean
 
 # The main clean target
@@ -155,22 +155,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd D:/Projects/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/preinstall
+	cd /home/sterben/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd D:/Projects/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/preinstall
+	cd /home/sterben/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd D:/Projects/cpp-projects/opencraft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/sterben/cpp-projects/opencraft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/glm/glm/CMakeFiles/glm.dir/rule:
-	cd D:/Projects/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/CMakeFiles/glm.dir/rule
+	cd /home/sterben/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glm/glm/CMakeFiles/glm.dir/rule
 .PHONY : lib/glm/glm/CMakeFiles/glm.dir/rule
 
 # Convenience name for target.
@@ -179,23 +179,23 @@ glm: lib/glm/glm/CMakeFiles/glm.dir/rule
 
 # fast build rule for target.
 glm/fast:
-	cd D:/Projects/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/build
+	cd /home/sterben/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/build
 .PHONY : glm/fast
 
-detail/glm.obj: detail/glm.cpp.obj
-.PHONY : detail/glm.obj
+detail/glm.o: detail/glm.cpp.o
+.PHONY : detail/glm.o
 
 # target to build an object file
-detail/glm.cpp.obj:
-	cd D:/Projects/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj
-.PHONY : detail/glm.cpp.obj
+detail/glm.cpp.o:
+	cd /home/sterben/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o
+.PHONY : detail/glm.cpp.o
 
 detail/glm.i: detail/glm.cpp.i
 .PHONY : detail/glm.i
 
 # target to preprocess a source file
 detail/glm.cpp.i:
-	cd D:/Projects/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.i
+	cd /home/sterben/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.i
 .PHONY : detail/glm.cpp.i
 
 detail/glm.s: detail/glm.cpp.s
@@ -203,7 +203,7 @@ detail/glm.s: detail/glm.cpp.s
 
 # target to generate assembly for a file
 detail/glm.cpp.s:
-	cd D:/Projects/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.s
+	cd /home/sterben/cpp-projects/opencraft/build && $(MAKE) $(MAKESILENT) -f lib/glm/glm/CMakeFiles/glm.dir/build.make lib/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.s
 .PHONY : detail/glm.cpp.s
 
 # Help Target
@@ -220,7 +220,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... glm"
-	@echo "... detail/glm.obj"
+	@echo "... detail/glm.o"
 	@echo "... detail/glm.i"
 	@echo "... detail/glm.s"
 .PHONY : help
@@ -234,6 +234,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd D:/Projects/cpp-projects/opencraft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/sterben/cpp-projects/opencraft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

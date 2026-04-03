@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:/Projects/cpp-projects/opencraft
+CMAKE_SOURCE_DIR = /home/sterben/cpp-projects/opencraft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:/Projects/cpp-projects/opencraft/build
+CMAKE_BINARY_DIR = /home/sterben/cpp-projects/opencraft/build
 
 # Utility rule file for update_mappings.
 
@@ -67,8 +67,8 @@ include lib/glfw/src/CMakeFiles/update_mappings.dir/compiler_depend.make
 include lib/glfw/src/CMakeFiles/update_mappings.dir/progress.make
 
 lib/glfw/src/CMakeFiles/update_mappings:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:/Projects/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
-	cd D:/Projects/cpp-projects/opencraft/lib/glfw/src && "C:/Program Files/CMake/bin/cmake.exe" -P D:/Projects/cpp-projects/opencraft/lib/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
+	cd /home/sterben/cpp-projects/opencraft/lib/glfw/src && /usr/bin/cmake -P /home/sterben/cpp-projects/opencraft/lib/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
 
 lib/glfw/src/CMakeFiles/update_mappings.dir/codegen:
 .PHONY : lib/glfw/src/CMakeFiles/update_mappings.dir/codegen
@@ -82,10 +82,10 @@ lib/glfw/src/CMakeFiles/update_mappings.dir/build: update_mappings
 .PHONY : lib/glfw/src/CMakeFiles/update_mappings.dir/build
 
 lib/glfw/src/CMakeFiles/update_mappings.dir/clean:
-	cd D:/Projects/cpp-projects/opencraft/build/lib/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
+	cd /home/sterben/cpp-projects/opencraft/build/lib/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
 .PHONY : lib/glfw/src/CMakeFiles/update_mappings.dir/clean
 
 lib/glfw/src/CMakeFiles/update_mappings.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" D:/Projects/cpp-projects/opencraft D:/Projects/cpp-projects/opencraft/lib/glfw/src D:/Projects/cpp-projects/opencraft/build D:/Projects/cpp-projects/opencraft/build/lib/glfw/src D:/Projects/cpp-projects/opencraft/build/lib/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake "--color=$(COLOR)" update_mappings
+	cd /home/sterben/cpp-projects/opencraft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sterben/cpp-projects/opencraft /home/sterben/cpp-projects/opencraft/lib/glfw/src /home/sterben/cpp-projects/opencraft/build /home/sterben/cpp-projects/opencraft/build/lib/glfw/src /home/sterben/cpp-projects/opencraft/build/lib/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake "--color=$(COLOR)" update_mappings
 .PHONY : lib/glfw/src/CMakeFiles/update_mappings.dir/depend
 

@@ -9,6 +9,10 @@ add_subdirectory(lib/glm)
 find_package(OpenGL REQUIRED)
 
 add_executable(${PROJECT_NAME} src/main.cpp
+        src/Core/Engine.cpp
+        src/Core/Engine.h
+        src/WindowManager/WindowManager.cpp
+        src/WindowManager/WindowManager.h
 )
 target_sources(${PROJECT_NAME} PRIVATE
         lib/imgui/imgui.cpp
