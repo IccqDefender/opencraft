@@ -1,14 +1,9 @@
 #include <iostream>
-#include "./Core/Engine.h"
+#include "Core/Engine.h"
 
 
 int main(){
-    Engine* engine = new Engine();
-
-    engine->Run();
-    engine->Stop();
-
-    delete engine;
+    Engine* _engine = new Engine();
     
     return 0;
 }
