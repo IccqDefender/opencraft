@@ -1,7 +1,7 @@
 #include "Engine.h"
 
 Engine::Engine(){
-    _windowManager = new WindowManager();
+    _windowManager = std::make_unique<WindowManager>();
 }
 
 Engine::~Engine(){
@@ -9,7 +9,7 @@ Engine::~Engine(){
 }
 
 void Engine::Run(){
-    _windowManager->CreateWindow(_windowManager->GetWindow(), 800, 600, "opengl");
+    _windowManager->CreateWindow(800, 600, "opengl");
     StartMainLoop();
 }
 
@@ -20,10 +20,10 @@ void Engine::StartMainLoop(){
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        glfwSwapBuffers();
+        glfwSwapBuffers(_windowManager->GetWindow());
     }    
 }
 
 void Engine::Stop(){
-    delete _windowManager;
+
 }

@@ -1,6 +1,7 @@
+#pragma once
 #include "../WindowManager/WindowManager.h"
 
-class Engine(){
+class Engine{
 public:
     Engine();
     ~Engine();
@@ -10,5 +11,5 @@ public:
     void Stop();
 
 private:
-    WindowManager* _windowManager = nullptr;
+    std::unique_ptr<WindowManager> _windowManager;
 };

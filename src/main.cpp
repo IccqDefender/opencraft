@@ -1,9 +1,13 @@
 #include <iostream>
+#include <memory>
 #include "Core/Engine.h"
 
 
 int main(){
-    Engine* _engine = new Engine();
+    std::unique_ptr<Engine> _engine = std::make_unique<Engine>();
+    _engine->Run();
+    _engine->StartMainLoop();
+    _engine->Stop();
     
     return 0;
 }
