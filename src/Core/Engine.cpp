@@ -1,4 +1,5 @@
 #include "Engine.h"
+#include <GLFW/glfw3.h>
 
 Engine::Engine(){
     _windowManager = std::make_unique<WindowManager>();

@@ -8,11 +8,11 @@ public:
     WindowManager();
     ~WindowManager();
 
-    GLFWwindow* GetWindow() { return m_window.get(); }
-    bool ShouldWindowClose() { return glfwWindowShouldClose(m_window.get()); }
+    GLFWwindow* GetWindow() { return m_window; }
+    bool ShouldWindowClose() { return glfwWindowShouldClose(m_window); }
 
     void CreateWindow(uint32_t width, uint32_t height, const char* title);
 
 private:
-    std::unique_ptr<GLFWwindow> m_window = std::make_unique<GLFWwindow>();
+    GLFWwindow* m_window;
 };
