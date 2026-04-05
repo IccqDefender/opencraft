@@ -1,46 +1,53 @@
-cmake_minimum_required(VERSION 4.1)
-project(opencraft CXX)
+cmake_minimum_required(VERSION 3.14)
+project(opencraft)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(FetchContent)
 
-# Configure GLFW to skip pkg-config
-set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
-set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
-set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+# GLM
+FetchContent_Declare(glm GIT_REPOSITORY https://github.com/g-truc/glm.git GIT_TAG 1.0.1)
+FetchContent_MakeAvailable(glm)
 
-FetchContent_Declare(
-        glfw
-        GIT_REPOSITORY https://github.com/glfw/glfw.git
-        GIT_TAG 3.4
-)
-
+# GLFW
+FetchContent_Declare(glfw GIT_REPOSITORY https://github.com/glfw/glfw.git GIT_TAG 3.4)
+set(GLFW_BUILD_TESTS OFF)
+set(GLFW_BUILD_EXAMPLES OFF)
 FetchContent_MakeAvailable(glfw)
 
-add_subdirectory(lib/glm)
+# ImGui
+FetchContent_Declare(imgui GIT_REPOSITORY https://github.com/ocornut/imgui.git GIT_TAG v1.91.0)
+FetchContent_MakeAvailable(imgui)
 
-find_package(OpenGL REQUIRED)
+# Локальный GLAD
+add_library(glad STATIC libs/glad/src/glad.c)
+target_include_directories(glad PUBLIC libs/glad/include)
 
-add_executable(${PROJECT_NAME} src/main.cpp
+# Ваш проект
+add_executable(${PROJECT_NAME}
+        src/main.cpp
         src/Core/Engine.cpp
-        src/Core/Engine.h
         src/WindowManager/WindowManager.cpp
-        src/WindowManager/WindowManager.h
         src/Render/Render.cpp
-        src/Render/Render.h
-)
-target_sources(${PROJECT_NAME} PRIVATE
-        lib/imgui/imgui.cpp
-        lib/imgui/imgui_demo.cpp
-        lib/imgui/imgui_draw.cpp
-        lib/imgui/imgui_tables.cpp
-        lib/imgui/imgui_widgets.cpp
-        # Бэкенды для GLFW и Vulkan
-        lib/imgui/backends/imgui_impl_glfw.cpp
-        lib/imgui/backends/imgui_impl_opengl3.cpp
+        ${imgui_SOURCE_DIR}/imgui.cpp
+        ${imgui_SOURCE_DIR}/imgui_demo.cpp
+        ${imgui_SOURCE_DIR}/imgui_draw.cpp
+        ${imgui_SOURCE_DIR}/imgui_tables.cpp
+        ${imgui_SOURCE_DIR}/imgui_widgets.cpp
+        ${imgui_SOURCE_DIR}/backends/imgui_impl_glfw.cpp
+        ${imgui_SOURCE_DIR}/backends/imgui_impl_opengl3.cpp
 )
 
-target_link_libraries(${PROJECT_NAME} PRIVATE glfw OpenGL::GL)
+target_include_directories(${PROJECT_NAME} PRIVATE
+        ${imgui_SOURCE_DIR}
+        ${imgui_SOURCE_DIR}/backends
+        libs/glad/include
+        src
+)
 
-target_include_directories(${PROJECT_NAME} PRIVATE glfw lib/imgui lib/imgui/backends)
+target_link_libraries(${PROJECT_NAME} PRIVATE glfw glad glm::glm)
+
+if(WIN32)
+    target_link_libraries(${PROJECT_NAME} PRIVATE opengl32)
+endif()
