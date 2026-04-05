@@ -9,8 +9,12 @@ Engine::~Engine(){
 
 }
 
-void Engine::Run(){
-    _windowManager->CreateWindow(800, 600, "opengl");
+void Engine::Run(uint32_t width, uint32_t height, const char* title){
+    m_WINDOW_WIDTH = width;
+    m_WINDOW_HEIGHT = height;
+    m_WINDOW_TITLE = title;
+
+    _windowManager->CreateWindow(m_WINDOW_WIDTH, m_WINDOW_HEIGHT, m_WINDOW_TITLE);
     StartMainLoop();
 }
 

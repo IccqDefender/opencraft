@@ -2,7 +2,7 @@
 
 WindowManager::WindowManager(){
     if(!glfwInit()){
-        std::cout << "Failed to init GLFW!" << std::endl;
+        throw std::runtime_error("Failed to init GLFW!");
     }
 }
 
@@ -13,5 +13,8 @@ WindowManager::~WindowManager(){
 
 void WindowManager::CreateWindow(uint32_t width, uint32_t height, const char* title){
     m_window = glfwCreateWindow(width, height, title, nullptr, nullptr);
+    if(!m_window){ throw std::runtime_error("Failed to create GLFW window!"); }
     glfwMakeContextCurrent(m_window);
+
+    if (!gladLoadGL()){ throw std::runtime_error("Failed to initialize GLAD!"); }
 }

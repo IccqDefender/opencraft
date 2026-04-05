@@ -4,10 +4,15 @@
 
 
 int main(){
-    std::unique_ptr<Engine> _engine = std::make_unique<Engine>();
-    _engine->Run();
-    _engine->StartMainLoop();
-    _engine->Stop();
+    const auto _engine = std::make_unique<Engine>();
+
+    try {
+        _engine->Run(1280, 720, "opencraft");
+        _engine->StartMainLoop();
+        _engine->Stop();
+    }catch (std::exception& e) {
+        std::cout << e.what() << std::endl;
+    }
     
     return 0;
 }
