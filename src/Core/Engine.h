@@ -1,5 +1,6 @@
 #pragma once
 #include "../WindowManager/WindowManager.h"
+#include "WindowManager/ImguiManager/ImguiManager.h"
 #include <memory>
 
 class Engine{
@@ -13,6 +14,7 @@ public:
 
 private:
     std::unique_ptr<WindowManager> _windowManager;
+    std::unique_ptr<ImguiManager> _imguiManager;
 
     uint32_t m_WINDOW_WIDTH;
     uint32_t m_WINDOW_HEIGHT;
