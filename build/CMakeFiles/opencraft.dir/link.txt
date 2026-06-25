@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/opencraft.dir/link.d CMakeFiles/opencraft.dir/src/main.cpp.o -o opencraft  external/glfw/src/libglfw3.a libglad.a libimgui.a /usr/lib/libGL.so -ldl -lpthread external/glfw/src/libglfw3.a /usr/lib/librt.a -lm -ldl

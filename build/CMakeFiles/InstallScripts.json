@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/sterben/cpp-projects/opencraft/build/cmake_install.cmake",
+		"/home/sterben/cpp-projects/opencraft/build/external/glfw/cmake_install.cmake",
+		"/home/sterben/cpp-projects/opencraft/build/external/glfw/src/cmake_install.cmake",
+		"/home/sterben/cpp-projects/opencraft/build/external/glfw/docs/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
