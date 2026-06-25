@@ -145,8 +145,9 @@ CMakeFiles/opencraft.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
  /usr/include/c++/15.2.1/bits/ostream.tcc /usr/include/c++/15.2.1/istream \
  /usr/include/c++/15.2.1/bits/istream.tcc \
- /home/sterben/cpp-projects/opencraft/external/glfw/include/GLFW/glfw3.h \
+ /home/sterben/cpp-projects/opencraft/external/glad/include/glad/glad.h \
+ /usr/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h /usr/include/GL/gl.h \
- /usr/include/GL/glext.h /usr/include/KHR/khrplatform.h
+ /usr/include/bits/stdint-least.h \
+ /home/sterben/cpp-projects/opencraft/external/glfw/include/GLFW/glfw3.h
