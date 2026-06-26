@@ -383,6 +383,54 @@ external/imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.s
 .PHONY : external/imgui/imgui_widgets.cpp.s
 
+src/core/engine.o: src/core/engine.cpp.o
+.PHONY : src/core/engine.o
+
+# target to build an object file
+src/core/engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/core/engine.cpp.o
+.PHONY : src/core/engine.cpp.o
+
+src/core/engine.i: src/core/engine.cpp.i
+.PHONY : src/core/engine.i
+
+# target to preprocess a source file
+src/core/engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/core/engine.cpp.i
+.PHONY : src/core/engine.cpp.i
+
+src/core/engine.s: src/core/engine.cpp.s
+.PHONY : src/core/engine.s
+
+# target to generate assembly for a file
+src/core/engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/core/engine.cpp.s
+.PHONY : src/core/engine.cpp.s
+
+src/core/window/windowManager.o: src/core/window/windowManager.cpp.o
+.PHONY : src/core/window/windowManager.o
+
+# target to build an object file
+src/core/window/windowManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o
+.PHONY : src/core/window/windowManager.cpp.o
+
+src/core/window/windowManager.i: src/core/window/windowManager.cpp.i
+.PHONY : src/core/window/windowManager.i
+
+# target to preprocess a source file
+src/core/window/windowManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.i
+.PHONY : src/core/window/windowManager.cpp.i
+
+src/core/window/windowManager.s: src/core/window/windowManager.cpp.s
+.PHONY : src/core/window/windowManager.s
+
+# target to generate assembly for a file
+src/core/window/windowManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.s
+.PHONY : src/core/window/windowManager.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -443,6 +491,12 @@ help:
 	@echo "... external/imgui/imgui_widgets.o"
 	@echo "... external/imgui/imgui_widgets.i"
 	@echo "... external/imgui/imgui_widgets.s"
+	@echo "... src/core/engine.o"
+	@echo "... src/core/engine.i"
+	@echo "... src/core/engine.s"
+	@echo "... src/core/window/windowManager.o"
+	@echo "... src/core/window/windowManager.i"
+	@echo "... src/core/window/windowManager.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

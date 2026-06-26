@@ -64,7 +64,12 @@ find_package(OpenGL REQUIRED)
 # --------------------------------------------
 # Собираем все .cpp файлы из src/ (включая подпапки)
 file(GLOB_RECURSE SOURCES "src/*.cpp")
-add_executable(opencraft ${SOURCES})
+add_executable(opencraft ${SOURCES}
+    src/core/engine.cpp
+    src/core/engine.h
+    src/core/window/windowManager.h
+    src/core/window/windowManager.cpp
+)
 
 # Линкуем все библиотеки к игре
 target_link_libraries(opencraft

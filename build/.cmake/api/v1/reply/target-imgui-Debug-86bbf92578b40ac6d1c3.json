@@ -127,6 +127,10 @@
 			"id" : "glfw::@ca12bac854c2ac6b2230"
 		},
 		{
+			"backtrace" : 2,
+			"fragment" : "/usr/lib/libGL.so"
+		},
+		{
 			"backtrace" : 3,
 			"fragment" : "dl"
 		},
@@ -140,6 +144,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "glfw::@ca12bac854c2ac6b2230"
+		},
+		{
+			"backtrace" : 2,
+			"fragment" : "/usr/lib/libGL.so"
 		},
 		{
 			"backtrace" : 3,

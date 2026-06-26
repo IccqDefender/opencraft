@@ -1,5 +1,5 @@
-CMakeFiles/opencraft.dir/src/main.cpp.o: \
- /home/sterben/cpp-projects/opencraft/src/main.cpp \
+CMakeFiles/opencraft.dir/src/core/engine.cpp.o: \
+ /home/sterben/cpp-projects/opencraft/src/core/engine.cpp \
  /usr/include/stdc-predef.h \
  /home/sterben/cpp-projects/opencraft/src/core/engine.h \
  /home/sterben/cpp-projects/opencraft/external/glad/include/glad/glad.h \

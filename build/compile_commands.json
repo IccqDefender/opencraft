@@ -37,6 +37,18 @@
 },
 {
   "directory": "/home/sterben/cpp-projects/opencraft/build",
+  "command": "/usr/bin/g++  -I/home/sterben/cpp-projects/opencraft/external/glad/include -I/home/sterben/cpp-projects/opencraft/external/glm -I/home/sterben/cpp-projects/opencraft/external/imgui -I/home/sterben/cpp-projects/opencraft/external/imgui/backends -I/home/sterben/cpp-projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/core/engine.cpp.o -c /home/sterben/cpp-projects/opencraft/src/core/engine.cpp",
+  "file": "/home/sterben/cpp-projects/opencraft/src/core/engine.cpp",
+  "output": "CMakeFiles/opencraft.dir/src/core/engine.cpp.o"
+},
+{
+  "directory": "/home/sterben/cpp-projects/opencraft/build",
+  "command": "/usr/bin/g++  -I/home/sterben/cpp-projects/opencraft/external/glad/include -I/home/sterben/cpp-projects/opencraft/external/glm -I/home/sterben/cpp-projects/opencraft/external/imgui -I/home/sterben/cpp-projects/opencraft/external/imgui/backends -I/home/sterben/cpp-projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o -c /home/sterben/cpp-projects/opencraft/src/core/window/windowManager.cpp",
+  "file": "/home/sterben/cpp-projects/opencraft/src/core/window/windowManager.cpp",
+  "output": "CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o"
+},
+{
+  "directory": "/home/sterben/cpp-projects/opencraft/build",
   "command": "/usr/bin/g++  -I/home/sterben/cpp-projects/opencraft/external/glad/include -I/home/sterben/cpp-projects/opencraft/external/glm -I/home/sterben/cpp-projects/opencraft/external/imgui -I/home/sterben/cpp-projects/opencraft/external/imgui/backends -I/home/sterben/cpp-projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/main.cpp.o -c /home/sterben/cpp-projects/opencraft/src/main.cpp",
   "file": "/home/sterben/cpp-projects/opencraft/src/main.cpp",
   "output": "CMakeFiles/opencraft.dir/src/main.cpp.o"

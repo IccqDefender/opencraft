@@ -72,10 +72,38 @@ include CMakeFiles/opencraft.dir/flags.make
 CMakeFiles/opencraft.dir/codegen:
 .PHONY : CMakeFiles/opencraft.dir/codegen
 
+CMakeFiles/opencraft.dir/src/core/engine.cpp.o: CMakeFiles/opencraft.dir/flags.make
+CMakeFiles/opencraft.dir/src/core/engine.cpp.o: /home/sterben/cpp-projects/opencraft/src/core/engine.cpp
+CMakeFiles/opencraft.dir/src/core/engine.cpp.o: CMakeFiles/opencraft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opencraft.dir/src/core/engine.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencraft.dir/src/core/engine.cpp.o -MF CMakeFiles/opencraft.dir/src/core/engine.cpp.o.d -o CMakeFiles/opencraft.dir/src/core/engine.cpp.o -c /home/sterben/cpp-projects/opencraft/src/core/engine.cpp
+
+CMakeFiles/opencraft.dir/src/core/engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencraft.dir/src/core/engine.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sterben/cpp-projects/opencraft/src/core/engine.cpp > CMakeFiles/opencraft.dir/src/core/engine.cpp.i
+
+CMakeFiles/opencraft.dir/src/core/engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencraft.dir/src/core/engine.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sterben/cpp-projects/opencraft/src/core/engine.cpp -o CMakeFiles/opencraft.dir/src/core/engine.cpp.s
+
+CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o: CMakeFiles/opencraft.dir/flags.make
+CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o: /home/sterben/cpp-projects/opencraft/src/core/window/windowManager.cpp
+CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o: CMakeFiles/opencraft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o -MF CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o.d -o CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o -c /home/sterben/cpp-projects/opencraft/src/core/window/windowManager.cpp
+
+CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sterben/cpp-projects/opencraft/src/core/window/windowManager.cpp > CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.i
+
+CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sterben/cpp-projects/opencraft/src/core/window/windowManager.cpp -o CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.s
+
 CMakeFiles/opencraft.dir/src/main.cpp.o: CMakeFiles/opencraft.dir/flags.make
 CMakeFiles/opencraft.dir/src/main.cpp.o: /home/sterben/cpp-projects/opencraft/src/main.cpp
 CMakeFiles/opencraft.dir/src/main.cpp.o: CMakeFiles/opencraft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opencraft.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/opencraft.dir/src/main.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencraft.dir/src/main.cpp.o -MF CMakeFiles/opencraft.dir/src/main.cpp.o.d -o CMakeFiles/opencraft.dir/src/main.cpp.o -c /home/sterben/cpp-projects/opencraft/src/main.cpp
 
 CMakeFiles/opencraft.dir/src/main.cpp.i: cmake_force
@@ -88,11 +116,15 @@ CMakeFiles/opencraft.dir/src/main.cpp.s: cmake_force
 
 # Object files for target opencraft
 opencraft_OBJECTS = \
+"CMakeFiles/opencraft.dir/src/core/engine.cpp.o" \
+"CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o" \
 "CMakeFiles/opencraft.dir/src/main.cpp.o"
 
 # External object files for target opencraft
 opencraft_EXTERNAL_OBJECTS =
 
+opencraft: CMakeFiles/opencraft.dir/src/core/engine.cpp.o
+opencraft: CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o
 opencraft: CMakeFiles/opencraft.dir/src/main.cpp.o
 opencraft: CMakeFiles/opencraft.dir/build.make
 opencraft: CMakeFiles/opencraft.dir/compiler_depend.ts
@@ -104,7 +136,7 @@ opencraft: external/glfw/src/libglfw3.a
 opencraft: /usr/lib/librt.a
 opencraft: /usr/lib/libm.so
 opencraft: CMakeFiles/opencraft.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable opencraft"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sterben/cpp-projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable opencraft"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencraft.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

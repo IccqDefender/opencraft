@@ -2,6 +2,8 @@ opencraft: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
+  CMakeFiles/opencraft.dir/src/core/engine.cpp.o \
+  CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o \
   CMakeFiles/opencraft.dir/src/main.cpp.o \
   external/glfw/src/libglfw3.a \
   libglad.a \
@@ -51,6 +53,10 @@ opencraft: \
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
+
+CMakeFiles/opencraft.dir/src/core/engine.cpp.o:
+
+CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o:
 
 CMakeFiles/opencraft.dir/src/main.cpp.o:
 
