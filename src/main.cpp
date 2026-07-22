@@ -1,13 +1,14 @@
-#include "core/engine.h"
+#include "core/Core.h"
+
 #include <memory>
 
+int main() {
 
-int main(){
-  std::unique_ptr<Engine> m_engine = std::make_unique<Engine>();
+    std::unique_ptr<Core> m_core = std::make_unique<Core>();
 
-  m_engine->Start();
+    m_core->run();
 
-  m_engine->Stop();
+    m_core->stop();
 
-  return 0;
+    return 0;
 }
