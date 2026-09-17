@@ -1,14 +1,23 @@
-#include "core/Core.h"
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
 
-#include <memory>
+#include "imgui.h"
+#include "imgui_impl_glfw.h"
+#include "imgui_impl_opengl3.h"
+
+#include "game/Game.h"
+
+#include <iostream>
 
 int main() {
 
-    std::unique_ptr<Core> m_core = std::make_unique<Core>();
+    Game* m_game = new Game();
 
-    m_core->run();
+    m_game->Start();
 
-    m_core->stop();
+    m_game->Stop();
+
+    delete m_game;
 
     return 0;
 }

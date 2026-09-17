@@ -16,7 +16,8 @@ add_subdirectory(external/glfw)
 # --------------------------------------------
 # 2. GLAD (статическая библиотека из external/glad)
 # --------------------------------------------
-add_library(glad STATIC external/glad/src/glad.c)
+add_library(glad STATIC external/glad/src/glad.c
+)
 target_include_directories(glad PUBLIC external/glad/include)
 
 # --------------------------------------------
@@ -29,29 +30,26 @@ target_include_directories(glm INTERFACE external/glm)
 # 4. Dear ImGui (сборка ядра без бэкендов)
 # --------------------------------------------
 # Собираем все .cpp файлы из external/imgui, кроме бэкендов
-file(GLOB IMGUI_SOURCES "external/imgui/*.cpp")
-list(REMOVE_ITEM IMGUI_SOURCES
-    "external/imgui/backends/imgui_impl_glfw.cpp"
-    "external/imgui/backends/imgui_impl_opengl3.cpp"
+add_library(imgui STATIC
+        external/imgui/imgui.cpp
+        external/imgui/imgui_draw.cpp
+        external/imgui/imgui_tables.cpp
+        external/imgui/imgui_widgets.cpp
+        external/imgui/imgui_demo.cpp
+        external/imgui/backends/imgui_impl_glfw.cpp
+        external/imgui/backends/imgui_impl_opengl3.cpp
 )
 
-add_library(imgui STATIC ${IMGUI_SOURCES})
-
-# Подключаем заголовки ImGui (корневую папку и backends)
 target_include_directories(imgui PUBLIC
-    external/imgui
-    external/imgui/backends
+        external/imgui
+        external/imgui/backends
 )
 
-# ImGui зависит от GLFW и OpenGL (явно указываем)
-target_link_libraries(imgui
-    glfw
-    ${OPENGL_gl_LIBRARY}
-)
+# Бэкенд GLFW зависит от glfw и opengl32, но НЕ нужен find_package(OpenGL) до этого
+target_link_libraries(imgui PUBLIC glfw)
 
-# Для Linux добавляем стандартные библиотеки (dl, pthread)
-if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
-    target_link_libraries(imgui ${CMAKE_DL_LIBS} pthread)
+if (WIN32)
+    target_link_libraries(imgui PUBLIC opengl32)
 endif()
 
 # --------------------------------------------
@@ -65,11 +63,10 @@ find_package(OpenGL REQUIRED)
 # Собираем все .cpp файлы из src/ (включая подпапки)
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 add_executable(opencraft ${SOURCES}
-        src/core/Core.cpp
-        src/core/Core.h
-        src/core/WindowManager.cpp
-        src/core/WindowManager.h
-
+        src/core/Window.cpp
+        src/core/Window.h
+        src/game/Game.cpp
+        src/game/Game.h
 )
 
 # Линкуем все библиотеки к игре
