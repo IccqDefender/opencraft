@@ -8,9 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/sterben/cpp-projects/opencraft/src/core/engine.cpp" "CMakeFiles/opencraft.dir/src/core/engine.cpp.o" "gcc" "CMakeFiles/opencraft.dir/src/core/engine.cpp.o.d"
-  "/home/sterben/cpp-projects/opencraft/src/core/window/windowManager.cpp" "CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o" "gcc" "CMakeFiles/opencraft.dir/src/core/window/windowManager.cpp.o.d"
-  "/home/sterben/cpp-projects/opencraft/src/main.cpp" "CMakeFiles/opencraft.dir/src/main.cpp.o" "gcc" "CMakeFiles/opencraft.dir/src/main.cpp.o.d"
+  "/home/sterben/Projects/opencraft/src/core/Window.cpp" "CMakeFiles/opencraft.dir/src/core/Window.cpp.o" "gcc" "CMakeFiles/opencraft.dir/src/core/Window.cpp.o.d"
+  "/home/sterben/Projects/opencraft/src/main.cpp" "CMakeFiles/opencraft.dir/src/main.cpp.o" "gcc" "CMakeFiles/opencraft.dir/src/main.cpp.o.d"
   "" "opencraft" "gcc" "CMakeFiles/opencraft.dir/link.d"
   )
 

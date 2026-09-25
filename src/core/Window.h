@@ -1,30 +1,29 @@
-#ifndef OPENCRAFT_WINDOW_H
-#define OPENCRAFT_WINDOW_H
+#ifndef WINDOW_H
+#define WINDOW_H
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
+#include <stdint.h>
+#include <stdexcept>
+
 class Window {
 public:
+    Window(uint32_t width, uint32_t height, const char* title);
+    ~Window();
 
-    bool initialize(); //Initialize window method
-    bool cleanup(); //Cleanup window method
+    GLFWwindow* getWindow() const { return m_window; };
 
-    bool createCurrentWindow(); //Create window method
-    GLFWwindow* getCurrentWindow() { return m_window; }; //Get current window method
-    bool isCurrentWindowShouldClose() { return glfwWindowShouldClose(m_window); }; //Is window should close method
-    void setCurrentWindowShouldClose() { glfwSetWindowShouldClose(m_window, GLFW_TRUE); }; //Close window method
+    void makeContextCurrent();
 
-    void pollEvents();  //Poll events method
-    void swapBuffers(); //Swap buffers method
+    void swapBuffers();
+    void pollEvents();
+
+    bool isWindowShouldClose() const { return glfwWindowShouldClose(m_window); };
+    void setWindowShouldClose(bool flag) { glfwSetWindowShouldClose(m_window, flag); };
+
 private:
-    const int WIDTH = 1280;             //Window width
-    const int HEIGHT = 720;             //Window height
-    const char* TITLE = "opencraft";    //Window title
-
-    GLFWwindow* m_window = nullptr;     //Window pointer
-
+    GLFWwindow* m_window;
 };
 
-
-#endif //OPENCRAFT_WINDOW_H
+#endif // WINDOW_H

@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/home/sterben/cpp-projects/opencraft/build/external/glfw/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"/home/sterben/cpp-projects/opencraft/build/external/glfw/install_manifest.txt\"")
+if (NOT EXISTS "/home/sterben/Projects/opencraft/build/external/glfw/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/home/sterben/Projects/opencraft/build/external/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "/home/sterben/cpp-projects/opencraft/build/external/glfw/install_manifest.txt" files)
+file(READ "/home/sterben/Projects/opencraft/build/external/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})
