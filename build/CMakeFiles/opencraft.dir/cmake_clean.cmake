@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/opencraft.dir/src/core/Window.cpp.o.d"
   "CMakeFiles/opencraft.dir/src/main.cpp.o"
   "CMakeFiles/opencraft.dir/src/main.cpp.o.d"
+  "CMakeFiles/opencraft.dir/src/render/Shader.cpp.o"
+  "CMakeFiles/opencraft.dir/src/render/Shader.cpp.o.d"
   "opencraft"
   "opencraft.pdb"
 )

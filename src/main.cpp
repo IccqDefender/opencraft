@@ -70,20 +70,30 @@ int main() {
     windowManager->makeContextCurrent();
 
     float vertices[] = {
-      //position          //color
-      -0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 
-       0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f,
-       0.0f,  0.5f, 0.0f, 0.0f, 0.0f, 1.0f
+    // position            // color
+     0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f, // верх-право   - красный
+     0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f, // низ-право    - зелёный
+    -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f, // низ-лево     - синий
+    -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f  // верх-лево    - жёлтый
+};
+
+    uint32_t indices[] = {
+      0, 1, 3,
+      1, 2, 3
     };
 
-    GLuint VAO, VBO;
+    GLuint VAO, VBO, EBO;
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
+    glGenBuffers(1, &EBO);
 
     glBindVertexArray(VAO);
 
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
@@ -102,7 +112,7 @@ int main() {
 
       glUseProgram(shaderProgram);
       glBindVertexArray(VAO);
-      glDrawArrays(GL_TRIANGLES, 0, 3);
+      glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
       windowManager->swapBuffers();
       windowManager->pollEvents();
@@ -110,6 +120,7 @@ int main() {
 
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
+    glDeleteBuffers(1, &EBO);
     glDeleteProgram(shaderProgram);
 
   } catch (const std::runtime_error& e) {

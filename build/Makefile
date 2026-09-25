@@ -479,6 +479,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/render/Shader.o: src/render/Shader.cpp.o
+.PHONY : src/render/Shader.o
+
+# target to build an object file
+src/render/Shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/Shader.cpp.o
+.PHONY : src/render/Shader.cpp.o
+
+src/render/Shader.i: src/render/Shader.cpp.i
+.PHONY : src/render/Shader.i
+
+# target to preprocess a source file
+src/render/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/Shader.cpp.i
+.PHONY : src/render/Shader.cpp.i
+
+src/render/Shader.s: src/render/Shader.cpp.s
+.PHONY : src/render/Shader.s
+
+# target to generate assembly for a file
+src/render/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/Shader.cpp.s
+.PHONY : src/render/Shader.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -527,6 +551,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/render/Shader.o"
+	@echo "... src/render/Shader.i"
+	@echo "... src/render/Shader.s"
 .PHONY : help
 
 

@@ -60,6 +60,12 @@
   "output": "CMakeFiles/opencraft.dir/src/main.cpp.o"
 },
 {
+  "directory": "/home/sterben/Projects/opencraft/build",
+  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external/glm -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/render/Shader.cpp.o -c /home/sterben/Projects/opencraft/src/render/Shader.cpp",
+  "file": "/home/sterben/Projects/opencraft/src/render/Shader.cpp",
+  "output": "CMakeFiles/opencraft.dir/src/render/Shader.cpp.o"
+},
+{
   "directory": "/home/sterben/Projects/opencraft/build/external/glfw/src",
   "command": "/usr/bin/clang -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -I/home/sterben/Projects/opencraft/external/glfw/include -I/home/sterben/Projects/opencraft/external/glfw/src -I/home/sterben/Projects/opencraft/build/external/glfw/src -g -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/context.c.o -c /home/sterben/Projects/opencraft/external/glfw/src/context.c",
   "file": "/home/sterben/Projects/opencraft/external/glfw/src/context.c",

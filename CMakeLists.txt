@@ -66,6 +66,7 @@ add_executable(opencraft ${SOURCES}
     src/core/Window.cpp
     src/core/Window.h
     src/render/Shader.h
+    src/render/Shader.cpp
 )
 
 # Линкуем все библиотеки к игре
