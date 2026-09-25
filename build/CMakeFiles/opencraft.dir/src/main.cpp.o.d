@@ -464,4 +464,5 @@ CMakeFiles/opencraft.dir/src/main.cpp.o: \
   /home/sterben/Projects/opencraft/external/glm/gtc/../trigonometric.hpp \
   /home/sterben/Projects/opencraft/external/glm/gtc/../matrix.hpp \
   /home/sterben/Projects/opencraft/src/core/Window.h \
-  /home/sterben/Projects/opencraft/src/core/Input.h
+  /home/sterben/Projects/opencraft/src/core/Input.h \
+  /home/sterben/Projects/opencraft/src/render/Camera.h

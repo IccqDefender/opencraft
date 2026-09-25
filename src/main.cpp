@@ -11,6 +11,7 @@
 
 #include "core/Window.h"
 #include "core/Input.h"
+#include "render/Camera.h"
 
 const char* vertexShaderSource = R"(
 #version 460 core
@@ -20,10 +21,11 @@ layout (location = 1) in vec3 aColor;
 
 out vec3 ourColor;
 
+uniform mat4 uView;
 uniform mat4 uProjection;
 
 void main() {
-  gl_Position = uProjection * vec4(aPos, 1.0);
+  gl_Position = uProjection * uView * vec4(aPos, 1.0);
   ourColor = aColor;
 }
 )";
@@ -79,9 +81,14 @@ GLuint createShaderProgram(){
 
 int main() {
   std::unique_ptr<Window> windowManager = std::make_unique<Window>(1280, 720, "opencraft");
+  std::unique_ptr<Camera> camera = std::make_unique<Camera>(glm::vec3(0.0f, 0.0f, 3.0f));
+
+  float lastFrame = 0.0f;
 
   try{
     windowManager->makeContextCurrent();
+
+    Input::setCursorMode(windowManager->getWindow(), GLFW_CURSOR_DISABLED);
 
     float vertices[] = {
     // position            // color
@@ -124,19 +131,30 @@ int main() {
       Input::update();
       windowManager->pollEvents();
 
+      float currentFrame = static_cast<float>(glfwGetTime());
+      float deltaTime = currentFrame - lastFrame;
+      lastFrame = currentFrame;
+
       if(Input::isKeyJustPressed(GLFW_KEY_ESCAPE)){
         windowManager->setWindowShouldClose(true);
       }
 
-      glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
-      glClear(GL_COLOR_BUFFER_BIT);
+      camera->update(deltaTime);
+
+      glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
+      glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 
       float aspect = 1280.0f / 720.0f;
-      glm::mat4 projection = glm::ortho(-aspect, aspect, -1.0f, 1.0f, -1.0f, 1.0f);
 
       glUseProgram(shaderProgram);
+
+      glm::mat4 view = camera->getViewMatrix();
+      glm::mat4 projection = camera->getProjectionMatrix(aspect);
+
+      GLint viewLoc = glGetUniformLocation(shaderProgram, "uView");
       GLint projectionLoc = glGetUniformLocation(shaderProgram, "uProjection");
+      glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &view[0][0]);
       glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, &projection[0][0]);
 
       glBindVertexArray(VAO);
