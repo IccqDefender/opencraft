@@ -1,25 +1,38 @@
 #include "core/Window.h"
 
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
+
 #include <iostream>
 #include <stdexcept>
 
 #include <memory>
 
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+
 const char* vertexShaderSource = R"(
 #version 460 core
+
 layout (location = 0) in vec3 aPos;
 layout (location = 1) in vec3 aColor;
+
 out vec3 ourColor;
+
+uniform mat4 uProjection;
+
 void main() {
-  gl_Position = vec4(aPos, 1.0);
+  gl_Position = uProjection * vec4(aPos, 1.0);
   ourColor = aColor;
 }
 )";
 
 const char* fragmentShaderSource = R"(
 #version 460 core
+
 in vec3 ourColor;
 out vec4 FragColor;
+
 void main() {
   FragColor = vec4(ourColor, 1.0);
 }
@@ -75,7 +88,7 @@ int main() {
      0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f, // низ-право    - зелёный
     -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f, // низ-лево     - синий
     -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f  // верх-лево    - жёлтый
-};
+    };
 
     uint32_t indices[] = {
       0, 1, 3,
@@ -110,7 +123,14 @@ int main() {
       glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
       glClear(GL_COLOR_BUFFER_BIT);
 
+
+      float aspect = 1280.0f / 720.0f;
+      glm::mat4 projection = glm::ortho(-aspect, aspect, -1.0f, 1.0f, -1.0f, 1.0f);
+
       glUseProgram(shaderProgram);
+      GLint projectionLoc = glGetUniformLocation(shaderProgram, "uProjection");
+      glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, &projection[0][0]);
+
       glBindVertexArray(VAO);
       glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 

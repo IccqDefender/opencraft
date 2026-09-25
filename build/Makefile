@@ -431,6 +431,54 @@ external/imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.s
 .PHONY : external/imgui/imgui_widgets.cpp.s
 
+src/core/Input.o: src/core/Input.cpp.o
+.PHONY : src/core/Input.o
+
+# target to build an object file
+src/core/Input.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/core/Input.cpp.o
+.PHONY : src/core/Input.cpp.o
+
+src/core/Input.i: src/core/Input.cpp.i
+.PHONY : src/core/Input.i
+
+# target to preprocess a source file
+src/core/Input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/core/Input.cpp.i
+.PHONY : src/core/Input.cpp.i
+
+src/core/Input.s: src/core/Input.cpp.s
+.PHONY : src/core/Input.s
+
+# target to generate assembly for a file
+src/core/Input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/core/Input.cpp.s
+.PHONY : src/core/Input.cpp.s
+
+src/core/Time.o: src/core/Time.cpp.o
+.PHONY : src/core/Time.o
+
+# target to build an object file
+src/core/Time.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/core/Time.cpp.o
+.PHONY : src/core/Time.cpp.o
+
+src/core/Time.i: src/core/Time.cpp.i
+.PHONY : src/core/Time.i
+
+# target to preprocess a source file
+src/core/Time.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/core/Time.cpp.i
+.PHONY : src/core/Time.cpp.i
+
+src/core/Time.s: src/core/Time.cpp.s
+.PHONY : src/core/Time.s
+
+# target to generate assembly for a file
+src/core/Time.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/core/Time.cpp.s
+.PHONY : src/core/Time.cpp.s
+
 src/core/Window.o: src/core/Window.cpp.o
 .PHONY : src/core/Window.o
 
@@ -479,6 +527,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/render/Camera.o: src/render/Camera.cpp.o
+.PHONY : src/render/Camera.o
+
+# target to build an object file
+src/render/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/Camera.cpp.o
+.PHONY : src/render/Camera.cpp.o
+
+src/render/Camera.i: src/render/Camera.cpp.i
+.PHONY : src/render/Camera.i
+
+# target to preprocess a source file
+src/render/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/Camera.cpp.i
+.PHONY : src/render/Camera.cpp.i
+
+src/render/Camera.s: src/render/Camera.cpp.s
+.PHONY : src/render/Camera.s
+
+# target to generate assembly for a file
+src/render/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/Camera.cpp.s
+.PHONY : src/render/Camera.cpp.s
+
+src/render/Mesh.o: src/render/Mesh.cpp.o
+.PHONY : src/render/Mesh.o
+
+# target to build an object file
+src/render/Mesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/Mesh.cpp.o
+.PHONY : src/render/Mesh.cpp.o
+
+src/render/Mesh.i: src/render/Mesh.cpp.i
+.PHONY : src/render/Mesh.i
+
+# target to preprocess a source file
+src/render/Mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/Mesh.cpp.i
+.PHONY : src/render/Mesh.cpp.i
+
+src/render/Mesh.s: src/render/Mesh.cpp.s
+.PHONY : src/render/Mesh.s
+
+# target to generate assembly for a file
+src/render/Mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/Mesh.cpp.s
+.PHONY : src/render/Mesh.cpp.s
+
 src/render/Shader.o: src/render/Shader.cpp.o
 .PHONY : src/render/Shader.o
 
@@ -502,6 +598,126 @@ src/render/Shader.s: src/render/Shader.cpp.s
 src/render/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/Shader.cpp.s
 .PHONY : src/render/Shader.cpp.s
+
+src/render/Texture.o: src/render/Texture.cpp.o
+.PHONY : src/render/Texture.o
+
+# target to build an object file
+src/render/Texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/Texture.cpp.o
+.PHONY : src/render/Texture.cpp.o
+
+src/render/Texture.i: src/render/Texture.cpp.i
+.PHONY : src/render/Texture.i
+
+# target to preprocess a source file
+src/render/Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/Texture.cpp.i
+.PHONY : src/render/Texture.cpp.i
+
+src/render/Texture.s: src/render/Texture.cpp.s
+.PHONY : src/render/Texture.s
+
+# target to generate assembly for a file
+src/render/Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/Texture.cpp.s
+.PHONY : src/render/Texture.cpp.s
+
+src/render/TextureAtlas.o: src/render/TextureAtlas.cpp.o
+.PHONY : src/render/TextureAtlas.o
+
+# target to build an object file
+src/render/TextureAtlas.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o
+.PHONY : src/render/TextureAtlas.cpp.o
+
+src/render/TextureAtlas.i: src/render/TextureAtlas.cpp.i
+.PHONY : src/render/TextureAtlas.i
+
+# target to preprocess a source file
+src/render/TextureAtlas.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.i
+.PHONY : src/render/TextureAtlas.cpp.i
+
+src/render/TextureAtlas.s: src/render/TextureAtlas.cpp.s
+.PHONY : src/render/TextureAtlas.s
+
+# target to generate assembly for a file
+src/render/TextureAtlas.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.s
+.PHONY : src/render/TextureAtlas.cpp.s
+
+src/world/Block.o: src/world/Block.cpp.o
+.PHONY : src/world/Block.o
+
+# target to build an object file
+src/world/Block.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/world/Block.cpp.o
+.PHONY : src/world/Block.cpp.o
+
+src/world/Block.i: src/world/Block.cpp.i
+.PHONY : src/world/Block.i
+
+# target to preprocess a source file
+src/world/Block.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/world/Block.cpp.i
+.PHONY : src/world/Block.cpp.i
+
+src/world/Block.s: src/world/Block.cpp.s
+.PHONY : src/world/Block.s
+
+# target to generate assembly for a file
+src/world/Block.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/world/Block.cpp.s
+.PHONY : src/world/Block.cpp.s
+
+src/world/Chunk.o: src/world/Chunk.cpp.o
+.PHONY : src/world/Chunk.o
+
+# target to build an object file
+src/world/Chunk.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o
+.PHONY : src/world/Chunk.cpp.o
+
+src/world/Chunk.i: src/world/Chunk.cpp.i
+.PHONY : src/world/Chunk.i
+
+# target to preprocess a source file
+src/world/Chunk.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/world/Chunk.cpp.i
+.PHONY : src/world/Chunk.cpp.i
+
+src/world/Chunk.s: src/world/Chunk.cpp.s
+.PHONY : src/world/Chunk.s
+
+# target to generate assembly for a file
+src/world/Chunk.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/world/Chunk.cpp.s
+.PHONY : src/world/Chunk.cpp.s
+
+src/world/World.o: src/world/World.cpp.o
+.PHONY : src/world/World.o
+
+# target to build an object file
+src/world/World.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/world/World.cpp.o
+.PHONY : src/world/World.cpp.o
+
+src/world/World.i: src/world/World.cpp.i
+.PHONY : src/world/World.i
+
+# target to preprocess a source file
+src/world/World.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/world/World.cpp.i
+.PHONY : src/world/World.cpp.i
+
+src/world/World.s: src/world/World.cpp.s
+.PHONY : src/world/World.s
+
+# target to generate assembly for a file
+src/world/World.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/world/World.cpp.s
+.PHONY : src/world/World.cpp.s
 
 # Help Target
 help:
@@ -545,15 +761,42 @@ help:
 	@echo "... external/imgui/imgui_widgets.o"
 	@echo "... external/imgui/imgui_widgets.i"
 	@echo "... external/imgui/imgui_widgets.s"
+	@echo "... src/core/Input.o"
+	@echo "... src/core/Input.i"
+	@echo "... src/core/Input.s"
+	@echo "... src/core/Time.o"
+	@echo "... src/core/Time.i"
+	@echo "... src/core/Time.s"
 	@echo "... src/core/Window.o"
 	@echo "... src/core/Window.i"
 	@echo "... src/core/Window.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/render/Camera.o"
+	@echo "... src/render/Camera.i"
+	@echo "... src/render/Camera.s"
+	@echo "... src/render/Mesh.o"
+	@echo "... src/render/Mesh.i"
+	@echo "... src/render/Mesh.s"
 	@echo "... src/render/Shader.o"
 	@echo "... src/render/Shader.i"
 	@echo "... src/render/Shader.s"
+	@echo "... src/render/Texture.o"
+	@echo "... src/render/Texture.i"
+	@echo "... src/render/Texture.s"
+	@echo "... src/render/TextureAtlas.o"
+	@echo "... src/render/TextureAtlas.i"
+	@echo "... src/render/TextureAtlas.s"
+	@echo "... src/world/Block.o"
+	@echo "... src/world/Block.i"
+	@echo "... src/world/Block.s"
+	@echo "... src/world/Chunk.o"
+	@echo "... src/world/Chunk.i"
+	@echo "... src/world/Chunk.s"
+	@echo "... src/world/World.o"
+	@echo "... src/world/World.i"
+	@echo "... src/world/World.s"
 .PHONY : help
 
 

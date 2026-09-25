@@ -2,8 +2,18 @@ opencraft: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../lib64/Scrt1.o \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../lib64/crti.o \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
+  CMakeFiles/opencraft.dir/src/core/Input.cpp.o \
+  CMakeFiles/opencraft.dir/src/core/Time.cpp.o \
   CMakeFiles/opencraft.dir/src/core/Window.cpp.o \
   CMakeFiles/opencraft.dir/src/main.cpp.o \
+  CMakeFiles/opencraft.dir/src/render/Camera.cpp.o \
+  CMakeFiles/opencraft.dir/src/render/Mesh.cpp.o \
+  CMakeFiles/opencraft.dir/src/render/Shader.cpp.o \
+  CMakeFiles/opencraft.dir/src/render/Texture.cpp.o \
+  CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o \
+  CMakeFiles/opencraft.dir/src/world/Block.cpp.o \
+  CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o \
+  CMakeFiles/opencraft.dir/src/world/World.cpp.o \
   external/glfw/src/libglfw3.a \
   libglad.a \
   libimgui.a \
@@ -64,9 +74,29 @@ opencraft: \
 
 /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
 
+CMakeFiles/opencraft.dir/src/core/Input.cpp.o:
+
+CMakeFiles/opencraft.dir/src/core/Time.cpp.o:
+
 CMakeFiles/opencraft.dir/src/core/Window.cpp.o:
 
 CMakeFiles/opencraft.dir/src/main.cpp.o:
+
+CMakeFiles/opencraft.dir/src/render/Camera.cpp.o:
+
+CMakeFiles/opencraft.dir/src/render/Mesh.cpp.o:
+
+CMakeFiles/opencraft.dir/src/render/Shader.cpp.o:
+
+CMakeFiles/opencraft.dir/src/render/Texture.cpp.o:
+
+CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o:
+
+CMakeFiles/opencraft.dir/src/world/Block.cpp.o:
+
+CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o:
+
+CMakeFiles/opencraft.dir/src/world/World.cpp.o:
 
 external/glfw/src/libglfw3.a:
 

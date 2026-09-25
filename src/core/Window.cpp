@@ -1,5 +1,8 @@
 #include "Window.h"
 
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
+
 Window::Window(uint32_t width, uint32_t height, const char* title) {
     if (!glfwInit()) {
         throw std::runtime_error("Failed to initialize GLFW\n");
@@ -45,4 +48,14 @@ void Window::pollEvents()
     if (GLFW_KEY_ESCAPE == glfwGetKey(m_window, GLFW_KEY_ESCAPE)) {
         glfwSetWindowShouldClose(m_window, true);
     }
+}
+
+bool Window::isWindowShouldClose()
+{
+    return glfwWindowShouldClose(m_window);
+}
+
+void Window::setWindowShouldClose(bool flag)
+{
+    glfwSetWindowShouldClose(m_window, flag);
 }

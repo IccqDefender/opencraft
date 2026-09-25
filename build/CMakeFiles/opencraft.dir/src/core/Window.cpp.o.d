@@ -1,27 +1,16 @@
 CMakeFiles/opencraft.dir/src/core/Window.cpp.o: \
   /home/sterben/Projects/opencraft/src/core/Window.cpp \
   /home/sterben/Projects/opencraft/src/core/Window.h \
-  /home/sterben/Projects/opencraft/external/glad/include/glad/glad.h \
-  /usr/include/KHR/khrplatform.h /usr/lib/clang/22/include/stdint.h \
-  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
-  /usr/include/features.h /usr/include/features-time64.h \
-  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
-  /usr/include/stdc-predef.h /usr/include/sys/cdefs.h \
-  /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
-  /usr/include/gnu/stubs-64.h /usr/include/bits/types.h \
-  /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
-  /usr/include/bits/wchar.h /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-uintn.h /usr/include/bits/stdint-least.h \
-  /home/sterben/Projects/opencraft/external/glfw/include/GLFW/glfw3.h \
-  /usr/lib/clang/22/include/stddef.h \
-  /usr/lib/clang/22/include/__stddef_header_macro.h \
-  /usr/lib/clang/22/include/__stddef_ptrdiff_t.h \
-  /usr/lib/clang/22/include/__stddef_size_t.h \
-  /usr/lib/clang/22/include/__stddef_wchar_t.h \
-  /usr/lib/clang/22/include/__stddef_null.h \
-  /usr/lib/clang/22/include/__stddef_nullptr_t.h \
-  /usr/lib/clang/22/include/__stddef_max_align_t.h \
-  /usr/lib/clang/22/include/__stddef_offsetof.h \
+  /usr/lib/clang/22/include/stdint.h /usr/include/stdint.h \
+  /usr/include/bits/libc-header-start.h /usr/include/features.h \
+  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h /usr/include/stdc-predef.h \
+  /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
+  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
+  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdint-least.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/stdexcept \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/exception \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -34,6 +23,15 @@ CMakeFiles/opencraft.dir/src/core/Window.cpp.o: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/bits/exception_ptr.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/bits/exception_defines.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/bits/cxxabi_init_exception.h \
+  /usr/lib/clang/22/include/stddef.h \
+  /usr/lib/clang/22/include/__stddef_header_macro.h \
+  /usr/lib/clang/22/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/22/include/__stddef_size_t.h \
+  /usr/lib/clang/22/include/__stddef_wchar_t.h \
+  /usr/lib/clang/22/include/__stddef_null.h \
+  /usr/lib/clang/22/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/22/include/__stddef_max_align_t.h \
+  /usr/lib/clang/22/include/__stddef_offsetof.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/typeinfo \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/bits/hash_bytes.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/new \
@@ -137,4 +135,7 @@ CMakeFiles/opencraft.dir/src/core/Window.cpp.o: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/bits/uses_allocator_args.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/tuple \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/bits/invoke.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/bits/stdexcept_except.h
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../include/c++/16/bits/stdexcept_except.h \
+  /home/sterben/Projects/opencraft/external/glad/include/glad/glad.h \
+  /usr/include/KHR/khrplatform.h \
+  /home/sterben/Projects/opencraft/external/glfw/include/GLFW/glfw3.h

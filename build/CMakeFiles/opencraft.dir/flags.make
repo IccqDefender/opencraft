@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external/glm -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include
+CXX_INCLUDES = -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include
 
 CXX_FLAGS = -g -std=gnu++17
 

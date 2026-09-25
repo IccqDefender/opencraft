@@ -24,7 +24,7 @@ target_include_directories(glad PUBLIC external/glad/include)
 # 3. GLM (header-only библиотека)
 # --------------------------------------------
 add_library(glm INTERFACE)
-target_include_directories(glm INTERFACE external/glm)
+target_include_directories(glm INTERFACE external)
 
 # --------------------------------------------
 # 4. Dear ImGui (сборка ядра без бэкендов)
@@ -67,6 +67,24 @@ add_executable(opencraft ${SOURCES}
     src/core/Window.h
     src/render/Shader.h
     src/render/Shader.cpp
+    src/render/Texture.cpp
+    src/render/Texture.h
+    src/render/Mesh.cpp
+    src/render/Mesh.h
+    src/core/Input.h
+    src/core/Input.cpp
+    src/core/Time.h
+    src/core/Time.cpp
+    src/render/Camera.h
+    src/render/Camera.cpp
+    src/render/TextureAtlas.h
+    src/render/TextureAtlas.cpp
+    src/world/Block.h
+    src/world/Block.cpp
+    src/world/Chunk.h
+    src/world/Chunk.cpp
+    src/world/World.cpp
+    src/world/World.h
 )
 
 # Линкуем все библиотеки к игре
@@ -87,7 +105,7 @@ endif()
 target_include_directories(opencraft PRIVATE
     ${OPENGL_INCLUDE_DIR}
     external/glad/include
-    external/glm
+    external
     external/imgui
     external/imgui/backends
 )

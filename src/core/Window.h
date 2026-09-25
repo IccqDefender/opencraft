@@ -1,11 +1,10 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-
 #include <stdint.h>
 #include <stdexcept>
+
+class GLFWwindow;
 
 class Window {
 public:
@@ -19,8 +18,8 @@ public:
     void swapBuffers();
     void pollEvents();
 
-    bool isWindowShouldClose() const { return glfwWindowShouldClose(m_window); };
-    void setWindowShouldClose(bool flag) { glfwSetWindowShouldClose(m_window, flag); };
+    bool isWindowShouldClose();
+    void setWindowShouldClose(bool flag);
 
 private:
     GLFWwindow* m_window;
