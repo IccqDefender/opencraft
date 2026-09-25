@@ -1,7 +1,5 @@
 #include "Window.h"
-
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include "Input.h"
 
 Window::Window(uint32_t width, uint32_t height, const char* title) {
     if (!glfwInit()) {
@@ -19,6 +17,8 @@ Window::Window(uint32_t width, uint32_t height, const char* title) {
     if (m_window == nullptr) {
         throw std::runtime_error("Failed to create GLFW window\n");
     }
+
+    Input::initialize(m_window);
 }
 
 Window::~Window(){
@@ -45,9 +45,6 @@ void Window::swapBuffers()
 void Window::pollEvents()
 {
     glfwPollEvents();
-    if (GLFW_KEY_ESCAPE == glfwGetKey(m_window, GLFW_KEY_ESCAPE)) {
-        glfwSetWindowShouldClose(m_window, true);
-    }
 }
 
 bool Window::isWindowShouldClose()

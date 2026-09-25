@@ -1,5 +1,3 @@
-#include "core/Window.h"
-
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
@@ -10,6 +8,9 @@
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+
+#include "core/Window.h"
+#include "core/Input.h"
 
 const char* vertexShaderSource = R"(
 #version 460 core
@@ -120,6 +121,13 @@ int main() {
     GLuint shaderProgram = createShaderProgram();
 
     while (!windowManager->isWindowShouldClose()) {
+      Input::update();
+      windowManager->pollEvents();
+
+      if(Input::isKeyJustPressed(GLFW_KEY_ESCAPE)){
+        windowManager->setWindowShouldClose(true);
+      }
+
       glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
       glClear(GL_COLOR_BUFFER_BIT);
 
@@ -135,7 +143,6 @@ int main() {
       glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
       windowManager->swapBuffers();
-      windowManager->pollEvents();
     }
 
     glDeleteVertexArrays(1, &VAO);
