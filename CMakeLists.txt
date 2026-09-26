@@ -85,6 +85,7 @@ add_executable(opencraft ${SOURCES}
     src/world/Chunk.cpp
     src/world/World.cpp
     src/world/World.h
+    src/render/Vertex.h
 )
 
 # Линкуем все библиотеки к игре
