@@ -465,6 +465,7 @@ CMakeFiles/opencraft.dir/src/main.cpp.o: \
   /home/sterben/Projects/opencraft/external/glm/gtc/../matrix.hpp \
   /home/sterben/Projects/opencraft/src/core/Window.h \
   /home/sterben/Projects/opencraft/src/core/Input.h \
+  /home/sterben/Projects/opencraft/src/render/Shader.h \
   /home/sterben/Projects/opencraft/src/render/Camera.h \
   /home/sterben/Projects/opencraft/src/render/Vertex.h \
   /home/sterben/Projects/opencraft/src/render/Mesh.h

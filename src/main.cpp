@@ -11,75 +11,11 @@
 
 #include "core/Window.h"
 #include "core/Input.h"
+
+#include "render/Shader.h"
 #include "render/Camera.h"
 #include "render/Vertex.h"
 #include "render/Mesh.h"
-
-const char* vertexShaderSource = R"(
-#version 460 core
-
-layout (location = 0) in vec3 aPos;
-layout (location = 1) in vec3 aColor;
-
-out vec3 ourColor;
-
-uniform mat4 uView;
-uniform mat4 uProjection;
-
-void main() {
-  gl_Position = uProjection * uView * vec4(aPos, 1.0);
-  ourColor = aColor;
-}
-)";
-
-const char* fragmentShaderSource = R"(
-#version 460 core
-
-in vec3 ourColor;
-out vec4 FragColor;
-
-void main() {
-  FragColor = vec4(ourColor, 1.0);
-}
-)";
-
-GLuint compileShader(GLenum shaderType, const char* source) {
-  GLuint shader = glCreateShader(shaderType);
-  glShaderSource(shader, 1, &source, nullptr);
-  glCompileShader(shader);
-
-  int success;
-  char infoLog[512];
-  glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
-  if (!success) {
-    glGetShaderInfoLog(shader, 512, nullptr, infoLog);
-    throw std::runtime_error("Shader compilation failed");
-  }
-  return shader;
-}
-
-GLuint createShaderProgram(){
-  GLuint vertexShader = compileShader(GL_VERTEX_SHADER, vertexShaderSource);
-  GLuint fragmentShader = compileShader(GL_FRAGMENT_SHADER, fragmentShaderSource);
-
-  GLuint shaderProgram = glCreateProgram();
-  glAttachShader(shaderProgram, vertexShader);
-  glAttachShader(shaderProgram, fragmentShader);
-  glLinkProgram(shaderProgram);
-
-  int success;
-  char infoLog[512];
-  glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
-  if (!success) {
-    glGetProgramInfoLog(shaderProgram, 512, nullptr, infoLog);
-    throw std::runtime_error("Shader program linking failed");
-  }
-
-  glDeleteShader(vertexShader);
-  glDeleteShader(fragmentShader);
-
-  return shaderProgram;
-}
 
 int main() {
   std::unique_ptr<Window> windowManager = std::make_unique<Window>(1280, 720, "opencraft");
@@ -91,6 +27,8 @@ int main() {
     windowManager->makeContextCurrent();
 
     Input::setCursorMode(windowManager->getWindow(), GLFW_CURSOR_DISABLED);
+
+    Shader shader = Shader::fromFiles("../assets/shaders/shader.vert", "../assets/shaders/shader.frag");
 
     std::vector<Vertex> vertices = {
       {{0.5f, 0.5f, 0.0f}, {1.0f, 0.0f, 0.0f}},
@@ -105,8 +43,6 @@ int main() {
     };
 
     Mesh squareMesh(vertices, indices);
-
-    GLuint shaderProgram = createShaderProgram();
 
     while (!windowManager->isWindowShouldClose()) {
       Input::update();
@@ -128,22 +64,14 @@ int main() {
 
       float aspect = 1280.0f / 720.0f;
 
-      glUseProgram(shaderProgram);
-
-      glm::mat4 view = camera->getViewMatrix();
-      glm::mat4 projection = camera->getProjectionMatrix(aspect);
-
-      GLint viewLoc = glGetUniformLocation(shaderProgram, "uView");
-      GLint projectionLoc = glGetUniformLocation(shaderProgram, "uProjection");
-      glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &view[0][0]);
-      glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, &projection[0][0]);
+      shader.use();
+      shader.setMat4("uView", camera->getViewMatrix());
+      shader.setMat4("uProjection", camera->getProjectionMatrix(aspect));
 
       squareMesh.draw();
-
+      
       windowManager->swapBuffers();
     }
-    
-    glDeleteProgram(shaderProgram);
 
   } catch (const std::runtime_error& e) {
     std::cerr << e.what() << std::endl;
