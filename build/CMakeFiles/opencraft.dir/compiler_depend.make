@@ -2575,9 +2575,743 @@ CMakeFiles/opencraft.dir/src/render/Shader.cpp.o: /home/sterben/Projects/opencra
   /usr/lib/clang/22/include/stddef.h \
   /usr/lib/clang/22/include/stdint.h
 
-CMakeFiles/opencraft.dir/src/render/Texture.cpp.o: /home/sterben/Projects/opencraft/src/render/Texture.cpp
+CMakeFiles/opencraft.dir/src/render/Texture.cpp.o: /home/sterben/Projects/opencraft/src/render/Texture.cpp \
+  /home/sterben/Projects/opencraft/external/glad/include/glad/glad.h \
+  /home/sterben/Projects/opencraft/external/stb/stb_image.h \
+  /home/sterben/Projects/opencraft/src/render/Texture.h \
+  /usr/include/c++/16/backward/binders.h \
+  /usr/include/c++/16/bit \
+  /usr/include/c++/16/bits/alloc_traits.h \
+  /usr/include/c++/16/bits/allocator.h \
+  /usr/include/c++/16/bits/basic_ios.h \
+  /usr/include/c++/16/bits/basic_ios.tcc \
+  /usr/include/c++/16/bits/basic_string.h \
+  /usr/include/c++/16/bits/basic_string.tcc \
+  /usr/include/c++/16/bits/char_traits.h \
+  /usr/include/c++/16/bits/charconv.h \
+  /usr/include/c++/16/bits/concept_check.h \
+  /usr/include/c++/16/bits/cpp_type_traits.h \
+  /usr/include/c++/16/bits/cxxabi_forced.h \
+  /usr/include/c++/16/bits/cxxabi_init_exception.h \
+  /usr/include/c++/16/bits/erase_if.h \
+  /usr/include/c++/16/bits/exception.h \
+  /usr/include/c++/16/bits/exception_defines.h \
+  /usr/include/c++/16/bits/exception_ptr.h \
+  /usr/include/c++/16/bits/functexcept.h \
+  /usr/include/c++/16/bits/functional_hash.h \
+  /usr/include/c++/16/bits/hash_bytes.h \
+  /usr/include/c++/16/bits/invoke.h \
+  /usr/include/c++/16/bits/ios_base.h \
+  /usr/include/c++/16/bits/istream.tcc \
+  /usr/include/c++/16/bits/locale_classes.h \
+  /usr/include/c++/16/bits/locale_classes.tcc \
+  /usr/include/c++/16/bits/locale_facets.h \
+  /usr/include/c++/16/bits/locale_facets.tcc \
+  /usr/include/c++/16/bits/localefwd.h \
+  /usr/include/c++/16/bits/memory_resource.h \
+  /usr/include/c++/16/bits/memoryfwd.h \
+  /usr/include/c++/16/bits/move.h \
+  /usr/include/c++/16/bits/nested_exception.h \
+  /usr/include/c++/16/bits/new_allocator.h \
+  /usr/include/c++/16/bits/new_except.h \
+  /usr/include/c++/16/bits/new_throw.h \
+  /usr/include/c++/16/bits/ostream.h \
+  /usr/include/c++/16/bits/ostream.tcc \
+  /usr/include/c++/16/bits/ostream_insert.h \
+  /usr/include/c++/16/bits/ostream_print.h \
+  /usr/include/c++/16/bits/postypes.h \
+  /usr/include/c++/16/bits/predefined_ops.h \
+  /usr/include/c++/16/bits/ptr_traits.h \
+  /usr/include/c++/16/bits/range_access.h \
+  /usr/include/c++/16/bits/requires_hosted.h \
+  /usr/include/c++/16/bits/specfun.h \
+  /usr/include/c++/16/bits/std_abs.h \
+  /usr/include/c++/16/bits/stdexcept_except.h \
+  /usr/include/c++/16/bits/stdexcept_throw.h \
+  /usr/include/c++/16/bits/stdexcept_throwfwd.h \
+  /usr/include/c++/16/bits/stl_algobase.h \
+  /usr/include/c++/16/bits/stl_construct.h \
+  /usr/include/c++/16/bits/stl_function.h \
+  /usr/include/c++/16/bits/stl_iterator.h \
+  /usr/include/c++/16/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/16/bits/stl_iterator_base_types.h \
+  /usr/include/c++/16/bits/stl_pair.h \
+  /usr/include/c++/16/bits/streambuf.tcc \
+  /usr/include/c++/16/bits/streambuf_iterator.h \
+  /usr/include/c++/16/bits/string_view.tcc \
+  /usr/include/c++/16/bits/stringfwd.h \
+  /usr/include/c++/16/bits/uses_allocator.h \
+  /usr/include/c++/16/bits/uses_allocator_args.h \
+  /usr/include/c++/16/bits/utility.h \
+  /usr/include/c++/16/bits/version.h \
+  /usr/include/c++/16/cctype \
+  /usr/include/c++/16/cerrno \
+  /usr/include/c++/16/clocale \
+  /usr/include/c++/16/cmath \
+  /usr/include/c++/16/concepts \
+  /usr/include/c++/16/cstddef \
+  /usr/include/c++/16/cstdio \
+  /usr/include/c++/16/cstdlib \
+  /usr/include/c++/16/cwchar \
+  /usr/include/c++/16/cwctype \
+  /usr/include/c++/16/debug/assertions.h \
+  /usr/include/c++/16/debug/debug.h \
+  /usr/include/c++/16/exception \
+  /usr/include/c++/16/ext/alloc_traits.h \
+  /usr/include/c++/16/ext/atomicity.h \
+  /usr/include/c++/16/ext/numeric_traits.h \
+  /usr/include/c++/16/ext/string_conversions.h \
+  /usr/include/c++/16/ext/type_traits.h \
+  /usr/include/c++/16/initializer_list \
+  /usr/include/c++/16/ios \
+  /usr/include/c++/16/iosfwd \
+  /usr/include/c++/16/iostream \
+  /usr/include/c++/16/istream \
+  /usr/include/c++/16/limits \
+  /usr/include/c++/16/math.h \
+  /usr/include/c++/16/new \
+  /usr/include/c++/16/ostream \
+  /usr/include/c++/16/pstl/pstl_config.h \
+  /usr/include/c++/16/stdexcept \
+  /usr/include/c++/16/stdlib.h \
+  /usr/include/c++/16/streambuf \
+  /usr/include/c++/16/string \
+  /usr/include/c++/16/string_view \
+  /usr/include/c++/16/system_error \
+  /usr/include/c++/16/tr1/bessel_function.tcc \
+  /usr/include/c++/16/tr1/beta_function.tcc \
+  /usr/include/c++/16/tr1/ell_integral.tcc \
+  /usr/include/c++/16/tr1/exp_integral.tcc \
+  /usr/include/c++/16/tr1/gamma.tcc \
+  /usr/include/c++/16/tr1/hypergeometric.tcc \
+  /usr/include/c++/16/tr1/legendre_function.tcc \
+  /usr/include/c++/16/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/16/tr1/poly_hermite.tcc \
+  /usr/include/c++/16/tr1/poly_laguerre.tcc \
+  /usr/include/c++/16/tr1/riemann_zeta.tcc \
+  /usr/include/c++/16/tr1/special_function_util.h \
+  /usr/include/c++/16/tuple \
+  /usr/include/c++/16/type_traits \
+  /usr/include/c++/16/typeinfo \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++allocator.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++locale.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/ctype_base.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/ctype_inline.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/error_constants.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr-default.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/KHR/khrplatform.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/asm-generic/types.h \
+  /usr/include/asm/bitsperlong.h \
+  /usr/include/asm/errno.h \
+  /usr/include/asm/posix_types.h \
+  /usr/include/asm/posix_types_64.h \
+  /usr/include/asm/types.h \
+  /usr/include/assert.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/cpu-set.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/sched.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/setjmp.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/timex.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_itimerspec.h \
+  /usr/include/bits/types/struct_sched_param.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_tm.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/limits.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/sched/types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/linux/types.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/single_threaded.h \
+  /usr/include/sys/types.h \
+  /usr/include/tbb/tbb.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/lib/clang/22/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/22/include/__stdarg___va_copy.h \
+  /usr/lib/clang/22/include/__stdarg_header_macro.h \
+  /usr/lib/clang/22/include/__stdarg_va_arg.h \
+  /usr/lib/clang/22/include/__stdarg_va_copy.h \
+  /usr/lib/clang/22/include/__stdarg_va_list.h \
+  /usr/lib/clang/22/include/__stddef_header_macro.h \
+  /usr/lib/clang/22/include/__stddef_max_align_t.h \
+  /usr/lib/clang/22/include/__stddef_null.h \
+  /usr/lib/clang/22/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/22/include/__stddef_offsetof.h \
+  /usr/lib/clang/22/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/22/include/__stddef_size_t.h \
+  /usr/lib/clang/22/include/__stddef_wchar_t.h \
+  /usr/lib/clang/22/include/emmintrin.h \
+  /usr/lib/clang/22/include/limits.h \
+  /usr/lib/clang/22/include/mm_malloc.h \
+  /usr/lib/clang/22/include/mmintrin.h \
+  /usr/lib/clang/22/include/stdarg.h \
+  /usr/lib/clang/22/include/stddef.h \
+  /usr/lib/clang/22/include/stdint.h \
+  /usr/lib/clang/22/include/xmmintrin.h
 
-CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o: /home/sterben/Projects/opencraft/src/render/TextureAtlas.cpp
+CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o: /home/sterben/Projects/opencraft/src/render/TextureAtlas.cpp \
+  /home/sterben/Projects/opencraft/external/glad/include/glad/glad.h \
+  /home/sterben/Projects/opencraft/external/glm/common.hpp \
+  /home/sterben/Projects/opencraft/external/glm/common.hpp \
+  /home/sterben/Projects/opencraft/external/glm/vector_relational.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/_vectorize.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/func_exponential.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/func_vector_relational.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/qualifier.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/setup.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec1.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/exponential.hpp \
+  /home/sterben/Projects/opencraft/external/glm/vector_relational.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/compute_vector_relational.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/_fixes.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/_vectorize.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/compute_common.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/func_common.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/func_geometric.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/qualifier.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/setup.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec1.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec1.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/geometric.hpp \
+  /home/sterben/Projects/opencraft/external/glm/matrix.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat2x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat2x3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat2x3.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat2x4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat2x4.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat3x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat3x2.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat3x3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat3x3.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat3x4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat3x4.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat4x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat4x2.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat4x3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat4x3.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat4x4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat4x4.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x3_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x4_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x2_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x3_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x4_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x2_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x3_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x4_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x3_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x4_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x2_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x3_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x4_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x2_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x3_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x4_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/geometric.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/func_matrix.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/qualifier.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/setup.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat2x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat2x3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat2x4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat3x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat3x3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat3x4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat4x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat4x3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat4x4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/matrix.hpp \
+  /home/sterben/Projects/opencraft/external/glm/vec2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/vec3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/vec4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/compute_vector_relational.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/setup.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/_vectorize.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/compute_vector_decl.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/compute_vector_relational.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/qualifier.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/setup.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat2x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_mat2x2.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec2.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec3.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_vec4.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/setup.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/scalar_int_sized.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/scalar_uint_sized.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_int2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_int3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_int4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_uint2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_uint3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_uint4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x2_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x2_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_bool2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_bool2_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_bool3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_bool3_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_bool4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_bool4_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_double2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_double2_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_double3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_double3_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_double4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_double4_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_float2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_float2_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_float3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_float3_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_float4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_float4_precision.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_int2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_int2_sized.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_int3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_int3_sized.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_int4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_int4_sized.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_uint2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_uint2_sized.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_uint3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_uint3_sized.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_uint4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/ext/vector_uint4_sized.hpp \
+  /home/sterben/Projects/opencraft/external/glm/common.hpp \
+  /home/sterben/Projects/opencraft/external/glm/common.hpp \
+  /home/sterben/Projects/opencraft/external/glm/simd/platform.h \
+  /home/sterben/Projects/opencraft/external/glm/detail/_fixes.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/_vectorize.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/func_integer.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/func_packing.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/func_trigonometric.inl \
+  /home/sterben/Projects/opencraft/external/glm/detail/qualifier.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/setup.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_half.hpp \
+  /home/sterben/Projects/opencraft/external/glm/detail/type_half.inl \
+  /home/sterben/Projects/opencraft/external/glm/exponential.hpp \
+  /home/sterben/Projects/opencraft/external/glm/fwd.hpp \
+  /home/sterben/Projects/opencraft/external/glm/geometric.hpp \
+  /home/sterben/Projects/opencraft/external/glm/glm.hpp \
+  /home/sterben/Projects/opencraft/external/glm/integer.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat2x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat2x3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat2x4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat3x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat3x3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat3x4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat4x2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat4x3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/mat4x4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/matrix.hpp \
+  /home/sterben/Projects/opencraft/external/glm/packing.hpp \
+  /home/sterben/Projects/opencraft/external/glm/trigonometric.hpp \
+  /home/sterben/Projects/opencraft/external/glm/vec2.hpp \
+  /home/sterben/Projects/opencraft/external/glm/vec3.hpp \
+  /home/sterben/Projects/opencraft/external/glm/vec4.hpp \
+  /home/sterben/Projects/opencraft/external/glm/vector_relational.hpp \
+  /home/sterben/Projects/opencraft/src/render/Texture.h \
+  /home/sterben/Projects/opencraft/src/render/TextureAtlas.h \
+  /usr/include/c++/16/array \
+  /usr/include/c++/16/backward/auto_ptr.h \
+  /usr/include/c++/16/backward/binders.h \
+  /usr/include/c++/16/bit \
+  /usr/include/c++/16/bits/align.h \
+  /usr/include/c++/16/bits/alloc_traits.h \
+  /usr/include/c++/16/bits/allocated_ptr.h \
+  /usr/include/c++/16/bits/allocator.h \
+  /usr/include/c++/16/bits/atomic_base.h \
+  /usr/include/c++/16/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/16/bits/basic_string.h \
+  /usr/include/c++/16/bits/basic_string.tcc \
+  /usr/include/c++/16/bits/char_traits.h \
+  /usr/include/c++/16/bits/charconv.h \
+  /usr/include/c++/16/bits/concept_check.h \
+  /usr/include/c++/16/bits/cpp_type_traits.h \
+  /usr/include/c++/16/bits/cxxabi_forced.h \
+  /usr/include/c++/16/bits/cxxabi_init_exception.h \
+  /usr/include/c++/16/bits/enable_special_members.h \
+  /usr/include/c++/16/bits/erase_if.h \
+  /usr/include/c++/16/bits/exception.h \
+  /usr/include/c++/16/bits/exception_defines.h \
+  /usr/include/c++/16/bits/exception_ptr.h \
+  /usr/include/c++/16/bits/functexcept.h \
+  /usr/include/c++/16/bits/functional_hash.h \
+  /usr/include/c++/16/bits/hash_bytes.h \
+  /usr/include/c++/16/bits/hashtable.h \
+  /usr/include/c++/16/bits/hashtable_policy.h \
+  /usr/include/c++/16/bits/invoke.h \
+  /usr/include/c++/16/bits/localefwd.h \
+  /usr/include/c++/16/bits/memory_resource.h \
+  /usr/include/c++/16/bits/memoryfwd.h \
+  /usr/include/c++/16/bits/move.h \
+  /usr/include/c++/16/bits/nested_exception.h \
+  /usr/include/c++/16/bits/new_allocator.h \
+  /usr/include/c++/16/bits/new_except.h \
+  /usr/include/c++/16/bits/new_throw.h \
+  /usr/include/c++/16/bits/node_handle.h \
+  /usr/include/c++/16/bits/ostream_insert.h \
+  /usr/include/c++/16/bits/postypes.h \
+  /usr/include/c++/16/bits/predefined_ops.h \
+  /usr/include/c++/16/bits/ptr_traits.h \
+  /usr/include/c++/16/bits/range_access.h \
+  /usr/include/c++/16/bits/refwrap.h \
+  /usr/include/c++/16/bits/requires_hosted.h \
+  /usr/include/c++/16/bits/shared_ptr.h \
+  /usr/include/c++/16/bits/shared_ptr_atomic.h \
+  /usr/include/c++/16/bits/shared_ptr_base.h \
+  /usr/include/c++/16/bits/specfun.h \
+  /usr/include/c++/16/bits/std_abs.h \
+  /usr/include/c++/16/bits/std_function.h \
+  /usr/include/c++/16/bits/stdexcept_throw.h \
+  /usr/include/c++/16/bits/stdexcept_throwfwd.h \
+  /usr/include/c++/16/bits/stl_algobase.h \
+  /usr/include/c++/16/bits/stl_bvector.h \
+  /usr/include/c++/16/bits/stl_construct.h \
+  /usr/include/c++/16/bits/stl_function.h \
+  /usr/include/c++/16/bits/stl_iterator.h \
+  /usr/include/c++/16/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/16/bits/stl_iterator_base_types.h \
+  /usr/include/c++/16/bits/stl_pair.h \
+  /usr/include/c++/16/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/16/bits/stl_tempbuf.h \
+  /usr/include/c++/16/bits/stl_uninitialized.h \
+  /usr/include/c++/16/bits/stl_vector.h \
+  /usr/include/c++/16/bits/string_view.tcc \
+  /usr/include/c++/16/bits/stringfwd.h \
+  /usr/include/c++/16/bits/unique_ptr.h \
+  /usr/include/c++/16/bits/unordered_map.h \
+  /usr/include/c++/16/bits/uses_allocator.h \
+  /usr/include/c++/16/bits/uses_allocator_args.h \
+  /usr/include/c++/16/bits/utility.h \
+  /usr/include/c++/16/bits/vector.tcc \
+  /usr/include/c++/16/bits/version.h \
+  /usr/include/c++/16/cassert \
+  /usr/include/c++/16/cctype \
+  /usr/include/c++/16/cerrno \
+  /usr/include/c++/16/cfloat \
+  /usr/include/c++/16/climits \
+  /usr/include/c++/16/clocale \
+  /usr/include/c++/16/cmath \
+  /usr/include/c++/16/compare \
+  /usr/include/c++/16/concepts \
+  /usr/include/c++/16/cstddef \
+  /usr/include/c++/16/cstdint \
+  /usr/include/c++/16/cstdio \
+  /usr/include/c++/16/cstdlib \
+  /usr/include/c++/16/cwchar \
+  /usr/include/c++/16/debug/assertions.h \
+  /usr/include/c++/16/debug/debug.h \
+  /usr/include/c++/16/exception \
+  /usr/include/c++/16/ext/aligned_buffer.h \
+  /usr/include/c++/16/ext/alloc_traits.h \
+  /usr/include/c++/16/ext/atomicity.h \
+  /usr/include/c++/16/ext/concurrence.h \
+  /usr/include/c++/16/ext/numeric_traits.h \
+  /usr/include/c++/16/ext/string_conversions.h \
+  /usr/include/c++/16/ext/type_traits.h \
+  /usr/include/c++/16/functional \
+  /usr/include/c++/16/initializer_list \
+  /usr/include/c++/16/iosfwd \
+  /usr/include/c++/16/limits \
+  /usr/include/c++/16/memory \
+  /usr/include/c++/16/new \
+  /usr/include/c++/16/pstl/execution_defs.h \
+  /usr/include/c++/16/pstl/glue_memory_defs.h \
+  /usr/include/c++/16/pstl/pstl_config.h \
+  /usr/include/c++/16/string \
+  /usr/include/c++/16/string_view \
+  /usr/include/c++/16/tr1/bessel_function.tcc \
+  /usr/include/c++/16/tr1/beta_function.tcc \
+  /usr/include/c++/16/tr1/ell_integral.tcc \
+  /usr/include/c++/16/tr1/exp_integral.tcc \
+  /usr/include/c++/16/tr1/gamma.tcc \
+  /usr/include/c++/16/tr1/hypergeometric.tcc \
+  /usr/include/c++/16/tr1/legendre_function.tcc \
+  /usr/include/c++/16/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/16/tr1/poly_hermite.tcc \
+  /usr/include/c++/16/tr1/poly_laguerre.tcc \
+  /usr/include/c++/16/tr1/riemann_zeta.tcc \
+  /usr/include/c++/16/tr1/special_function_util.h \
+  /usr/include/c++/16/tuple \
+  /usr/include/c++/16/type_traits \
+  /usr/include/c++/16/typeinfo \
+  /usr/include/c++/16/unordered_map \
+  /usr/include/c++/16/vector \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++allocator.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++locale.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr-default.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/KHR/khrplatform.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/asm-generic/types.h \
+  /usr/include/asm/bitsperlong.h \
+  /usr/include/asm/errno.h \
+  /usr/include/asm/posix_types.h \
+  /usr/include/asm/posix_types_64.h \
+  /usr/include/asm/types.h \
+  /usr/include/assert.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/cpu-set.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/sched.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/setjmp.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/timex.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_itimerspec.h \
+  /usr/include/bits/types/struct_sched_param.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_tm.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/limits.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/sched/types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/linux/types.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/single_threaded.h \
+  /usr/include/sys/types.h \
+  /usr/include/tbb/tbb.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/lib/clang/22/include/__float_float.h \
+  /usr/lib/clang/22/include/__float_header_macro.h \
+  /usr/lib/clang/22/include/__float_infinity_nan.h \
+  /usr/lib/clang/22/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/22/include/__stddef_header_macro.h \
+  /usr/lib/clang/22/include/__stddef_max_align_t.h \
+  /usr/lib/clang/22/include/__stddef_null.h \
+  /usr/lib/clang/22/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/22/include/__stddef_offsetof.h \
+  /usr/lib/clang/22/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/22/include/__stddef_size_t.h \
+  /usr/lib/clang/22/include/__stddef_wchar_t.h \
+  /usr/lib/clang/22/include/float.h \
+  /usr/lib/clang/22/include/limits.h \
+  /usr/lib/clang/22/include/sanitizer/tsan_interface.h \
+  /usr/lib/clang/22/include/stdarg.h \
+  /usr/lib/clang/22/include/stddef.h \
+  /usr/lib/clang/22/include/stdint.h
 
 CMakeFiles/opencraft.dir/src/world/Block.cpp.o: /home/sterben/Projects/opencraft/src/world/Block.cpp
 
@@ -3544,1062 +4278,1094 @@ opencraft: /usr/lib64/Scrt1.o \
   libimgui.a
 
 
+libimgui.a:
+
+libglad.a:
+
 CMakeFiles/opencraft.dir/src/world/World.cpp.o:
 
 CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o:
 
-CMakeFiles/opencraft.dir/src/world/Block.cpp.o:
-
-CMakeFiles/opencraft.dir/src/render/Texture.cpp.o:
-
-CMakeFiles/opencraft.dir/src/core/Window.cpp.o:
-
-/usr/lib32/libX11.so.6:
-
-CMakeFiles/opencraft.dir/src/core/Time.cpp.o:
-
-/usr/lib/librt.a:
-
-/usr/lib/libm.so.6:
-
-/usr/lib/libc_nonshared.a:
-
-/usr/lib/libXdmcp.so.6:
-
-/usr/lib/libGLdispatch.so.0:
-
-/usr/lib/libGLX.so.0:
-
-/usr/lib/libGL.so:
-
-/usr/lib/ld-linux-x86-64.so.2:
-
-/usr/lib64/gcc/x86_64-pc-linux-gnu/16/libgcc_s.so:
-
-/usr/lib64/gcc/x86_64-pc-linux-gnu/16/libgcc.a:
-
-/usr/lib64/libm.so:
-
-/usr/lib64/libgcc_s.so.1:
-
-/usr/lib64/libdl.a:
-
-/usr/lib64/crtn.o:
-
-/usr/lib64/Scrt1.o:
-
-/home/sterben/Projects/opencraft/src/world/World.cpp:
-
-/home/sterben/Projects/opencraft/src/world/Chunk.cpp:
-
-/home/sterben/Projects/opencraft/src/world/Block.cpp:
-
-/usr/lib32/libxcb.so.1:
-
-/home/sterben/Projects/opencraft/src/render/TextureAtlas.cpp:
-
-/usr/include/c++/16/sstream:
-
-/usr/include/c++/16/bits/fstream.tcc:
-
-/home/sterben/Projects/opencraft/src/render/Shader.cpp:
-
-/usr/include/c++/16/bits/codecvt.h:
-
-/usr/include/c++/16/bits/stl_heap.h:
-
-/usr/include/c++/16/bits/stl_algo.h:
-
-/home/sterben/Projects/opencraft/src/render/Camera.cpp:
-
-/usr/include/time.h:
-
-/usr/include/sys/single_threaded.h:
-
-/usr/include/linux/types.h:
-
-CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o:
-
-/usr/lib64/gcc/x86_64-pc-linux-gnu/16/crtendS.o:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/bits/wctype-wchar.h:
-
-/usr/include/bits/types/struct_sched_param.h:
-
-/usr/include/bits/types/struct_itimerspec.h:
-
-/usr/include/bits/timex.h:
-
-/usr/include/bits/cpu-set.h:
-
-/usr/include/asm/types.h:
-
-/usr/include/asm/posix_types_64.h:
-
-/usr/include/bits/time.h:
-
-/usr/include/asm/posix_types.h:
-
-/usr/include/asm/bitsperlong.h:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr.h:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr-default.h:
-
-CMakeFiles/opencraft.dir/src/core/Input.cpp.o:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/error_constants.h:
-
-/usr/include/c++/16/streambuf:
-
-/usr/include/c++/16/pstl/glue_memory_defs.h:
-
-/usr/include/c++/16/memory:
-
-/usr/include/c++/16/istream:
-
-/usr/include/c++/16/ext/concurrence.h:
-
-/usr/include/c++/16/bits/unique_ptr.h:
-
-/usr/include/c++/16/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/16/bits/shared_ptr_atomic.h:
-
-/usr/include/c++/16/bits/ostream.tcc:
-
-/usr/include/c++/16/bits/locale_facets.tcc:
-
-/usr/include/c++/16/bits/locale_classes.tcc:
-
-/usr/include/c++/16/bits/istream.tcc:
-
-/usr/include/c++/16/bits/atomic_lockfree_defines.h:
-
-/usr/include/c++/16/bits/atomic_base.h:
-
-/usr/include/c++/16/bits/allocated_ptr.h:
-
-/usr/include/c++/16/backward/auto_ptr.h:
-
-/home/sterben/Projects/opencraft/src/world/Block.h:
-
-/home/sterben/Projects/opencraft/external/glm/gtc/matrix_transform.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_transform.inl:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_projection.inl:
-
-/home/sterben/Projects/opencraft/external/glm/gtc/constants.hpp:
-
-/home/sterben/Projects/opencraft/src/main.cpp:
-
-/usr/lib/clang/22/include/stdarg.h:
-
-/usr/lib/clang/22/include/__stdarg___gnuc_va_list.h:
-
-libimgui.a:
-
-/usr/include/locale.h:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++io.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/errno.h:
-
-/usr/lib64/libc.so:
-
-/usr/include/c++/16/bits/stl_tempbuf.h:
-
-/usr/include/ctype.h:
-
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/bits/types/mbstate_t.h:
-
-/usr/include/bits/types/__mbstate_t.h:
-
-/usr/include/linux/posix_types.h:
-
-/usr/include/bits/types/FILE.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_transform.hpp:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++locale.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_projection.hpp:
-
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/include/c++/16/string_view:
-
-/usr/include/c++/16/string:
-
-/usr/include/c++/16/exception:
-
-/usr/include/linux/sched/types.h:
-
-/usr/include/c++/16/cwchar:
-
-/usr/include/bits/errno.h:
-
-/usr/include/c++/16/cstdlib:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/16/clocale:
-
-/usr/include/c++/16/bits/shared_ptr.h:
-
-/usr/include/c++/16/bits/stringfwd.h:
-
-/usr/include/c++/16/bits/stdexcept_except.h:
-
-/usr/include/c++/16/bits/postypes.h:
-
-/usr/include/c++/16/bits/ostream_insert.h:
-
-/home/sterben/Projects/opencraft/src/render/Mesh.h:
-
-/usr/include/c++/16/bits/nested_exception.h:
-
-/usr/include/c++/16/bits/exception_ptr.h:
-
-/usr/include/c++/16/bits/cxxabi_init_exception.h:
-
-/usr/include/c++/16/cwctype:
-
-/usr/include/c++/16/bits/cxxabi_forced.h:
-
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/include/c++/16/bits/char_traits.h:
-
-/usr/include/c++/16/bits/basic_string.tcc:
-
-/usr/include/c++/16/bits/basic_string.h:
-
-/usr/lib32/libGLX.so.0:
-
-/usr/include/c++/16/bits/streambuf.tcc:
-
-/home/sterben/Projects/opencraft/src/core/Window.h:
-
-/home/sterben/Projects/opencraft/src/core/Time.cpp:
-
-/home/sterben/Projects/opencraft/src/world/BlockRegistry.cpp:
-
-/usr/lib/clang/22/include/limits.h:
-
-/usr/include/c++/16/system_error:
-
-/usr/lib/clang/22/include/__stddef_wchar_t.h:
-
-/usr/lib/clang/22/include/__stddef_offsetof.h:
-
-/usr/lib/clang/22/include/__stddef_nullptr_t.h:
-
-/usr/lib/clang/22/include/__stddef_max_align_t.h:
-
-/usr/lib/clang/22/include/__stddef_header_macro.h:
-
-CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o:
-
-/usr/lib/clang/22/include/__float_infinity_nan.h:
-
-/usr/lib/clang/22/include/__float_float.h:
-
-/usr/include/sys/types.h:
-
-/usr/include/sys/cdefs.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/bits/sched.h:
-
-/usr/include/bits/types/__FILE.h:
-
-/usr/include/features.h:
-
-/usr/include/features-time64.h:
-
-/usr/lib64/crti.o:
-
-/usr/include/stdio.h:
-
-/usr/include/c++/16/stdexcept:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/bits/wchar.h:
-
-/usr/include/bits/waitstatus.h:
-
-/usr/include/bits/waitflags.h:
-
-/usr/include/bits/uintn-identity.h:
-
-/usr/include/bits/typesizes.h:
-
-/usr/include/bits/types/timer_t.h:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/include/bits/types/clock_t.h:
-
-CMakeFiles/opencraft.dir/src/render/Shader.cpp.o:
-
-/usr/include/c++/16/iosfwd:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/include/bits/types/__locale_t.h:
-
-/usr/include/bits/types.h:
-
-/usr/include/bits/timesize.h:
-
-/usr/include/bits/time64.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/c++/16/bits/locale_facets.h:
-
-/usr/include/bits/struct_mutex.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/bits/stdint-uintn.h:
-
-/usr/include/c++/16/bits/shared_ptr_base.h:
-
-/usr/include/bits/stdint-least.h:
-
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/bits/stdint-intn.h:
-
-/usr/include/c++/16/bits/concept_check.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_float4_precision.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x4.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_float3.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_double4.hpp:
-
-/home/sterben/Projects/opencraft/src/render/Texture.cpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_double3.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_double2_precision.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/detail/func_geometric.inl:
-
-/home/sterben/Projects/opencraft/external/glm/detail/compute_vector_decl.hpp:
-
-/usr/lib32/libXdmcp.so.6:
-
-/home/sterben/Projects/opencraft/external/glm/detail/_vectorize.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/scalar_constants.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x4_precision.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat4x2.inl:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x4.hpp:
-
-/usr/include/c++/16/pstl/execution_defs.h:
-
-/usr/include/c++/16/bits/allocator.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_bool2.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/detail/_fixes.hpp:
-
-/usr/include/c++/16/bits/ostream.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x2_precision.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_uint3.hpp:
-
-/usr/lib/clang/22/include/__stddef_null.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/scalar_uint_sized.hpp:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/c++/16/ext/type_traits.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x2_precision.hpp:
-
-CMakeFiles/opencraft.dir/src/render/Camera.cpp.o:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_double2.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x3.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_vec2.inl:
-
-/home/sterben/Projects/opencraft/external/glm/gtc/matrix_transform.inl:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat2x2.inl:
-
-/usr/include/c++/16/bits/requires_hosted.h:
-
-/usr/include/bits/byteswap.h:
-
-/home/sterben/Projects/opencraft/external/glm/vec4.hpp:
-
-/usr/include/bits/posix2_lim.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x2.hpp:
-
-/usr/include/c++/16/ext/string_conversions.h:
-
-/usr/include/c++/16/bits/charconv.h:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/home/sterben/Projects/opencraft/external/glm/mat3x3.hpp:
-
-/usr/include/math.h:
-
-/home/sterben/Projects/opencraft/external/glm/detail/func_vector_relational.inl:
-
-/usr/include/c++/16/tr1/legendre_function.tcc:
-
-/usr/lib/libX11.so.6:
-
-/home/sterben/Projects/opencraft/external/glm/mat2x3.hpp:
-
-/usr/include/c++/16/bits/ptr_traits.h:
-
-/home/sterben/Projects/opencraft/external/glm/detail/func_matrix.inl:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/c++/16/cstdio:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x2.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/exponential.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x4_precision.hpp:
-
-/usr/include/c++/16/bits/streambuf_iterator.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x3.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x2.hpp:
-
-/usr/include/c++/16/bits/hash_bytes.h:
-
-/usr/lib/clang/22/include/sanitizer/tsan_interface.h:
-
-/usr/include/c++/16/bits/utility.h:
-
-/usr/include/bits/mathcalls-helper-functions.h:
-
-/usr/include/c++/16/bits/specfun.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x3_precision.hpp:
-
-/usr/include/c++/16/bits/functexcept.h:
-
-/usr/include/c++/16/bits/basic_ios.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_bool3.hpp:
-
-/usr/include/c++/16/bits/predefined_ops.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x4_precision.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/detail/func_integer.inl:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat2x4.hpp:
-
-libglad.a:
-
-/usr/include/c++/16/cctype:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat2x3.inl:
-
-/usr/include/c++/16/bits/sstream.tcc:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x2.hpp:
-
-/usr/include/c++/16/algorithm:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x3_precision.hpp:
-
-/usr/include/gnu/stubs-64.h:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat2x3.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_float3_precision.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/scalar_int_sized.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x4.hpp:
-
-/usr/include/c++/16/bits/string_view.tcc:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_double4_precision.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/simd/platform.h:
-
-/usr/lib/libxcb.so.1:
-
-/usr/include/bits/endian.h:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_vec1.inl:
-
-/home/sterben/Projects/opencraft/external/glm/detail/func_common.inl:
-
-/usr/include/bits/uio_lim.h:
-
-/usr/include/bits/math-vector.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x2.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/mat4x3.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_int4.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/scalar_constants.inl:
-
-/usr/include/c++/16/cerrno:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x2_precision.hpp:
-
-CMakeFiles/opencraft.dir/src/render/Mesh.cpp.o:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_vec4.inl:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat4x3.hpp:
-
-/home/sterben/Projects/opencraft/src/world/Chunk.h:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat3x2.inl:
-
-/usr/include/c++/16/bits/memory_resource.h:
-
-/home/sterben/Projects/opencraft/external/glm/mat2x2.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/vec2.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x3_precision.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_float2_precision.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/mat4x2.hpp:
-
-/home/sterben/Projects/opencraft/src/core/Input.cpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x3.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_vec3.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_uint2_sized.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x4_precision.hpp:
-
-/usr/include/bits/fp-logb.h:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat3x4.inl:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/c++/16/tr1/beta_function.tcc:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_double3_precision.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/geometric.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_clip_space.inl:
-
-/usr/include/bits/types/time_t.h:
-
-/home/sterben/Projects/opencraft/external/glfw/include/GLFW/glfw3.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_int3_sized.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_uint4_sized.hpp:
-
-/usr/include/bits/setjmp.h:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h:
-
-/home/sterben/Projects/opencraft/external/glm/glm.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_bool3_precision.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/vec3.hpp:
-
-/usr/include/bits/types/struct_tm.h:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat3x3.inl:
-
-/usr/include/c++/16/bits/functional_hash.h:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat3x2.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x2_precision.hpp:
-
-/home/sterben/Projects/opencraft/src/core/Window.cpp:
-
-/home/sterben/Projects/opencraft/external/glm/detail/setup.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_bool4.hpp:
-
-/usr/include/c++/16/typeinfo:
-
-/usr/lib/clang/22/include/float.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_int2_sized.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_uint3_sized.hpp:
-
-/usr/include/tbb/tbb.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x2_precision.hpp:
-
-/usr/include/c++/16/bits/new_allocator.h:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/ctype_inline.h:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_vec2.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x4_precision.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_vec4.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat3x3.hpp:
-
-/usr/include/bits/types/cookie_io_functions_t.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x4.hpp:
-
-/usr/include/c++/16/ios:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat3x4.hpp:
-
-/usr/lib/libXau.so.6:
-
-/usr/lib/clang/22/include/__stddef_ptrdiff_t.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_int2.hpp:
-
-/usr/lib/libmvec.so.1:
-
-/usr/lib/clang/22/include/__stddef_size_t.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x4.hpp:
-
-/home/sterben/Projects/opencraft/src/render/Vertex.h:
-
-/usr/include/bits/types/error_t.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_bool2_precision.hpp:
-
-/usr/include/c++/16/tr1/poly_hermite.tcc:
-
-/usr/include/c++/16/iostream:
-
-/home/sterben/Projects/opencraft/external/glm/detail/compute_common.hpp:
-
-/usr/include/limits.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_int4_sized.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_half.inl:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat2x4.inl:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat2x2.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat4x3.inl:
-
-/usr/include/c++/16/bits/ios_base.h:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat4x4.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_clip_space.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/gtc/constants.inl:
-
-/usr/include/bits/iscanonical.h:
-
-/usr/include/bits/types/sigset_t.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_int3.hpp:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/c++/16/bits/uses_allocator.h:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat4x4.inl:
-
-/usr/lib32/libGLdispatch.so.0:
-
-/home/sterben/Projects/opencraft/src/render/Mesh.cpp:
-
-/home/sterben/Projects/opencraft/src/render/Shader.h:
-
-/home/sterben/Projects/opencraft/src/core/Input.h:
-
-/home/sterben/Projects/opencraft/external/glm/vector_relational.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x3.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x2.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x3_precision.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_bool4_precision.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/common.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x3.hpp:
-
-CMakeFiles/opencraft.dir/src/main.cpp.o:
-
-/home/sterben/Projects/opencraft/external/glm/detail/func_packing.inl:
-
-/usr/include/bits/mathcalls-macros.h:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/atomic_word.h:
-
-/usr/include/c++/16/array:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_half.hpp:
-
-/home/sterben/Projects/opencraft/src/world/BlockRegistry.h:
-
-/usr/include/c++/16/bits/stl_function.h:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_vec3.inl:
-
-/usr/include/c++/16/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/16/bits/uniform_int_dist.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_uint2.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_mat4x2.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/integer.hpp:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/ctype_base.h:
-
-/usr/include/c++/16/tr1/ell_integral.tcc:
-
-/home/sterben/Projects/opencraft/external/glm/packing.hpp:
-
-/usr/lib64/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
-
-/usr/include/c++/16/backward/binders.h:
-
-/usr/include/c++/16/bit:
-
-/usr/include/c++/16/bits/alloc_traits.h:
-
-/usr/include/c++/16/bits/cpp_type_traits.h:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
-
-/usr/include/c++/16/bits/std_function.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x2_precision.hpp:
-
-/usr/include/c++/16/bits/exception.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/c++/16/bits/exception_defines.h:
-
-/usr/include/c++/16/bits/hashtable.h:
-
-/usr/include/alloca.h:
-
-/usr/include/c++/16/bits/ostream_print.h:
-
-/home/sterben/Projects/opencraft/external/glm/detail/type_vec1.hpp:
-
-/usr/include/c++/16/bits/hashtable_policy.h:
-
-/usr/include/GL/gl.h:
-
-/usr/include/c++/16/bits/memoryfwd.h:
-
-/usr/include/bits/xopen_lim.h:
-
-/usr/include/c++/16/bits/stl_construct.h:
-
-/usr/include/c++/16/bits/move.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x4.hpp:
-
-/usr/include/c++/16/bits/new_except.h:
-
-/usr/include/c++/16/ext/atomicity.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x3_precision.hpp:
-
-/usr/include/c++/16/bits/new_throw.h:
-
-/usr/lib/clang/22/include/__float_header_macro.h:
-
-/usr/include/c++/16/bits/node_handle.h:
-
-/usr/lib32/libXau.so.6:
-
-/home/sterben/Projects/opencraft/external/glm/detail/compute_vector_relational.hpp:
-
-/usr/include/c++/16/bits/range_access.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/c++/16/bits/std_abs.h:
-
-/usr/include/c++/16/bits/stdexcept_throw.h:
-
-/usr/lib/clang/22/include/stddef.h:
-
-/usr/include/c++/16/bits/invoke.h:
-
-/usr/include/c++/16/bits/stdexcept_throwfwd.h:
-
-/usr/include/bits/select.h:
-
-/usr/include/c++/16/ext/numeric_traits.h:
-
-/home/sterben/Projects/opencraft/external/glm/matrix.hpp:
-
-/usr/include/c++/16/bits/stl_iterator.h:
-
-/usr/include/c++/16/bits/stl_algobase.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x3.hpp:
-
-/usr/include/c++/16/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/basic_file.h:
-
-/home/sterben/Projects/opencraft/external/glad/include/glad/glad.h:
-
-/usr/include/c++/16/bits/stl_iterator_base_types.h:
-
-/usr/include/bits/locale.h:
-
-/usr/include/c++/16/bits/stl_pair.h:
-
-/usr/include/GL/glext.h:
-
-/home/sterben/Projects/opencraft/external/glm/mat3x2.hpp:
-
-/usr/include/c++/16/bits/stl_uninitialized.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/c++/16/bits/stl_vector.h:
-
-/usr/lib/clang/22/include/stdint.h:
-
-/usr/include/c++/16/bits/uses_allocator_args.h:
-
-/usr/include/bits/floatn.h:
-
-/home/sterben/Projects/opencraft/external/glm/fwd.hpp:
-
-/usr/include/c++/16/bits/vector.tcc:
-
-/usr/include/c++/16/fstream:
-
-/usr/include/c++/16/bits/version.h:
-
-/usr/include/c++/16/cassert:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_float2.hpp:
-
-/usr/include/c++/16/cfloat:
-
-/home/sterben/Projects/opencraft/external/glm/trigonometric.hpp:
-
-/usr/include/c++/16/climits:
-
-/usr/include/c++/16/functional:
-
-/usr/include/c++/16/bits/align.h:
-
-/home/sterben/Projects/opencraft/src/render/Camera.h:
-
-/usr/include/c++/16/cmath:
-
-/home/sterben/Projects/opencraft/external/glm/mat4x4.hpp:
-
-/usr/include/c++/16/limits:
-
-external/glfw/src/libglfw3.a:
-
-/usr/include/pthread.h:
-
-/usr/include/c++/16/compare:
-
-/usr/lib/libc.so.6:
-
-/usr/include/c++/16/tuple:
-
-/usr/include/c++/16/bits/locale_classes.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x4_precision.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/detail/qualifier.hpp:
-
-/usr/include/c++/16/concepts:
-
-/usr/include/c++/16/cstddef:
-
-/usr/include/c++/16/bits/basic_ios.tcc:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_float4.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/mat3x4.hpp:
-
-/usr/include/c++/16/cstdint:
-
-/usr/include/c++/16/pstl/glue_algorithm_defs.h:
-
-/usr/include/c++/16/debug/assertions.h:
-
-/home/sterben/Projects/opencraft/external/glm/mat2x4.hpp:
-
-/usr/include/c++/16/bits/unordered_map.h:
-
-/usr/include/c++/16/ext/alloc_traits.h:
-
-/usr/include/asm-generic/types.h:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/c++/16/bits/stl_bvector.h:
-
-/usr/include/c++/16/debug/debug.h:
-
-/usr/include/sys/select.h:
-
-/usr/include/c++/16/ext/aligned_buffer.h:
-
-/usr/include/bits/types/wint_t.h:
-
-/usr/include/c++/16/new:
-
-/usr/include/c++/16/ostream:
-
-/usr/include/bits/types/struct_timeval.h:
-
-/usr/include/c++/16/pstl/pstl_config.h:
-
-/usr/include/c++/16/bits/erase_if.h:
-
-/usr/include/c++/16/tr1/gamma.tcc:
-
-/usr/include/wctype.h:
-
-/usr/include/sched.h:
-
-/usr/include/bits/fp-fast.h:
-
-/usr/include/c++/16/tr1/hypergeometric.tcc:
-
-/usr/include/c++/16/type_traits:
-
-/usr/lib64/libpthread.a:
-
-/home/sterben/Projects/opencraft/external/glm/ext/vector_uint4.hpp:
-
-/home/sterben/Projects/opencraft/external/glm/detail/func_trigonometric.inl:
-
-/usr/include/c++/16/tr1/modified_bessel_func.tcc:
-
-/usr/include/c++/16/initializer_list:
-
-/usr/include/c++/16/tr1/riemann_zeta.tcc:
-
-/usr/include/c++/16/tr1/special_function_util.h:
-
-/usr/include/c++/16/bits/localefwd.h:
-
-/home/sterben/Projects/opencraft/external/glm/detail/func_exponential.inl:
-
-/usr/include/c++/16/unordered_map:
-
-/usr/include/c++/16/vector:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++allocator.h:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/cpu_defines.h:
-
-/usr/lib64/gcc/x86_64-pc-linux-gnu/16/libstdc++.so:
-
-/usr/include/bits/mathcalls.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h:
-
-/usr/include/KHR/khrplatform.h:
-
-/usr/include/assert.h:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/c++/16/bits/enable_special_members.h:
-
-/usr/include/c++/16/tr1/exp_integral.tcc:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/include/bits/flt-eval-method.h:
-
-/usr/include/bits/libc-header-start.h:
-
-/usr/include/c++/16/bits/algorithmfwd.h:
-
-/home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x3_precision.hpp:
-
-/usr/include/c++/16/tr1/bessel_function.tcc:
-
-/usr/include/bits/libm-simd-decl-stubs.h:
-
-/usr/include/bits/local_lim.h:
-
-/usr/include/c++/16/bits/refwrap.h:
-
-/usr/include/bits/mathcalls-narrow.h:
+/usr/include/bits/pthreadtypes.h:
 
 /usr/include/wchar.h:
 
+/usr/include/bits/mathcalls-narrow.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/usr/include/c++/16/tr1/bessel_function.tcc:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x3_precision.hpp:
+
+/usr/include/c++/16/bits/algorithmfwd.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/bits/flt-eval-method.h:
+
+/usr/include/c++/16/tr1/exp_integral.tcc:
+
+/usr/include/c++/16/bits/enable_special_members.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/KHR/khrplatform.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/lib64/gcc/x86_64-pc-linux-gnu/16/libstdc++.so:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++allocator.h:
+
+/usr/lib/clang/22/include/emmintrin.h:
+
+/home/sterben/Projects/opencraft/external/glm/detail/func_exponential.inl:
+
+/usr/include/c++/16/tr1/special_function_util.h:
+
+/usr/include/c++/16/initializer_list:
+
+external/glfw/src/libglfw3.a:
+
+/home/sterben/Projects/opencraft/external/glm/detail/func_trigonometric.inl:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_uint4.hpp:
+
+/usr/include/wctype.h:
+
+/usr/include/c++/16/bits/erase_if.h:
+
+/usr/include/c++/16/pstl/pstl_config.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/c++/16/new:
+
+/usr/include/bits/types/wint_t.h:
+
+/usr/include/c++/16/ext/aligned_buffer.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/c++/16/debug/debug.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/c++/16/bits/unordered_map.h:
+
+/home/sterben/Projects/opencraft/external/glm/mat2x4.hpp:
+
+/usr/include/c++/16/cstdint:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_float4.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/detail/qualifier.hpp:
+
+/usr/include/c++/16/bits/locale_classes.h:
+
+/usr/include/c++/16/tuple:
+
+/usr/include/c++/16/compare:
+
+/usr/include/c++/16/bits/localefwd.h:
+
+/usr/include/pthread.h:
+
+/usr/include/c++/16/limits:
+
+/home/sterben/Projects/opencraft/external/glm/mat4x4.hpp:
+
+/usr/include/c++/16/cmath:
+
+/home/sterben/Projects/opencraft/src/render/Camera.h:
+
+/usr/include/c++/16/bits/align.h:
+
+/usr/include/c++/16/climits:
+
+/home/sterben/Projects/opencraft/external/glm/trigonometric.hpp:
+
+/usr/include/c++/16/cfloat:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_float2.hpp:
+
+/usr/include/c++/16/cassert:
+
+/usr/include/c++/16/pstl/glue_algorithm_defs.h:
+
+/usr/include/c++/16/bits/basic_ios.tcc:
+
+/usr/include/c++/16/fstream:
+
+/usr/include/c++/16/bits/vector.tcc:
+
+/home/sterben/Projects/opencraft/external/glm/fwd.hpp:
+
+/usr/include/bits/floatn.h:
+
+/home/sterben/Projects/opencraft/external/glm/mat3x2.hpp:
+
+/usr/include/GL/glext.h:
+
+/usr/include/c++/16/bits/stl_pair.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/c++/16/bits/stl_iterator_base_types.h:
+
+/home/sterben/Projects/opencraft/external/glad/include/glad/glad.h:
+
+/usr/include/c++/16/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/16/bits/stl_algobase.h:
+
+/home/sterben/Projects/opencraft/external/glm/matrix.hpp:
+
+/usr/include/c++/16/bits/stdexcept_throw.h:
+
+/usr/include/gnu/stubs.h:
+
+/home/sterben/Projects/opencraft/external/glm/detail/compute_vector_relational.hpp:
+
+/usr/lib32/libXau.so.6:
+
+/usr/include/c++/16/bits/node_handle.h:
+
+/usr/lib/clang/22/include/__float_header_macro.h:
+
+/usr/include/c++/16/bits/new_throw.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x3_precision.hpp:
+
+/usr/include/c++/16/bits/new_except.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x4.hpp:
+
+/usr/include/c++/16/bits/move.h:
+
+/usr/include/c++/16/bits/stl_construct.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/c++/16/bits/memoryfwd.h:
+
+/usr/include/c++/16/bits/hashtable_policy.h:
+
+/usr/include/c++/16/bits/ostream_print.h:
+
+/usr/include/alloca.h:
+
+/usr/include/sched.h:
+
+/usr/include/c++/16/bits/hashtable.h:
+
+/usr/include/c++/16/bits/exception_defines.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x2_precision.hpp:
+
+/usr/include/c++/16/bits/std_function.h:
+
+/usr/include/endian.h:
+
+/usr/include/stdint.h:
+
+/usr/include/c++/16/bits/cpp_type_traits.h:
+
+/usr/include/c++/16/bits/alloc_traits.h:
+
+/usr/include/c++/16/backward/binders.h:
+
+/usr/lib64/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
+
+/usr/include/c++/16/ext/alloc_traits.h:
+
+/home/sterben/Projects/opencraft/external/glm/packing.hpp:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/ctype_base.h:
+
+/home/sterben/Projects/opencraft/external/glm/integer.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat4x2.hpp:
+
+/usr/include/c++/16/tr1/poly_laguerre.tcc:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_vec3.inl:
+
+/usr/include/c++/16/bits/stl_function.h:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_half.hpp:
+
+/usr/include/c++/16/tr1/hypergeometric.tcc:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/c++/16/array:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
+/usr/include/bits/mathcalls-macros.h:
+
+/home/sterben/Projects/opencraft/external/glm/detail/func_packing.inl:
+
+CMakeFiles/opencraft.dir/src/main.cpp.o:
+
+/home/sterben/Projects/opencraft/external/glm/common.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_bool4_precision.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x3_precision.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x2.hpp:
+
+/usr/include/c++/16/bits/stl_vector.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x3.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/vector_relational.hpp:
+
+/home/sterben/Projects/opencraft/src/core/Input.h:
+
+/home/sterben/Projects/opencraft/src/render/Shader.h:
+
+/usr/lib32/libGLdispatch.so.0:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat4x4.inl:
+
+/usr/include/c++/16/bits/uses_allocator.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_int3.hpp:
+
+/usr/include/bits/types/sigset_t.h:
+
+/usr/include/bits/iscanonical.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_clip_space.hpp:
+
+/usr/include/c++/16/bits/ios_base.h:
+
+/usr/include/c++/16/bit:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat4x3.inl:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat2x2.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat2x4.inl:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_half.inl:
+
+/usr/include/limits.h:
+
+/home/sterben/Projects/opencraft/external/glm/detail/compute_common.hpp:
+
+/usr/include/c++/16/iostream:
+
+/usr/include/bits/types/error_t.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x4.hpp:
+
+/usr/lib/clang/22/include/__stddef_size_t.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_int2.hpp:
+
+/usr/lib/clang/22/include/__stddef_ptrdiff_t.h:
+
+/usr/include/c++/16/tr1/modified_bessel_func.tcc:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat3x4.hpp:
+
+/usr/include/c++/16/ios:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x4.hpp:
+
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat3x3.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_vec2.hpp:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/ctype_inline.h:
+
+/usr/include/c++/16/bits/new_allocator.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x2_precision.hpp:
+
+/usr/include/tbb/tbb.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_uint3_sized.hpp:
+
+/usr/lib/clang/22/include/__stdarg_va_arg.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_int2_sized.hpp:
+
+/usr/include/c++/16/cstddef:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x3.hpp:
+
+/usr/lib/clang/22/include/float.h:
+
+/usr/include/c++/16/typeinfo:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/c++/16/bits/invoke.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_bool4.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/detail/setup.hpp:
+
+/usr/include/c++/16/bits/stl_uninitialized.h:
+
+/home/sterben/Projects/opencraft/src/core/Window.cpp:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat3x2.hpp:
+
+/usr/include/c++/16/bits/stl_bvector.h:
+
+/usr/include/c++/16/bits/functional_hash.h:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat3x3.inl:
+
+/usr/include/bits/types/struct_tm.h:
+
+/home/sterben/Projects/opencraft/external/glm/vec3.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_bool3_precision.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/glm.hpp:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_int3_sized.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_clip_space.inl:
+
+/home/sterben/Projects/opencraft/external/glm/geometric.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_double3_precision.hpp:
+
+/usr/include/c++/16/tr1/beta_function.tcc:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat3x4.inl:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x4_precision.hpp:
+
+/usr/include/c++/16/tr1/gamma.tcc:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_vec3.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/mat4x2.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_float2_precision.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x3_precision.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/mat2x2.hpp:
+
+/usr/include/c++/16/bits/memory_resource.h:
+
+/home/sterben/Projects/opencraft/external/glm/gtc/constants.inl:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat3x2.inl:
+
+/home/sterben/Projects/opencraft/src/world/Chunk.h:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat4x3.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_vec4.inl:
+
+CMakeFiles/opencraft.dir/src/render/Mesh.cpp.o:
+
+/usr/include/c++/16/bits/std_abs.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x2_precision.hpp:
+
+/usr/include/c++/16/cerrno:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_bool2_precision.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/scalar_constants.inl:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_int4.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/mat4x3.hpp:
+
+/usr/include/asm-generic/types.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x2.hpp:
+
+/usr/include/bits/math-vector.h:
+
+/usr/include/c++/16/concepts:
+
+/home/sterben/Projects/opencraft/external/glm/detail/func_common.inl:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_vec1.inl:
+
+/usr/include/bits/endian.h:
+
+/usr/lib/libxcb.so.1:
+
+/home/sterben/Projects/opencraft/external/glm/simd/platform.h:
+
+/usr/include/c++/16/ext/numeric_traits.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_double4_precision.hpp:
+
+/usr/include/c++/16/ext/atomicity.h:
+
+/usr/include/c++/16/bits/string_view.tcc:
+
+/usr/include/c++/16/ostream:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x4.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/scalar_int_sized.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_float3_precision.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat2x3.hpp:
+
+/usr/include/gnu/stubs-64.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x3_precision.hpp:
+
+/usr/include/c++/16/algorithm:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x2.hpp:
+
+/usr/include/c++/16/bits/sstream.tcc:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat2x3.inl:
+
 /usr/include/bits/posix1_lim.h:
 
-/usr/include/bits/pthreadtypes.h:
+/usr/include/c++/16/cctype:
+
+/home/sterben/Projects/opencraft/external/glm/detail/func_integer.inl:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x4_precision.hpp:
+
+/usr/include/c++/16/bits/predefined_ops.h:
+
+/usr/include/c++/16/bits/range_access.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_bool3.hpp:
+
+/usr/include/c++/16/bits/basic_ios.h:
+
+/usr/include/c++/16/bits/functexcept.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x3_precision.hpp:
+
+/usr/include/c++/16/bits/specfun.h:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/include/c++/16/bits/utility.h:
+
+/usr/lib/clang/22/include/sanitizer/tsan_interface.h:
+
+/usr/include/c++/16/bits/hash_bytes.h:
+
+/usr/include/c++/16/bits/uses_allocator_args.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x2.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x3.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_uint2.hpp:
+
+/usr/include/c++/16/bits/streambuf_iterator.h:
+
+/home/sterben/Projects/opencraft/external/glm/exponential.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x2.hpp:
+
+/usr/include/c++/16/cstdio:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/c++/16/bits/ptr_traits.h:
+
+/home/sterben/Projects/opencraft/src/render/Vertex.h:
+
+/home/sterben/Projects/opencraft/external/glm/mat2x3.hpp:
+
+/usr/include/bits/setjmp.h:
+
+/home/sterben/Projects/opencraft/external/stb/stb_image.h:
+
+/usr/lib/libX11.so.6:
+
+/usr/include/c++/16/tr1/legendre_function.tcc:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_vec1.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/detail/func_vector_relational.inl:
+
+/usr/include/math.h:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/c++/16/bits/charconv.h:
+
+/home/sterben/Projects/opencraft/external/glm/vec2.hpp:
+
+/usr/include/c++/16/ext/string_conversions.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x2.hpp:
+
+/usr/include/bits/posix2_lim.h:
+
+/home/sterben/Projects/opencraft/external/glm/vec4.hpp:
+
+/usr/include/bits/byteswap.h:
+
+/usr/lib/clang/22/include/stdint.h:
+
+/usr/include/c++/16/stdlib.h:
+
+/usr/include/c++/16/bits/requires_hosted.h:
+
+/usr/include/c++/16/tr1/poly_hermite.tcc:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat2x2.inl:
+
+/home/sterben/Projects/opencraft/external/glm/gtc/matrix_transform.inl:
+
+/usr/include/bits/select.h:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_vec2.inl:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x3.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_double2.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_vec4.hpp:
+
+CMakeFiles/opencraft.dir/src/render/Camera.cpp.o:
+
+/usr/include/c++/16/math.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x2_precision.hpp:
+
+/usr/include/bits/uio_lim.h:
+
+/usr/include/c++/16/ext/type_traits.h:
+
+/usr/include/bits/thread-shared-types.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/scalar_uint_sized.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat2x4.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_uint3.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x2_precision.hpp:
+
+/usr/include/c++/16/bits/ostream.h:
+
+/home/sterben/Projects/opencraft/external/glm/detail/_fixes.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_bool2.hpp:
+
+/usr/include/c++/16/bits/allocator.h:
+
+/usr/include/c++/16/debug/assertions.h:
+
+/usr/include/c++/16/pstl/execution_defs.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x4.hpp:
+
+/usr/include/c++/16/bits/version.h:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat4x2.inl:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float4x4_precision.hpp:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/scalar_constants.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/detail/_vectorize.hpp:
+
+/usr/lib64/libpthread.a:
+
+/usr/lib32/libXdmcp.so.6:
+
+/home/sterben/Projects/opencraft/external/glm/detail/compute_vector_decl.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_double2_precision.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_double3.hpp:
+
+/usr/include/GL/gl.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_double4.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float2x4.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_float4_precision.hpp:
+
+/usr/include/c++/16/bits/concept_check.h:
+
+/usr/include/bits/stdint-least.h:
+
+/usr/include/c++/16/bits/shared_ptr_base.h:
+
+/usr/include/bits/stdint-uintn.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/struct_mutex.h:
+
+/home/sterben/Projects/opencraft/src/world/BlockRegistry.h:
+
+/usr/include/c++/16/bits/locale_facets.h:
+
+/usr/include/bits/time64.h:
+
+/usr/include/bits/timesize.h:
+
+/usr/include/bits/types/__locale_t.h:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/c++/16/tr1/ell_integral.tcc:
+
+/usr/include/c++/16/iosfwd:
+
+CMakeFiles/opencraft.dir/src/render/Shader.cpp.o:
+
+/home/sterben/Projects/opencraft/src/core/Input.cpp:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/uintn-identity.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/home/sterben/Projects/opencraft/src/render/Mesh.cpp:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/c++/16/stdexcept:
+
+/usr/include/stdio.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double2x4_precision.hpp:
+
+/usr/include/features-time64.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_uint2_sized.hpp:
+
+/usr/include/features.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/basic_file.h:
+
+/usr/include/linux/limits.h:
+
+/home/sterben/Projects/opencraft/src/render/Texture.cpp:
+
+/usr/include/stdlib.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/sys/types.h:
+
+/usr/lib/clang/22/include/__float_float.h:
+
+/usr/lib/clang/22/include/__float_infinity_nan.h:
+
+/usr/lib/clang/22/include/__stddef_header_macro.h:
+
+/usr/lib/clang/22/include/__stddef_max_align_t.h:
+
+/usr/lib/clang/22/include/__stddef_nullptr_t.h:
+
+/usr/lib/clang/22/include/__stddef_offsetof.h:
+
+/usr/lib/clang/22/include/__stddef_wchar_t.h:
+
+/usr/include/c++/16/system_error:
+
+/usr/include/strings.h:
+
+/usr/lib/clang/22/include/limits.h:
+
+/home/sterben/Projects/opencraft/src/render/TextureAtlas.h:
+
+/home/sterben/Projects/opencraft/src/world/BlockRegistry.cpp:
+
+/home/sterben/Projects/opencraft/src/core/Time.cpp:
+
+/home/sterben/Projects/opencraft/src/core/Window.h:
+
+/home/sterben/Projects/opencraft/external/glfw/include/GLFW/glfw3.h:
+
+/usr/include/c++/16/bits/streambuf.tcc:
+
+/usr/lib32/libGLX.so.0:
+
+/usr/include/c++/16/bits/basic_string.h:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h:
+
+/usr/include/c++/16/bits/basic_string.tcc:
+
+/usr/include/c++/16/bits/char_traits.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o:
+
+/usr/include/c++/16/bits/cxxabi_forced.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x4_precision.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/mat3x3.hpp:
+
+/usr/include/c++/16/cwctype:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x3.hpp:
+
+/usr/include/c++/16/bits/cxxabi_init_exception.h:
+
+/usr/include/c++/16/bits/exception_ptr.h:
+
+/usr/lib/libXau.so.6:
+
+/usr/include/c++/16/bits/nested_exception.h:
+
+/home/sterben/Projects/opencraft/src/render/Mesh.h:
+
+/usr/include/c++/16/bits/ostream_insert.h:
+
+/usr/include/c++/16/bits/postypes.h:
+
+/usr/include/c++/16/bits/stdexcept_except.h:
+
+/usr/include/c++/16/type_traits:
+
+/usr/include/c++/16/bits/shared_ptr.h:
+
+/usr/include/c++/16/clocale:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/16/cstdlib:
+
+/usr/include/bits/errno.h:
+
+/home/sterben/Projects/opencraft/external/glm/mat3x4.hpp:
+
+/usr/include/c++/16/cwchar:
+
+/usr/include/linux/sched/types.h:
+
+/usr/include/c++/16/exception:
+
+/usr/include/c++/16/string:
+
+/usr/include/c++/16/string_view:
+
+/usr/lib64/crti.o:
+
+/usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/stdc-predef.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_projection.hpp:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++locale.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_transform.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double4x4_precision.hpp:
+
+/usr/lib/clang/22/include/__stddef_null.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/bits/types/mbstate_t.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/16/bits/stl_tempbuf.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_int4_sized.hpp:
+
+/usr/lib64/libc.so:
+
+/usr/include/errno.h:
+
+/usr/include/c++/16/bits/stl_iterator.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++io.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_uint4_sized.hpp:
+
+/usr/include/locale.h:
+
+/usr/lib/clang/22/include/__stdarg___gnuc_va_list.h:
+
+/usr/include/assert.h:
+
+/usr/lib/clang/22/include/stdarg.h:
+
+/usr/include/bits/types/time_t.h:
+
+/home/sterben/Projects/opencraft/src/main.cpp:
+
+/home/sterben/Projects/opencraft/external/glm/gtc/constants.hpp:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_projection.inl:
+
+/home/sterben/Projects/opencraft/external/glm/gtc/matrix_transform.hpp:
+
+/home/sterben/Projects/opencraft/src/world/Block.h:
+
+/usr/include/c++/16/backward/auto_ptr.h:
+
+/usr/include/c++/16/bits/allocated_ptr.h:
+
+/usr/include/c++/16/bits/atomic_base.h:
+
+/usr/lib/clang/22/include/xmmintrin.h:
+
+/usr/include/c++/16/bits/atomic_lockfree_defines.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_double3x2_precision.hpp:
+
+/usr/include/c++/16/bits/istream.tcc:
+
+/usr/include/c++/16/bits/locale_classes.tcc:
+
+/usr/include/c++/16/bits/locale_facets.tcc:
+
+/usr/include/c++/16/bits/shared_ptr_atomic.h:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/lib/libc.so.6:
+
+/home/sterben/Projects/opencraft/external/glm/detail/func_matrix.inl:
+
+/usr/include/c++/16/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/16/bits/unique_ptr.h:
+
+/usr/include/c++/16/ext/concurrence.h:
+
+/usr/include/c++/16/istream:
+
+/usr/include/c++/16/memory:
+
+/usr/include/c++/16/pstl/glue_memory_defs.h:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/error_constants.h:
+
+CMakeFiles/opencraft.dir/src/core/Input.cpp.o:
+
+/usr/include/c++/16/bits/refwrap.h:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr-default.h:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/asm/posix_types_64.h:
+
+/usr/include/asm/types.h:
+
+/usr/include/bits/cpu-set.h:
+
+/usr/include/bits/types/struct_itimerspec.h:
+
+/usr/include/bits/types/struct_sched_param.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/bits/wctype-wchar.h:
+
+/usr/include/c++/16/vector:
+
+/usr/lib/libmvec.so.1:
+
+/usr/include/bits/fp-logb.h:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_float3x3.hpp:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/bits/timex.h:
+
+/usr/lib64/gcc/x86_64-pc-linux-gnu/16/crtendS.o:
+
+CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o:
+
+/usr/include/linux/types.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/sys/single_threaded.h:
+
+/usr/include/time.h:
+
+/usr/include/asm/posix_types.h:
+
+/home/sterben/Projects/opencraft/src/render/Camera.cpp:
+
+/home/sterben/Projects/opencraft/external/glm/detail/func_geometric.inl:
+
+/usr/include/c++/16/bits/stl_algo.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/c++/16/bits/stl_heap.h:
+
+/usr/include/c++/16/bits/codecvt.h:
+
+/home/sterben/Projects/opencraft/src/render/Shader.cpp:
+
+/usr/include/c++/16/streambuf:
+
+/usr/include/c++/16/bits/fstream.tcc:
+
+/usr/lib/clang/22/include/__stdarg___va_copy.h:
+
+/usr/include/c++/16/bits/stdexcept_throwfwd.h:
+
+/usr/include/c++/16/sstream:
+
+/usr/include/asm/bitsperlong.h:
+
+/home/sterben/Projects/opencraft/src/render/Texture.h:
+
+/usr/lib/clang/22/include/__stdarg_va_list.h:
+
+/usr/include/string.h:
+
+/usr/include/c++/16/unordered_map:
+
+/usr/lib/clang/22/include/__stdarg_header_macro.h:
+
+/usr/include/bits/types.h:
+
+/usr/lib/clang/22/include/__stdarg_va_copy.h:
+
+/usr/include/c++/16/bits/exception.h:
+
+/usr/lib/clang/22/include/mm_malloc.h:
+
+/usr/lib/clang/22/include/mmintrin.h:
+
+/home/sterben/Projects/opencraft/src/render/TextureAtlas.cpp:
+
+/usr/lib32/libxcb.so.1:
+
+/home/sterben/Projects/opencraft/external/glm/ext/matrix_transform.inl:
+
+/home/sterben/Projects/opencraft/src/world/Block.cpp:
+
+/home/sterben/Projects/opencraft/external/glm/detail/type_mat4x4.hpp:
+
+/home/sterben/Projects/opencraft/src/world/Chunk.cpp:
+
+/home/sterben/Projects/opencraft/src/world/World.cpp:
+
+/usr/lib64/Scrt1.o:
+
+/usr/lib64/crtn.o:
+
+/usr/lib64/libdl.a:
+
+/usr/lib64/libgcc_s.so.1:
+
+/usr/lib64/libm.so:
+
+/usr/include/c++/16/functional:
+
+/usr/lib64/gcc/x86_64-pc-linux-gnu/16/libgcc.a:
+
+/usr/include/c++/16/tr1/riemann_zeta.tcc:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/lib64/gcc/x86_64-pc-linux-gnu/16/libgcc_s.so:
+
+/usr/lib/ld-linux-x86-64.so.2:
+
+/usr/lib/libGL.so:
+
+/usr/lib/libGLX.so.0:
+
+/usr/lib/libGLdispatch.so.0:
+
+/usr/lib/libXdmcp.so.6:
+
+/usr/include/c++/16/bits/uniform_int_dist.h:
+
+/usr/include/c++/16/bits/ostream.tcc:
+
+/usr/lib/libc_nonshared.a:
+
+/home/sterben/Projects/opencraft/external/glm/ext/vector_float3.hpp:
+
+/usr/lib/libm.so.6:
+
+/usr/lib/librt.a:
+
+CMakeFiles/opencraft.dir/src/core/Time.cpp.o:
+
+/usr/lib32/libX11.so.6:
+
+CMakeFiles/opencraft.dir/src/core/Window.cpp.o:
+
+CMakeFiles/opencraft.dir/src/render/Texture.cpp.o:
+
+/usr/lib/clang/22/include/stddef.h:
+
+/usr/include/c++/16/bits/stringfwd.h:
+
+CMakeFiles/opencraft.dir/src/world/Block.cpp.o:

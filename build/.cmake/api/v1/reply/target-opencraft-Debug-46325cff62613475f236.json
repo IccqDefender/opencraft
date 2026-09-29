@@ -111,6 +111,10 @@
 					"path" : "/home/sterben/Projects/opencraft/external/imgui/backends"
 				},
 				{
+					"backtrace" : 6,
+					"path" : "/home/sterben/Projects/opencraft/external/stb"
+				},
+				{
 					"backtrace" : 2,
 					"path" : "/home/sterben/Projects/opencraft/external/glfw/include"
 				}

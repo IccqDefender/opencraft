@@ -49,79 +49,79 @@
 },
 {
   "directory": "/home/sterben/Projects/opencraft/build",
-  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/core/Input.cpp.o -c /home/sterben/Projects/opencraft/src/core/Input.cpp",
+  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/stb -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/core/Input.cpp.o -c /home/sterben/Projects/opencraft/src/core/Input.cpp",
   "file": "/home/sterben/Projects/opencraft/src/core/Input.cpp",
   "output": "CMakeFiles/opencraft.dir/src/core/Input.cpp.o"
 },
 {
   "directory": "/home/sterben/Projects/opencraft/build",
-  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/core/Time.cpp.o -c /home/sterben/Projects/opencraft/src/core/Time.cpp",
+  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/stb -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/core/Time.cpp.o -c /home/sterben/Projects/opencraft/src/core/Time.cpp",
   "file": "/home/sterben/Projects/opencraft/src/core/Time.cpp",
   "output": "CMakeFiles/opencraft.dir/src/core/Time.cpp.o"
 },
 {
   "directory": "/home/sterben/Projects/opencraft/build",
-  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/core/Window.cpp.o -c /home/sterben/Projects/opencraft/src/core/Window.cpp",
+  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/stb -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/core/Window.cpp.o -c /home/sterben/Projects/opencraft/src/core/Window.cpp",
   "file": "/home/sterben/Projects/opencraft/src/core/Window.cpp",
   "output": "CMakeFiles/opencraft.dir/src/core/Window.cpp.o"
 },
 {
   "directory": "/home/sterben/Projects/opencraft/build",
-  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/main.cpp.o -c /home/sterben/Projects/opencraft/src/main.cpp",
+  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/stb -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/main.cpp.o -c /home/sterben/Projects/opencraft/src/main.cpp",
   "file": "/home/sterben/Projects/opencraft/src/main.cpp",
   "output": "CMakeFiles/opencraft.dir/src/main.cpp.o"
 },
 {
   "directory": "/home/sterben/Projects/opencraft/build",
-  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/render/Camera.cpp.o -c /home/sterben/Projects/opencraft/src/render/Camera.cpp",
+  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/stb -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/render/Camera.cpp.o -c /home/sterben/Projects/opencraft/src/render/Camera.cpp",
   "file": "/home/sterben/Projects/opencraft/src/render/Camera.cpp",
   "output": "CMakeFiles/opencraft.dir/src/render/Camera.cpp.o"
 },
 {
   "directory": "/home/sterben/Projects/opencraft/build",
-  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/render/Mesh.cpp.o -c /home/sterben/Projects/opencraft/src/render/Mesh.cpp",
+  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/stb -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/render/Mesh.cpp.o -c /home/sterben/Projects/opencraft/src/render/Mesh.cpp",
   "file": "/home/sterben/Projects/opencraft/src/render/Mesh.cpp",
   "output": "CMakeFiles/opencraft.dir/src/render/Mesh.cpp.o"
 },
 {
   "directory": "/home/sterben/Projects/opencraft/build",
-  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/render/Shader.cpp.o -c /home/sterben/Projects/opencraft/src/render/Shader.cpp",
+  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/stb -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/render/Shader.cpp.o -c /home/sterben/Projects/opencraft/src/render/Shader.cpp",
   "file": "/home/sterben/Projects/opencraft/src/render/Shader.cpp",
   "output": "CMakeFiles/opencraft.dir/src/render/Shader.cpp.o"
 },
 {
   "directory": "/home/sterben/Projects/opencraft/build",
-  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/render/Texture.cpp.o -c /home/sterben/Projects/opencraft/src/render/Texture.cpp",
+  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/stb -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/render/Texture.cpp.o -c /home/sterben/Projects/opencraft/src/render/Texture.cpp",
   "file": "/home/sterben/Projects/opencraft/src/render/Texture.cpp",
   "output": "CMakeFiles/opencraft.dir/src/render/Texture.cpp.o"
 },
 {
   "directory": "/home/sterben/Projects/opencraft/build",
-  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o -c /home/sterben/Projects/opencraft/src/render/TextureAtlas.cpp",
+  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/stb -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o -c /home/sterben/Projects/opencraft/src/render/TextureAtlas.cpp",
   "file": "/home/sterben/Projects/opencraft/src/render/TextureAtlas.cpp",
   "output": "CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o"
 },
 {
   "directory": "/home/sterben/Projects/opencraft/build",
-  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/world/Block.cpp.o -c /home/sterben/Projects/opencraft/src/world/Block.cpp",
+  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/stb -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/world/Block.cpp.o -c /home/sterben/Projects/opencraft/src/world/Block.cpp",
   "file": "/home/sterben/Projects/opencraft/src/world/Block.cpp",
   "output": "CMakeFiles/opencraft.dir/src/world/Block.cpp.o"
 },
 {
   "directory": "/home/sterben/Projects/opencraft/build",
-  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o -c /home/sterben/Projects/opencraft/src/world/BlockRegistry.cpp",
+  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/stb -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o -c /home/sterben/Projects/opencraft/src/world/BlockRegistry.cpp",
   "file": "/home/sterben/Projects/opencraft/src/world/BlockRegistry.cpp",
   "output": "CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o"
 },
 {
   "directory": "/home/sterben/Projects/opencraft/build",
-  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o -c /home/sterben/Projects/opencraft/src/world/Chunk.cpp",
+  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/stb -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o -c /home/sterben/Projects/opencraft/src/world/Chunk.cpp",
   "file": "/home/sterben/Projects/opencraft/src/world/Chunk.cpp",
   "output": "CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o"
 },
 {
   "directory": "/home/sterben/Projects/opencraft/build",
-  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/world/World.cpp.o -c /home/sterben/Projects/opencraft/src/world/World.cpp",
+  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/stb -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/world/World.cpp.o -c /home/sterben/Projects/opencraft/src/world/World.cpp",
   "file": "/home/sterben/Projects/opencraft/src/world/World.cpp",
   "output": "CMakeFiles/opencraft.dir/src/world/World.cpp.o"
 },

@@ -111,6 +111,7 @@ target_include_directories(opencraft PRIVATE
     external
     external/imgui
     external/imgui/backends
+    external/stb
 )
 
 # --------------------------------------------
