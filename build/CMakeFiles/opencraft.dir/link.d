@@ -12,6 +12,7 @@ opencraft: \
   CMakeFiles/opencraft.dir/src/render/Texture.cpp.o \
   CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o \
   CMakeFiles/opencraft.dir/src/world/Block.cpp.o \
+  CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o \
   CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o \
   CMakeFiles/opencraft.dir/src/world/World.cpp.o \
   external/glfw/src/libglfw3.a \
@@ -93,6 +94,8 @@ CMakeFiles/opencraft.dir/src/render/Texture.cpp.o:
 CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o:
 
 CMakeFiles/opencraft.dir/src/world/Block.cpp.o:
+
+CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o:
 
 CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o:
 

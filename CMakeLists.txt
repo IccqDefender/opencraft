@@ -86,6 +86,8 @@ add_executable(opencraft ${SOURCES}
     src/world/World.cpp
     src/world/World.h
     src/render/Vertex.h
+    src/world/BlockRegistry.h
+    src/world/BlockRegistry.cpp
 )
 
 # Линкуем все библиотеки к игре

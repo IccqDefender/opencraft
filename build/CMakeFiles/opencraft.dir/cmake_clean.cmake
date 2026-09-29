@@ -20,6 +20,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o.d"
   "CMakeFiles/opencraft.dir/src/world/Block.cpp.o"
   "CMakeFiles/opencraft.dir/src/world/Block.cpp.o.d"
+  "CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o"
+  "CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o.d"
   "CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o"
   "CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o.d"
   "CMakeFiles/opencraft.dir/src/world/World.cpp.o"

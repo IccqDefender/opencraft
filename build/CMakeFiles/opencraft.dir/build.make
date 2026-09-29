@@ -212,10 +212,24 @@ CMakeFiles/opencraft.dir/src/world/Block.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencraft.dir/src/world/Block.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sterben/Projects/opencraft/src/world/Block.cpp -o CMakeFiles/opencraft.dir/src/world/Block.cpp.s
 
+CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o: CMakeFiles/opencraft.dir/flags.make
+CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o: /home/sterben/Projects/opencraft/src/world/BlockRegistry.cpp
+CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o: CMakeFiles/opencraft.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/Projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o -MF CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o.d -o CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o -c /home/sterben/Projects/opencraft/src/world/BlockRegistry.cpp
+
+CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sterben/Projects/opencraft/src/world/BlockRegistry.cpp > CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.i
+
+CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sterben/Projects/opencraft/src/world/BlockRegistry.cpp -o CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.s
+
 CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o: CMakeFiles/opencraft.dir/flags.make
 CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o: /home/sterben/Projects/opencraft/src/world/Chunk.cpp
 CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o: CMakeFiles/opencraft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/Projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/Projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o -MF CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o.d -o CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o -c /home/sterben/Projects/opencraft/src/world/Chunk.cpp
 
 CMakeFiles/opencraft.dir/src/world/Chunk.cpp.i: cmake_force
@@ -229,7 +243,7 @@ CMakeFiles/opencraft.dir/src/world/Chunk.cpp.s: cmake_force
 CMakeFiles/opencraft.dir/src/world/World.cpp.o: CMakeFiles/opencraft.dir/flags.make
 CMakeFiles/opencraft.dir/src/world/World.cpp.o: /home/sterben/Projects/opencraft/src/world/World.cpp
 CMakeFiles/opencraft.dir/src/world/World.cpp.o: CMakeFiles/opencraft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/Projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/opencraft.dir/src/world/World.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sterben/Projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/opencraft.dir/src/world/World.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opencraft.dir/src/world/World.cpp.o -MF CMakeFiles/opencraft.dir/src/world/World.cpp.o.d -o CMakeFiles/opencraft.dir/src/world/World.cpp.o -c /home/sterben/Projects/opencraft/src/world/World.cpp
 
 CMakeFiles/opencraft.dir/src/world/World.cpp.i: cmake_force
@@ -252,6 +266,7 @@ opencraft_OBJECTS = \
 "CMakeFiles/opencraft.dir/src/render/Texture.cpp.o" \
 "CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o" \
 "CMakeFiles/opencraft.dir/src/world/Block.cpp.o" \
+"CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o" \
 "CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o" \
 "CMakeFiles/opencraft.dir/src/world/World.cpp.o"
 
@@ -268,6 +283,7 @@ opencraft: CMakeFiles/opencraft.dir/src/render/Shader.cpp.o
 opencraft: CMakeFiles/opencraft.dir/src/render/Texture.cpp.o
 opencraft: CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o
 opencraft: CMakeFiles/opencraft.dir/src/world/Block.cpp.o
+opencraft: CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o
 opencraft: CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o
 opencraft: CMakeFiles/opencraft.dir/src/world/World.cpp.o
 opencraft: CMakeFiles/opencraft.dir/build.make
@@ -280,7 +296,7 @@ opencraft: external/glfw/src/libglfw3.a
 opencraft: /usr/lib/librt.a
 opencraft: /usr/lib/libm.so
 opencraft: CMakeFiles/opencraft.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sterben/Projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable opencraft"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sterben/Projects/opencraft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable opencraft"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencraft.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

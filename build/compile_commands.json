@@ -109,6 +109,12 @@
 },
 {
   "directory": "/home/sterben/Projects/opencraft/build",
+  "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o -c /home/sterben/Projects/opencraft/src/world/BlockRegistry.cpp",
+  "file": "/home/sterben/Projects/opencraft/src/world/BlockRegistry.cpp",
+  "output": "CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o"
+},
+{
+  "directory": "/home/sterben/Projects/opencraft/build",
   "command": "/usr/bin/clang++  -I/home/sterben/Projects/opencraft/external/glad/include -I/home/sterben/Projects/opencraft/external -I/home/sterben/Projects/opencraft/external/imgui -I/home/sterben/Projects/opencraft/external/imgui/backends -I/home/sterben/Projects/opencraft/external/glfw/include -g -std=gnu++17 -o CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o -c /home/sterben/Projects/opencraft/src/world/Chunk.cpp",
   "file": "/home/sterben/Projects/opencraft/src/world/Chunk.cpp",
   "output": "CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o"

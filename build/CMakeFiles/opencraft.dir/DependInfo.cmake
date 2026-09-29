@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/sterben/Projects/opencraft/src/render/Texture.cpp" "CMakeFiles/opencraft.dir/src/render/Texture.cpp.o" "gcc" "CMakeFiles/opencraft.dir/src/render/Texture.cpp.o.d"
   "/home/sterben/Projects/opencraft/src/render/TextureAtlas.cpp" "CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o" "gcc" "CMakeFiles/opencraft.dir/src/render/TextureAtlas.cpp.o.d"
   "/home/sterben/Projects/opencraft/src/world/Block.cpp" "CMakeFiles/opencraft.dir/src/world/Block.cpp.o" "gcc" "CMakeFiles/opencraft.dir/src/world/Block.cpp.o.d"
+  "/home/sterben/Projects/opencraft/src/world/BlockRegistry.cpp" "CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o" "gcc" "CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o.d"
   "/home/sterben/Projects/opencraft/src/world/Chunk.cpp" "CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o" "gcc" "CMakeFiles/opencraft.dir/src/world/Chunk.cpp.o.d"
   "/home/sterben/Projects/opencraft/src/world/World.cpp" "CMakeFiles/opencraft.dir/src/world/World.cpp.o" "gcc" "CMakeFiles/opencraft.dir/src/world/World.cpp.o.d"
   "" "opencraft" "gcc" "CMakeFiles/opencraft.dir/link.d"

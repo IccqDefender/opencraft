@@ -671,6 +671,30 @@ src/world/Block.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/world/Block.cpp.s
 .PHONY : src/world/Block.cpp.s
 
+src/world/BlockRegistry.o: src/world/BlockRegistry.cpp.o
+.PHONY : src/world/BlockRegistry.o
+
+# target to build an object file
+src/world/BlockRegistry.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.o
+.PHONY : src/world/BlockRegistry.cpp.o
+
+src/world/BlockRegistry.i: src/world/BlockRegistry.cpp.i
+.PHONY : src/world/BlockRegistry.i
+
+# target to preprocess a source file
+src/world/BlockRegistry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.i
+.PHONY : src/world/BlockRegistry.cpp.i
+
+src/world/BlockRegistry.s: src/world/BlockRegistry.cpp.s
+.PHONY : src/world/BlockRegistry.s
+
+# target to generate assembly for a file
+src/world/BlockRegistry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opencraft.dir/build.make CMakeFiles/opencraft.dir/src/world/BlockRegistry.cpp.s
+.PHONY : src/world/BlockRegistry.cpp.s
+
 src/world/Chunk.o: src/world/Chunk.cpp.o
 .PHONY : src/world/Chunk.o
 
@@ -791,6 +815,9 @@ help:
 	@echo "... src/world/Block.o"
 	@echo "... src/world/Block.i"
 	@echo "... src/world/Block.s"
+	@echo "... src/world/BlockRegistry.o"
+	@echo "... src/world/BlockRegistry.i"
+	@echo "... src/world/BlockRegistry.s"
 	@echo "... src/world/Chunk.o"
 	@echo "... src/world/Chunk.i"
 	@echo "... src/world/Chunk.s"

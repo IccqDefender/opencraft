@@ -17,6 +17,8 @@
 #include "render/Vertex.h"
 #include "render/Mesh.h"
 
+#include "world/BlockRegistry.h"
+
 int main() {
   std::unique_ptr<Window> windowManager = std::make_unique<Window>(1280, 720, "opencraft");
   std::unique_ptr<Camera> camera = std::make_unique<Camera>(glm::vec3(0.0f, 0.0f, 3.0f));
@@ -29,6 +31,8 @@ int main() {
     Input::setCursorMode(windowManager->getWindow(), GLFW_CURSOR_DISABLED);
 
     Shader shader = Shader::fromFiles("../assets/shaders/shader.vert", "../assets/shaders/shader.frag");
+
+    BlockRegistry::initialize();
 
     std::vector<Vertex> vertices = {
       {{0.5f, 0.5f, 0.0f}, {1.0f, 0.0f, 0.0f}},
@@ -43,6 +47,9 @@ int main() {
     };
 
     Mesh squareMesh(vertices, indices);
+
+    const BlockProperties& grassProps = BlockRegistry::get(BlockType::Grass);
+    std::cout << grassProps.name << " isSolid=" << grassProps.isSolid << std::endl;
 
     while (!windowManager->isWindowShouldClose()) {
       Input::update();
