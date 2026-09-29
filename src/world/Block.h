@@ -35,6 +35,8 @@ struct BlockProperties {
     bool isTransparent = true;
     bool isOpaque = false;
 
+    glm::vec3 debugColor = glm::vec3(1.0f, 0.0f, 1.0f);
+
     std::array<glm::ivec2, 6> faceTiles = {};
 };
 

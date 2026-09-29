@@ -469,5 +469,6 @@ CMakeFiles/opencraft.dir/src/main.cpp.o: \
   /home/sterben/Projects/opencraft/src/render/Camera.h \
   /home/sterben/Projects/opencraft/src/render/Vertex.h \
   /home/sterben/Projects/opencraft/src/render/Mesh.h \
-  /home/sterben/Projects/opencraft/src/world/BlockRegistry.h \
-  /home/sterben/Projects/opencraft/src/world/Block.h
+  /home/sterben/Projects/opencraft/src/world/Chunk.h \
+  /home/sterben/Projects/opencraft/src/world/Block.h \
+  /home/sterben/Projects/opencraft/src/world/BlockRegistry.h

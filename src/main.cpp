@@ -17,6 +17,7 @@
 #include "render/Vertex.h"
 #include "render/Mesh.h"
 
+#include "world/Chunk.h"
 #include "world/BlockRegistry.h"
 
 int main() {
@@ -34,22 +35,20 @@ int main() {
 
     BlockRegistry::initialize();
 
-    std::vector<Vertex> vertices = {
-      {{0.5f, 0.5f, 0.0f}, {1.0f, 0.0f, 0.0f}},
-      {{0.5f, -0.5f, 0.0f}, {0.0f, 1.0f, 0.0f}},
-      {{-0.5f, -0.5f, 0.0f}, {0.0f, 0.0f, 1.0f}},
-      {{-0.5f, 0.5f, 0.0f}, {1.0f, 1.0f, 1.0f}}
-    };
+    Chunk chunk(glm::ivec3(0, 0, 0));
 
-    std::vector<uint32_t> indices = {
-      0, 1, 3,
-      1, 2, 3
-    };
+    for (int x = 0; x < Chunk::SIZE_X; ++x){
+      for (int z = 0; z < Chunk::SIZE_Z; ++z){
+        for (int y = 0; y < 16; ++y){
+          chunk.setBlock(x, y, z, BlockType::Stone);
+        }
 
-    Mesh squareMesh(vertices, indices);
+        chunk.setBlock(x, 15, z, BlockType::Dirt);
+        chunk.setBlock(x, 16, z, BlockType::Grass);
+      }
+    }
 
-    const BlockProperties& grassProps = BlockRegistry::get(BlockType::Grass);
-    std::cout << grassProps.name << " isSolid=" << grassProps.isSolid << std::endl;
+    chunk.generateMesh();
 
     while (!windowManager->isWindowShouldClose()) {
       Input::update();
@@ -75,7 +74,7 @@ int main() {
       shader.setMat4("uView", camera->getViewMatrix());
       shader.setMat4("uProjection", camera->getProjectionMatrix(aspect));
 
-      squareMesh.draw();
+      chunk.draw(shader);
       
       windowManager->swapBuffers();
     }

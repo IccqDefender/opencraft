@@ -35,6 +35,8 @@ void Window::makeContextCurrent()
     }
 
     glViewport(0, 0, 1280, 720);
+
+    glEnable(GL_DEPTH_TEST);
 }
 
 void Window::swapBuffers()

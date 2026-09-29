@@ -38,6 +38,8 @@ void BlockRegistry::initialize(){
     props.faceTiles[(size_t)BlockFace::South]   = {1, 0};
     props.faceTiles[(size_t)BlockFace::East]    = {1, 0};
     props.faceTiles[(size_t)BlockFace::West]    = {1, 0};
+
+    props.debugColor = glm::vec3(0.3f, 0.7f, 0.2f);
   }
 
   /*
@@ -53,6 +55,8 @@ void BlockRegistry::initialize(){
     props.isOpaque = true;
 
     props.faceTiles.fill( {2, 0} );
+
+    props.debugColor = glm::vec3(0.5f, 0.35f, 0.2f);
   }
 
   /*
@@ -68,6 +72,8 @@ void BlockRegistry::initialize(){
     props.isOpaque = true;
 
     props.faceTiles.fill( {3, 0} );
+
+    props.debugColor = glm::vec3(0.5f, 0.5f, 0.5f);
  }
 
  /*
@@ -83,6 +89,8 @@ void BlockRegistry::initialize(){
     props.isOpaque = false;
 
     props.faceTiles.fill( {4, 0} );
+
+    props.debugColor = glm::vec3(0.3f, 0.7f, 0.2f);
  }
 
  /* 
@@ -98,6 +106,8 @@ void BlockRegistry::initialize(){
     props.isOpaque = false;
 
     props.faceTiles.fill( {5, 0} );
+
+    props.debugColor = glm::vec3(0.3f, 0.7f, 0.2f);
  }
 
  /*
@@ -118,6 +128,8 @@ void BlockRegistry::initialize(){
     props.faceTiles[(size_t)BlockFace::South]   = {7, 0};
     props.faceTiles[(size_t)BlockFace::East]    = {7, 0};
     props.faceTiles[(size_t)BlockFace::West]    = {7, 0};
+
+    props.debugColor = glm::vec3(0.3f, 0.7f, 0.2f);
  }
 
  /*
@@ -133,6 +145,8 @@ void BlockRegistry::initialize(){
     props.isOpaque = false;
 
     props.faceTiles.fill( {8, 0} );
+
+    props.debugColor = glm::vec3(0.3f, 0.7f, 0.2f);
  }
 
  s_initialized = true;
