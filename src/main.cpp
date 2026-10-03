@@ -16,22 +16,25 @@
 #include "render/Camera.h"
 #include "render/Vertex.h"
 #include "render/Mesh.h"
+#include "render/TextureAtlas.h"
 
 #include "world/Chunk.h"
 #include "world/BlockRegistry.h"
 
 int main() {
-  std::unique_ptr<Window> windowManager = std::make_unique<Window>(1280, 720, "opencraft");
-  std::unique_ptr<Camera> camera = std::make_unique<Camera>(glm::vec3(0.0f, 0.0f, 3.0f));
-
   float lastFrame = 0.0f;
 
   try{
+    std::unique_ptr<Window> windowManager = std::make_unique<Window>(1280, 720, "opencraft");
+    std::unique_ptr<Camera> camera = std::make_unique<Camera>(glm::vec3(0.0f, 0.0f, 3.0f));
+
     windowManager->makeContextCurrent();
 
     Input::setCursorMode(windowManager->getWindow(), GLFW_CURSOR_DISABLED);
 
-    Shader shader = Shader::fromFiles("../assets/shaders/shader.vert", "../assets/shaders/shader.frag");
+    Shader shader = Shader::fromFiles("assets/shaders/shader.vert", "assets/shaders/shader.frag");
+
+    TextureAtlas atlas("../assets/textures/blocks.png", 16);
 
     BlockRegistry::initialize();
 
@@ -48,7 +51,7 @@ int main() {
       }
     }
 
-    chunk.generateMesh();
+    chunk.generateMesh(atlas);
 
     while (!windowManager->isWindowShouldClose()) {
       Input::update();
@@ -71,6 +74,8 @@ int main() {
       float aspect = 1280.0f / 720.0f;
 
       shader.use();
+      atlas.bind(0);
+      shader.setInt("uTexture", 0);
       shader.setMat4("uView", camera->getViewMatrix());
       shader.setMat4("uProjection", camera->getProjectionMatrix(aspect));
 

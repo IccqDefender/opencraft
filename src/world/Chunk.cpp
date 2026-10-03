@@ -5,6 +5,7 @@
 #include "../render/Mesh.h"
 #include "../render/Shader.h"
 #include "../render/Vertex.h"
+#include "../render/TextureAtlas.h"
 
 #include <glm/gtc/matrix_transform.hpp>
 
@@ -84,7 +85,7 @@ glm::vec3 Chunk::getWorldPosition() const {
     return glm::vec3(m_position.x * SIZE_X, m_position.y * SIZE_Y, m_position.z * SIZE_Z);
 }
 
-void Chunk::generateMesh() {
+void Chunk::generateMesh(const TextureAtlas& atlas) {
     std::vector<Vertex> vertices;
     std::vector<uint32_t> indices;
 
@@ -92,11 +93,11 @@ void Chunk::generateMesh() {
         for (int y = 0; y < SIZE_Y; ++y){
             for (int z = 0; z < SIZE_Z; ++z){
                 Block block = getBlock(x, y, z);
-                if (block.isAir()) continue;
+                if(block.isAir()) continue;
 
                 const BlockProperties& props = BlockRegistry::get(block.type);
 
-                for (const FaceDef& face : FACES){
+                for (const FaceDef& face : FACES) {
                     int nx = x + face.normal.x;
                     int ny = y + face.normal.y;
                     int nz = z + face.normal.z;
@@ -105,17 +106,19 @@ void Chunk::generateMesh() {
 
                     float shade = 1.0f;
                     if(face.face == BlockFace::Bottom) shade = 0.5f;
-                    else if (face.face == BlockFace::North || face.face == BlockFace::South) shade = 0.8f;
-                    else if (face.face == BlockFace::East || face.face == BlockFace::West) shade = 0.7;
+                    else if(face.face == BlockFace::North || face.face == BlockFace::South) shade = 0.8f;
+                    else if(face.face == BlockFace::East || face.face == BlockFace::West) shade = 0.7f;
 
-                    glm::vec3 color = props.debugColor * shade;
+                    glm::ivec2 tile = props.faceTiles[(size_t)face.face];
+                    std::array<glm::vec2, 4> uvCorners = atlas.getTileUV(tile);
 
                     uint32_t baseIndex = (uint32_t)vertices.size();
 
-                    for (const glm::vec3& offset : face.vertices) {
+                    for (size_t i = 0; i < 4; ++i){
                         Vertex v;
-                        v.position = glm::vec3(x, y, z) + offset;
-                        v.color = color;
+                        v.position = glm::vec3(x, y, z) + face.vertices[i];
+                        v.color = glm::vec3(shade);
+                        v.uv = uvCorners[i];
                         vertices.push_back(v);
                     }
 

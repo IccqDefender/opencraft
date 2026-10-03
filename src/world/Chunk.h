@@ -8,6 +8,7 @@
 
 class Mesh;
 class Shader;
+class TextureAtlas;
 
 class Chunk{
 public:
@@ -20,7 +21,7 @@ public:
     Block getBlock(int x, int y, int z) const;
     void setBlock(int x, int y, int z, BlockType type);
 
-    void generateMesh();
+    void generateMesh(const TextureAtlas& atlas);
     void draw(Shader& shader) const;
 
     glm::ivec3 getPosition() const { return m_position; };
